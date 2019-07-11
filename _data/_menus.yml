@@ -3,22 +3,19 @@ main:
   depth: 2
   name: Top Menu
   items:
-  - page_id: _pages/about.html
-    label: About
-    url: /about/
   - page_id: _pages/rooms.html
     label: Rooms & Suites
-    url: /rooms/
+    url: "/rooms/"
   - page_id: _pages/offers.html
     label: Offers
-    url: /offers/
+    url: "/offers/"
   - page_id: _pages/dine-drink.html
     url_localized: ''
     label_localized:
       en: Eat & Drink
   - page_id: _pages/weddings-events.html
     label: Weddings & Events
-    url: /weddings-events/
+    url: "/weddings-events/"
   - page_id: _pages/sagamore-is-art.html
     folder: true
     label: Sagamore is Art
@@ -30,56 +27,56 @@ main:
         en: Overview
     - page_id: _pages/art-events.html
       label: Art Events
-      url: /art-events/
+      url: "/art-events/"
     - page_id: _pages/art-advisor-sebastien-laboureau.html
       label: Art Advisor - Sebastien Laboureau
-      url: /sagamore-is-art/art-advisor-sebastien-laboureau/
+      url: "/sagamore-is-art/art-advisor-sebastien-laboureau/"
   - page_id: _pages/blog.html
     label: Blog
-    url: /blog/
+    url: "/blog/"
   - page_id: _pages/gallery.html
     label: Gallery
-    url: /gallery/
+    url: "/gallery/"
   - page_id: _pages/press.html
     label: Press
-    url: /press/
+    url: "/press/"
 footer:
   depth: 2
   name: Footer Menu
   items:
   - page_id: _pages/about.html
     label: About
-    url: /about/
+    url: "/about/"
   - page_id: _pages/rooms.html
     label: Rooms & Suites
-    url: /rooms/
+    url: "/rooms/"
   - page_id: _pages/offers.html
     label: Offers
-    url: /offers/
+    url: "/offers/"
   - page_id: _pages/gallery.html
     label: Gallery
-    url: /gallery/
+    url: "/gallery/"
   - page_id: _pages/press.html
     label: Press
-    url: /press/
+    url: "/press/"
   - page_id: _pages/weddings-events.html
     label: Weddings & Events
-    url: /weddings-events/
+    url: "/weddings-events/"
   - page_id: _pages/blog.html
     label: Blog
-    url: /blog/
+    url: "/blog/"
   - page_id: _pages/privacy-policy.html
     label: Privacy Policy
-    url: /privacy-policy/
+    url: "/privacy-policy/"
   - page_id: _pages/terms.html
     label: Terms & Conditions
-    url: /terms/
+    url: "/terms/"
   - page_id: _pages/contact.html
     label: Contact
-    url: /contact/
+    url: "/contact/"
   - page_id: _pages/hotel-policies.html
     label: Hotel Policies
-    url: /hotel-policies/
+    url: "/hotel-policies/"
   - page_id: _pages/accessibility-statement.html
     label: Accessibility Statement
-    url: /accessibility-statement/
+    url: "/accessibility-statement/"
