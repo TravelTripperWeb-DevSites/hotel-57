@@ -66,12 +66,12 @@
       padding: 24px 12px;
       font-family: $family-secondary;
       font-size: $display8-size;
-      color: $primary;
+      color: $base-text-color;
       text-transform: uppercase;
       letter-spacing: 1px;
 
       &:hover {
-        color: $secondary !important;
+        color: $primary !important;
         text-decoration: none !important;
       }
     }
