@@ -21,9 +21,6 @@ main:
     label: Sagamore is Art
     url_localized: ''
     items: 
-  - page_id: _pages/gallery.html
-    label: Gallery
-    url: "/gallery/"
 footer:
   depth: 2
   name: Footer Menu
