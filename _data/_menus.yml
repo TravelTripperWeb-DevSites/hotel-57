@@ -15,7 +15,8 @@ main:
     url_localized: ''
     items: 
   - folder: false
-    url_localized: ''
+    url_localized:
+      en: "/contact/"
     page_id: _pages/contact.html
     label_localized:
       en: Contact
