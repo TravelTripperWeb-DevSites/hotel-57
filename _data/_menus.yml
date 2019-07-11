@@ -24,9 +24,6 @@ main:
   - page_id: _pages/gallery.html
     label: Gallery
     url: "/gallery/"
-  - page_id: _pages/press.html
-    label: Press
-    url: "/press/"
 footer:
   depth: 2
   name: Footer Menu
