@@ -21,9 +21,6 @@ main:
     label: Sagamore is Art
     url_localized: ''
     items:
-    - page_id: _pages/art-events.html
-      label: Art Events
-      url: "/art-events/"
     - page_id: _pages/art-advisor-sebastien-laboureau.html
       label: Art Advisor - Sebastien Laboureau
       url: "/sagamore-is-art/art-advisor-sebastien-laboureau/"
