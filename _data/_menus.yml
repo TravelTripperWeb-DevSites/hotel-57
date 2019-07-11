@@ -20,10 +20,7 @@ main:
     folder: true
     label: Sagamore is Art
     url_localized: ''
-    items:
-    - page_id: _pages/art-advisor-sebastien-laboureau.html
-      label: Art Advisor - Sebastien Laboureau
-      url: "/sagamore-is-art/art-advisor-sebastien-laboureau/"
+    items: 
   - page_id: _pages/blog.html
     label: Blog
     url: "/blog/"
