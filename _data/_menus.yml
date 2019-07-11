@@ -9,10 +9,6 @@ main:
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - page_id: _pages/dine-drink.html
-    url_localized: ''
-    label_localized:
-      en: Eat & Drink
   - page_id: _pages/sagamore-is-art.html
     folder: true
     label: Sagamore is Art
