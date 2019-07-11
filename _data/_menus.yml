@@ -21,9 +21,6 @@ main:
     label: Sagamore is Art
     url_localized: ''
     items: 
-  - page_id: _pages/blog.html
-    label: Blog
-    url: "/blog/"
   - page_id: _pages/gallery.html
     label: Gallery
     url: "/gallery/"
