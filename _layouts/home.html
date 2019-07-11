@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+{% include components/brg-banner %}
+
+{% region intro, type:mixed %}
+
+{{ content }}
+
+{% region outro, type:mixed %}
+
+
+{% assign rooms = site.data._models.rooms | sort: 'order' %}
+
+<section class="rooms-carousel">
+  <!-- Slider Arrows and Indicators -->
+  <div class="slider-control">
+    <div class="slider-control__arrows">
+      <a aria-label="Press enter for previous slide" class="prev-slide" href="javascript:void(0);" id="roomSliderPrev" title="Previous Slide">
+        <span class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+      </a>
+      <a aria-label="Press enter for next slide" class="next-slide" href="javascript:void(0);" id="roomSliderNext" title="Next Slide">
+        <span class="next">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+      </a>
+    </div>
+    <div class="nav-slide" id="roomSlider">
+      {% for room in rooms %}
+        <span>{{ room.name }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- Slider -->
+  <div class="rooms-slider">
+    {% for room in rooms %}
+      <div>
+        <div class="rooms-carousel__content">
+          <div class="rooms-carousel__image">
+            {% assign featured_image = room.featured_image | default: room.images[1] %}
+            {% include components/image image=featured_image max_width=1600 %}
+          </div>
+          <div class="rooms-carousel__info">
+            <h3 class="h4" tabindex="0">{{ room.name }}</h3>
+            <div class="rooms-carousel__info__descripton" tabindex="0">
+              <p>{{ room.short_description }}</p>
+            </div>
+          <a class="btn btn--secondary" href="/rooms/{{ room.url_friendly_name }}">View This Room</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% region bottom, type:mixed %}

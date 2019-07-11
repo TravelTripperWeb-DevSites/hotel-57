@@ -1,0 +1,11 @@
+{% for banner in site.data._models.top-banner %}
+  {% if banner.featured == true %}
+    <!--Top Banner-->
+    <section class="top-banner" style="background-color: {{ banner.background-color }}" tabindex="-1">
+      <p style="color: {{ banner.banner-text-color }}" tabindex="0">{{ banner.banner-text }}</p>
+      {% if banner.button-text and banner.button-text != "" %}
+      <a id="top_banner_offer" href="{{ banner.button-link }}" title="{{ banner.button-text }}" target="_blank" style="color: {{ banner.button-text-color }}; background-color: {{ banner.button-background-color }}; border-color: {{ banner.button-border-color }}">{{ banner.button-text }}</a>
+      {% endif %}
+    </section>
+  {% endif %}
+{% endfor %}

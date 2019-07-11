@@ -1,0 +1,15 @@
+---
+layout: generic
+---
+
+
+{% if site.data._models.art-events %}
+  {% assign art-events = site.data._models.art-events | sort: 'order' %}
+  {% include components/art-event-list %}
+{% else %}
+  {% regionblock no_list_items, type:html %}
+    {% t 'events.none' %}
+  {% endregionblock %}
+{% endif %}
+
+{{ content }}

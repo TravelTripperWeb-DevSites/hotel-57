@@ -1,0 +1,11 @@
+[
+  {
+    "_template": "1_col",
+    "html": {
+      "content": "<p>&nbsp;</p>\n<p class=\"h4\">HOTEL POLICIES</p>\n<ul class=\"about-list\">\n<li>Check in time is 4pm, Check out time is 11 am.</li>\n<li>The guest arriving must present his/her credit card along with a valid ID that matches the reservation. If the room and/or incidental charges are being paid by someone else, the hotel will require the person agreeing to pay to complete a credit card authorization form. One adult guest at least 21 years of age must be registered with your party to check in. A $150.00 per night security deposit for incidental charges will be held upon check-in on your card.</li>\n<li>Valet Parking is available at the hotel at $42 before taxes with in/out privileges</li>\n<li>Should you wish to have anything shipped to the hotel, we charge a small handling fee of $5.00 per package</li>\n<li>Pet Policy .. we are not a pet friendly hotel .</li>\n<li>Rollaway beds are subject to availability and room type, We do not charge extra for rollaway beds.</li>\n</ul>\n<p class=\"h4\">CANCELLATION POLICY</p>\n<ul class=\"about-list\">\n<li>Changes to the dates of stay, number of guests per room or number of rooms confirmed will be subject to current pricing which may be different than previously confirmed rates.</li>\n<li>Your reservation is a non-cancelable, non-changeable, and non-refundable booking; cancelation of your reservation will result in a full penalty of all nights room and tax to your credit card; any questions regarding your cancelation policy should be directed to the hotel directly by e-mailing <a title=\"reservations\" href=\"mailto:reservations@sagamorehotel.com\"> reservations@sagamorehotel.com</a></li>\n</ul>"
+    },
+    "advanced_options": {
+      "custom_classes": "static-content-wrap"
+    }
+  }
+]

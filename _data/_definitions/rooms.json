@@ -1,0 +1,43 @@
+{
+  "name": {
+    "required": true,
+    "localizable": true
+  },
+  "url_friendly_name": {
+    "label": "URL Friendly Name",
+    "type": "url_slug",
+    "localizable": true
+  },
+  "short_description": {
+    "localizable": true,
+    "type": "text"
+  },
+  "description": {
+    "localizable": true,
+    "type": "richtext"
+  },
+  "ada_room": {
+    "label": "ADA Compliant",
+    "type": "boolean"
+  },
+  "amenities": {
+    "type": "model",
+    "multiple": true,
+    "display_field": "name",
+    "model_name": "room_amenities"
+  },
+  "featured_image": {
+    "type": "image"
+  },
+  "images": {
+    "type": "image",
+    "multiple": true
+  },
+  "reztrip_room_id": {
+    "Label": "Booking URL",
+    "instructions": "Synxis Booking link for this room"
+  },
+  "order": {
+    "type": "order"
+  }
+}

@@ -1,2 +1,73 @@
 // Contact Page Elements
 // ==========================================================================
+
+.form-wrap {
+  max-width: 900px;
+  .form-control {
+    margin-bottom: 30px;
+    border-color: $terciary;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .form-check-label {
+    font-size: $base-font-size;
+    color: $black;
+    a {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+    font-family: $family-secondary;
+    font-size: 16px;
+    color: #333;
+  }
+  .checkbox-inline {
+    margin-right: 15px;
+    font-family: $family-terciary;
+    font-size: 12px;
+    line-height: 20px;
+    color: $primary;
+    letter-spacing: 1px;
+    input {
+      margin-right: 10px;
+    }
+  }
+  select {
+    padding: 0 0 0 10px;
+    border-radius: 0;
+  }
+}
+
+
+.static-content-wrap {
+  .h4 {
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: $primary;
+  }
+  a {
+    color: $primary;
+  }
+  ul {
+    margin: 0 0 20px;
+    padding: 0 0 0 5px;
+    li {
+      position: relative;
+      padding: 0 0 0 32px;
+      list-style: none;
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        content: '';
+        background-color: $primary;
+        border-radius: 50%;
+      }
+    }
+  }
+}

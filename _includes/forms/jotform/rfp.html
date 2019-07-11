@@ -1,0 +1,163 @@
+<form class="contact__wrap" action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.rfp-id }}/" method="post" name="form_{{ site.data.forms.jotform.rfp-id }}" id="{{ site.data.forms.jotform.rfp-id }}"
+    accept-charset="utf-8" autocomplete="off">
+    <input type="hidden" name="formID" value="{{ site.data.forms.jotform.rfp-id }}">
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q39_firstName"  placeholder="FIRST NAME *" aria-label="Enter first name" required>
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q40_lastName" placeholder="LAST NAME *" aria-label="Enter last name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <textarea class="form-control custom-input" id="input_8" name="q41_addressDetails" placeholder="ADDRESS DETAILS *" aria-label="Enter address details" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q42_city"  placeholder="CITY" aria-label="Enter your city">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q43_stateprovince" placeholder="State / Province / Region" aria-label="Enter your state">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q44_zipcode"  placeholder="Postal / Zip Code" aria-label="Enter postal or zip code">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q45_country" placeholder="COUNTRY" aria-label="Enter country">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control custom-input" type="text" id="input_6" name="q46_email" placeholder="PRIMARY EMAIL *" aria-label="Enter your primary email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control custom-input" type="text" id="input_6" name="q47_phoneNumber" placeholder="PRIMARY PHONE NUMBER *" aria-label="Enter your phone number" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <p tabindex="0">Preferred Method of Contact *</p>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q48_methodOf[]" value="Voice call" aria-label="Press Spacebar if your Preferred Method of Contact is Voice call ">Voice call </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q48_methodOf[]" value="Text message" aria-label="Press Spacebar if your Preferred Method of Contact is Text message">Text message </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q48_methodOf[]" value="eMail" aria-label="Press Spacebar if your Preferred Method of Contact is email">eMail </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q48_methodOf[]" value="U.S. Mail" aria-label="Press Spacebar if your Preferred Method of Contact is U.S. Mail">U.S. Mail </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <p tabindex="0">What Type of Event Will You Be Hosting?</p>
+        <label class="checkbox-inline">
+        <input type="checkbox" value="Wedding " name="q49_typeOf[]" aria-label="Press Spacebar if your event type is Wedding  ">Wedding</label>
+        <label class="checkbox-inline">
+        <input type="checkbox" value="Vow Renewal " name="q49_typeOf[]" aria-label="Press Spacebar if your event type is Vow Renewal ">Vow Renewal</label>
+        <label class="checkbox-inline">
+        <input type="checkbox" value="Other " name="q49_typeOf[]" aria-label="Press Spacebar if your event type is Other ">Other</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q50_eventgroupName"  placeholder="EVENT OR GROUP NAME *" aria-label="Enter event or group name" required>
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q51_startDate" placeholder="START DATE *" aria-label="Enter start date" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q52_endDate"  placeholder="END DATE *" aria-label="Enter end date" required>
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q53_arrivalDate" placeholder="ARRIVAL DATE *" aria-label="Enter arrival date" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q54_departureDate"  placeholder="DEPARTURE DATE *" aria-label="Enter departure date" required>
+      </div>
+      <div class="col-md-6">
+        <input class="form-control custom-input" type="text" id="input_6" name="q55_estimatedAttendees" placeholder="ESTIMATED # OF ATTENDEES *" aria-label="Enter estimated number of attendees" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control custom-input" type="text" id="input_6" name="q56_totalBudget" placeholder="TOTAL BUDGET *" aria-label="Enter total budget" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <p tabindex="0">Audio Visual Needs</p>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q57_audioVisual[]" value="LCD Projector " aria-label="LCD Projector  ">LCD Projector </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q57_audioVisual[]" value="Overhead Projector " aria-label="Overhead Projector ">Overhead Projector </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q57_audioVisual[]" value="Rear Screen Projector " aria-label="Rear Screen Projector ">Rear Screen Projector </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q57_audioVisual[]" value="Microphone(s) " aria-label="Microphone(s) ">Microphone(s) </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" name="q57_audioVisual[]" value="Screen  " aria-label="Screen  ">Screen </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <textarea class="form-control custom-input" type="text" id="input_6" name="q58_foodAnd" placeholder="FOOD & BEVERAGE REQUIREMENTS " aria-label="Enter food and beverage requirements"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <textarea class="form-control custom-input" type="text" id="input_6" name="q59_additionalInformation" placeholder="ADDITIONAL INFORMATION / COMMENTS " aria-label="Enter additional information or comments"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control custom-input" type="text" id="input_6" name="q60_otherDestination" placeholder="ARE YOU CONSIDERING ANOTHER DESTINATION? IF SO, WHERE? " aria-label="ARE YOU CONSIDERING ANOTHER DESTINATION? IF SO, WHERE? ">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input class="form-control custom-input md-mb-3" type="text" id="input_5" name="q61_whenWill"  placeholder="WHEN WILL YOU BE MAKING A DECISION?" aria-label="Enter when will you be making a decision">
+      </div>
+      <div class="col-md-6">
+        <select class="form-control custom-input" name="q62_howDid" aria-label="How Did You Hear About The Sagamore?">
+          <option value="" tabindex="-1">How Did You Hear About The Sagamore?</option>
+          <option value="Family / Friend">Family / Friend</option>
+          <option value="Internet">Internet</option>
+          <option value="Magazine Ad">Magazine Ad</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <p tabindex="0">Would You Like To Receive Exclusive Special Offers And News From Sagamore Hotels?</p>
+        <label class="checkbox-inline">
+        <input type="checkbox" value="Yes" name="q63_sendEmails[]">Yes, please send me email regarding exclusive special offers and news from Sagamore Hotels. </label>
+      </div>
+    </div>
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="checkbox"  name="q38_iAgree[]" value="Yes" aria-label="Press spacebar to if you agree with Terms of Service & Privacy Policy" required>
+      <p class="form-check-label small" for="input_14_0">
+        I agree with  <a href="/terms/"> Terms of Service</a> &  <a href="/privacy-policy/">Privacy Policy</a>
+      </p>
+    </div>
+    <button class="btn btn btn--secondary" type="submit" id="input_2">SUBMIT</button>
+    <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.rfp-id }}">
+
+    <script type="text/javascript">
+        document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.rfp-id }}-{{ site.data.forms.jotform.rfp-id }}";
+    </script>
+</form>
+<script type="text/javascript">
+    JotForm.ownerView = true;
+</script>

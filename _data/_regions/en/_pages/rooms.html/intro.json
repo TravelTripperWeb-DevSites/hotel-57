@@ -1,0 +1,11 @@
+[
+  {
+    "_template": "1_col",
+    "html": {
+      "content": "<div class=\"p-4\">\n<p>The iconic and legendary Sagamore Hotel on Miami Beach offers deluxe accommodations, an array of amenities, and a unique glimpse into the art culture that embodies the very essence of the property. Our 102 -room hotel, with an ample number of suites, boasts some of the largest standard rooms throughout South Beach. Each room offers the comforts of home while drawing decorative inspiration from the Art Deco style that embodies the region. Whether you&rsquo;re traveling for business or leisure, we&rsquo;re sure you&rsquo;re going to love our spacious suites, breathtaking views, and prime location.</p>\n<p>Accommodations feature a whirlpool tub, mini bar, in-room safe, 42&rdquo; flat screen TV with on-demand movies, Molton Brown bath amenities, room service and bathroom with separate entrance. Please note that our rooms and suites are ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. ADA rooms are available. We also invite you to view our Accessibility Statement.</p>\n<p>Your resort fee ensures you&rsquo;ll enjoy high-speed internet, two bottles of water delivered daily and two beach chairs on the white sands of Miami Beach.</p>\n</div>"
+    },
+    "advanced_options": {
+      "custom_classes": "my-3 my-md-4  text-center"
+    }
+  }
+]

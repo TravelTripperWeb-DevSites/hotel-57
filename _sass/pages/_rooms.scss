@@ -1,2 +1,249 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
+
+.c-room-list {
+  @include make-container;
+  max-width: 1280px;
+  &__items {
+    @include make-row;
+    margin: 0;
+  }
+  .c-room {
+    display: inherit;
+    flex-wrap: inherit;
+    margin-right: 0;
+    margin-left: 0;
+    @include make-col-ready;
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+      padding: 0;
+    }
+    &__image-group {
+      display: block;
+      flex: inherit;
+      max-width: 100%;
+      height: 260px;
+      margin-bottom: 24px;
+    }
+    &__featured-image {
+      display: block;
+      height: inherit;
+
+      picture {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    &__text-group {
+      position: relative;
+      display: block;
+      flex: inherit;
+      max-width: 100%;
+      margin-bottom: 30px;
+
+      .wrap {
+        min-height: auto;
+
+        @include media-breakpoint-up(md) {
+          min-height: 230px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &__short-description {
+      font-size: $display7-size;
+      line-height: 24px;
+    }
+    &:nth-child(even) {
+      .c-room__image-group {
+        order: 0;
+      }
+    }
+  }
+}
+
+
+.room-nav {
+  a,
+  span {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 0 44px 0 10px;
+    font-family: $family-secondary;
+    font-size: $display9-size;
+    color: $secondary;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 0;
+    @include transition(.3s);
+    &:after {
+      @include absolute-position(50%,0,auto,auto,32px,1px);
+      background-color: $gray-900;
+    }
+
+    &:last-child {
+      &:after {
+        content: normal;
+      }
+    }
+    &.not-active {
+      text-decoration: none;
+      cursor: default;
+      opacity: .5;
+
+      &:hover {
+        text-decoration: none;
+        background: transparent;
+      }
+
+    }
+    &:hover {
+      text-decoration: none;
+      background: transparent;
+    }
+  }
+}
+
+.visuval-gallery-img {
+  position: relative;
+  display: block;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    content: '';
+    background-color: rgba($black, .5);
+  }
+}
+.visuval-gallery {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 3;
+  width: auto;
+  height: auto;
+  .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+}
+.room-amenities {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 191px;
+  @include media-breakpoint-down(md) {
+    display: block;
+    min-height: inherit;
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    @include media-breakpoint-down(md) {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .overline {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    background: $gray-100;
+    @include media-breakpoint-down(md) {
+      display: block;
+      width: 100%;
+    }
+    ul {
+      margin: 0;
+      padding-left: 15px;
+      li {
+        font-family: $family-secondary;
+        font-size: $display8-size;
+      }
+    }
+  }
+
+}
+
+
+.more-rooms {
+  @include make-container;
+  max-width: 1320px;
+
+  &__wrap {
+    @include make-row;
+  }
+  &__left {
+    @include make-col-ready;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 14%;
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      padding-top: 0;
+      overflow: hidden;
+    }
+
+    .h4 {
+      max-width: 320px;
+      margin: 20px auto 0;
+      padding: 0 15px;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+
+    .slider-control {
+      top: 0;
+      transform: translateY(0);
+      @include media-breakpoint-up(md) {
+        top: 10%;
+        transform: translateY(-10%);
+      }
+      span {
+        padding-top: 6px;
+        padding-left: 0;
+      }
+    }
+  }
+  &__right {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+
+    }
+    picture {
+      display: block;
+      height: 320px;
+      @include media-breakpoint-up(md) {
+        display: block;
+        height: 543px;
+        overflow: hidden;
+      }
+    }
+  }
+}

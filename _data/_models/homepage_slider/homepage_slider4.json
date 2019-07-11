@@ -1,0 +1,37 @@
+{
+  "sort_order": 1,
+  "title": "Sagamore Miami Beach Video",
+  "image": {
+    "name": "Hero_video",
+    "content_type": "video/mp4",
+    "date_added": "2019-05-29-014506",
+    "audio": {
+      "codec": "aac",
+      "bit_rate": "130069",
+      "frequency": 48000,
+      "channels": 2,
+      "channel_layout": "stereo"
+    },
+    "video": {
+      "pix_format": "yuv420p",
+      "codec": "h264",
+      "level": 31,
+      "profile": "High",
+      "bit_rate": "2947457"
+    },
+    "bit_rate": 3089457,
+    "frame_rate": 25,
+    "duration": 18.1884,
+    "format": "mov",
+    "url": "//res.cloudinary.com/traveltripperweb/video/upload/v1559108707/otqrq2bhg8fbpfppanhb.mov",
+    "resource_type": "video",
+    "size": 7024035,
+    "path": "//res.cloudinary.com/traveltripperweb/video/upload/v1559108707/otqrq2bhg8fbpfppanhb.mov",
+    "file_size": null,
+    "alt": "Hero_video",
+    "caption": "",
+    "description": ""
+  },
+  "button_text": "#",
+  "button_link": "ss"
+}

@@ -1,0 +1,175 @@
+{% assign item = site.data._models.rooms  %}
+{% for p in item | sort: "order" %}
+  {% if p.url_friendly_name == room.url_friendly_name %}
+    {% assign pInd = forloop.index0 | minus: 1 %}
+    {% assign nInd = forloop.index0 | plus: 1 %}
+    {% if forloop.first != true %}
+      {% assign prevItemTitle = item[pInd].title %}
+      {% assign prevItemUrl = item[pInd].url_friendly_name %}
+    {% endif %}
+    {% if forloop.last != true %}
+      {% assign nextItemTitle = item[nInd].title %}
+      {% assign nextItemUrl = item[nInd].url_friendly_name %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign sync = include.sync_content %}
+
+{% assign room_detail = page.data %}
+<section class="hero inner-hero" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
+  <div class="hero__body">
+    <h1 class="h1 light" tabindex="0" tabindex="0">{{ room.name }}</h1>
+    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank">Book Now</a>
+  </div>
+</section>
+
+<div class="room-nav mt-3 text-center">
+  {%if prevItemUrl %}
+  <a title="Previous Room" href="/rooms/{{ prevItemUrl }}/" aria-label="Press enter for previous room">Previous Room </a>
+  {%else%}
+  <a class="not-active" title="Previous Room" href="#">Previous Room </a>
+  {%endif%}
+  <span>{{ room.name }}</span>
+  {%if nextItemUrl %}
+  <a  title="Next Room" href="/rooms/{{ nextItemUrl }}/" aria-label="Press enter for next room">Next Room</a>
+  {%else%}
+  <a class="not-active" title="Next Room" href="#">Next Room</a>
+  {%endif%}
+</div>
+
+<section class="rooms-carousel">
+  <div class="rooms-slider">
+    {% for pic in room_detail.images %}
+    <div class="hero" style="background-image: url('{{ pic.url_xlarge }}');"></div>
+    {% endfor %}
+  </div>
+  <div class="rooms-carousel__info rooms-carousel__info--content">
+    <p class="overline">LUXURY REDEFINED</p>
+    <h2 class="h4 dark" tabindex="0">{{ room.name }}</h2>
+    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank">Book Now</a>
+  </div>
+  <div class="slider-control">
+    <div class="slider-control__arrows">
+      <a href="javascript:void(0);" class="prev-slide" id="roomSliderPrev" title="Previous slide" aria-label="Press enter for previous slide">
+        <span class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+      </a>
+      <a href="javascript:void(0);" class="next-slide" id="roomSliderNext" title="Next slide" aria-label="Press enter for next slide">
+        <span class="next">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+      </a>
+    </div>
+    <div class="nav-slide d-none" id="roomSlider">
+      {% for pic in room_detail.images %}
+      <span></span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="c-2-col  container  twocol-intro">
+  <div class="row c-2-col__row no-gutters">
+    <div class="col-lg-6 col--left  col--">
+      <div class="col-html-content w-100 d-flex flex-column h-100 justify-content-center ">
+        <div class="text-center p-3 p-md-5 mt-auto">
+          <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
+          <div class="px-0 px-md-3" tabindex="0">{{ room.description }}</div>
+        </div>
+        <div class="two-img-grid mt-auto">
+          <div class="two-img-grid__single objectfit" tabindex="0">
+            <img src="{{ room.featured_image.url }}" alt="room.featured_image.alt">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col--right">
+      <div class="col-html-content">
+        <div class="my-3 ml-0 ml-lg-3 objectfit h-100 position-relative">
+          <picture class="visuval-gallery-img" tabindex="0">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1561101380/fyiohwxpn3vfltybfhzt.jpg" alt="Sagamore Night View Pool">
+          </picture>
+          <div class="visuval-gallery">
+            <h3 class="h4 light" tabindex="0"> TAKE A VISUAL JOURNEY</h3>
+            <a class="btn btn--secondary btn--secondary--transparent" href="/gallery/">View Gallery</a>
+          </div>
+        </div>
+        <div class="room-amenities ml-0 ml-lg-3 mt-auto ">
+          <div class="room-amenities__heading text-center">
+            <p class="overline" tabindex="0">ENJOY THE FOLLOWING<br>PRIVILEGES</p>
+            <h3 class="h5" tabindex="0">Room<br>Amenities</h3>
+          </div>
+          <div class="room-amenities__list">
+            <ul>
+              {% for amenity in room.amenities %}
+              <li tabindex="0">{{ amenity.name }}</li>
+              {% endfor %}
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% assign rooms = site.data._models.rooms | sort: 'order' %}
+<section class="more-rooms my-3">
+  <div class="more-rooms__wrap">
+  <div class="more-rooms__left text-center ">
+    <div class="content-slider">
+      {% for room in rooms %}
+      <div>
+        <p class="overline" tabindex="0">VIEW MORE LUXURIOUS <br>ROOMS & SUITES</p>
+        <h3 class="h4 dark" tabindex="0">{{ room.name }}</h3>
+        <a href="/rooms/{{ room.url_friendly_name }}" class="btn btn--secondary">View This Room</a><br>
+        <a href="/rooms/" class="btn btn--secondary">View All Room</a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="slider-control">
+      <div class="slider-control__arrows">
+        <a href="javascript:void(0);" class="prev-slide" id="roomsSliderPrev" title="Previous Slide" aria-label="Press enter for previous slide">
+          <span class="prev">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+        </a>
+        <a href="javascript:void(0);" class="next-slide" id="roomsSliderNext" title="Next Slide" aria-label="Press enter for next slide">
+          <span class="next">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-slide d-none" id="roomsSlider">
+      {% for room in rooms %}
+      <span></span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="more-rooms__right">
+    <div class="images-slider">
+      {% for room in rooms %}
+      <div tabindex="0">
+        {% assign featured_image = room.featured_image | default: room.images[1] %}
+        {% include components/image image=featured_image max_width=600 %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="hero cta-banner" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1561356545/sm1myo78elfl5ow71ff7.jpg');">
+  <div class="hero__body">
+    <div class="wrap">
+      <h4 class="overline pb-50" tabindex="0">The Perfect Stay</h4>
+      <p class="pb-2"><img id="1561013148461" class=" " src="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1561013144/u0epu5j0aewrwozcs2k3.png" alt="Sagamore - Miami Beach" data-image-large="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1561013144/u0epu5j0aewrwozcs2k3.png"
+          data-image-medium="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-small="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1561013144/u0epu5j0aewrwozcs2k3.png"
+          data-image-xsmall="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-thumb="//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1561013144/u0epu5j0aewrwozcs2k3.png"></p>
+      <a class="btn btn--secondary" style="z-index: 2;" href="https://be.synxis.com/?chain=12125&amp;&amp;hotel=6465" target="_blank" rel="no-follow noopener noreferrer">Book Now</a>
+    </div>
+  </div>
+</section>

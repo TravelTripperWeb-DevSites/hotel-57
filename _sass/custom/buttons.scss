@@ -1,0 +1,124 @@
+.btn {
+  border-radius: 5px;
+
+  &--primary {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px 12px;
+    font-family: $family-secondary;
+    font-size: $display8-size;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    background-color: $secondary;
+    border: 0;
+    border-radius: 0;
+    @include transition(.3s);
+
+    span {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      @include transition(.3s);
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $terciary;
+
+      span {
+        right: 12px;
+      }
+    }
+  }
+
+  &--secondary {
+    padding: 15px 30px 12px;
+    font-family: $family-secondary;
+    font-size: $display8-size;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    background-color: $white;
+    border: 1px solid $secondary;
+    @include transition(.3s);
+    &:hover {
+      color: $white;
+      background-color: $secondary;
+    }
+
+    &--light {
+      border: 1px solid $white;
+      &:hover {
+        background-color: $primary;
+        border: 1px solid $white;
+      }
+    }
+
+    &--transparent {
+      color: $white;
+      background: transparent;
+      border: 1px solid $white;
+      &:hover {
+        color: $primary;
+        background-color: $white;
+        border: 1px solid $white;
+      }
+    }
+  }
+
+  &--terciary {
+    padding: 15px 30px 12px;
+    font-family: $family-secondary;
+    font-size: $display8-size;
+    color: $gray-900;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    background-color: transparent;
+    border: 1px solid $secondary;
+    @include transition(.3s);
+
+    &:hover {
+      color: $white;
+      background-color: $secondary;
+    }
+  }
+}
+
+.prev-slide, .next-slide {
+  text-decoration: none !important;
+}
+
+.prev, .next {
+  @include transition(.3s);
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  padding: 6px 0 0 12px;
+  color: $white;
+  background-color: $secondary;
+  border: solid 1px $white;
+  border-radius: 0;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 15px 14px;
+  font-family: $family-secondary;
+  font-size: $display8-size;
+  color: $gray-900;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: solid 1px $secondary;
+  border-radius: 0;
+  @include placeholder-text($family-secondary, $display8-size, $gray-600)
+}

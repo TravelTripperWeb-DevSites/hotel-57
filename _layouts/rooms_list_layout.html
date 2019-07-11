@@ -1,0 +1,20 @@
+---
+layout: generic
+---
+
+{% if site.data._models.rooms %}
+  {% assign rooms = site.data._models.rooms %}
+  <section class="c-room-list rooms-listing">
+    <div class="c-room-list__items">
+      {% for room in rooms %}
+        {% include components/room sync_content=page.sync_room_content %}
+      {% endfor %}
+    </div>
+  </section>
+{% else %}
+  {% regionblock no_list_items, type:html %}
+    {% t 'rooms.none' %}
+  {% endregionblock %}
+{% endif %}
+
+{{ content }}

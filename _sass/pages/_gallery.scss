@@ -1,2 +1,52 @@
 // Gallery Page Elements
 // ==========================================================================
+
+.gallery-nav {
+  margin: 0;
+  padding: 20px 0 25px;
+  font-family: $family-secondary;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  list-style: none;
+
+  li {
+    position: relative;
+    display: inline-block;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 35px 0 0;
+      letter-spacing: 2px;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 32px;
+        height: 1px;
+        content: '';
+        background-color: #232525;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        &:after {
+          content: normal;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 10px 10px 8px;
+      color: $secondary;
+      text-decoration: none;
+
+      &.active, &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
