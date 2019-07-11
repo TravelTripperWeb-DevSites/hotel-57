@@ -14,6 +14,11 @@ main:
     label: Sagamore is Art
     url_localized: ''
     items: 
+  - folder: false
+    url_localized: ''
+    page_id: _pages/contact.html
+    label_localized:
+      en: Contact
 footer:
   depth: 2
   name: Footer Menu
