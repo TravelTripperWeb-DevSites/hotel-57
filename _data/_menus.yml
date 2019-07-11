@@ -13,9 +13,6 @@ main:
     url_localized: ''
     label_localized:
       en: Eat & Drink
-  - page_id: _pages/weddings-events.html
-    label: Weddings & Events
-    url: "/weddings-events/"
   - page_id: _pages/sagamore-is-art.html
     folder: true
     label: Sagamore is Art
