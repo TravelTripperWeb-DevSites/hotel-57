@@ -87,7 +87,7 @@
         "mask_opacity": ".5"
       },
       "style": "",
-      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">UNIQUE SPACES</p>\n<h2 class=\"overline light mb-3 mb-md-4\" style=\"text-align: center;\" tabindex=\"0\">WEDDINGS &amp; EVENTS</h2>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"weddings-events/\">Discover More</a></p>"
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">LOCAL ATTRACTIONS</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"attractions/\">Discover More</a></p>"
     },
     "col2_html": {
       "custom_classes": [
