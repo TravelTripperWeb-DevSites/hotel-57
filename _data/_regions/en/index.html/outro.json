@@ -122,7 +122,7 @@
         "mask_opacity": ".5"
       },
       "style": "white text-primary",
-      "content": "<p class=\"h3 light mb-3 mb-md-3\" tabindex=\"0\" style=\"text-align: center;\">Food is Art</p>\n<h2 class=\"overline light mb-3 mb-md-4\" tabindex=\"0\" style=\"text-align: center;\">Dine &amp; Drink</h2>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"dine-drink/\">Discover More</a></p>"
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">FAQ</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"faq/\">Discover More</a></p>"
     },
     "include_gap": true
   }
