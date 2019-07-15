@@ -3,6 +3,9 @@
     "_template": "1_col",
     "html": {
       "content": "<p class=\"h4 pb-4\" style=\"text-align: center;\" tabindex=\"0\">The Hotel @ Fifth Avenue</p>\n<p style=\"text-align: center;\">Visit our <a href=\"../faq/\">FAQ Page</a> for information regarding your stay, room details, and transportation.</p>\n<p style=\"text-align: center;\">If you booked through an online travel agent and to need modify or cancel your reservation, please visit the channel from which you booked.</p>\n<p style=\"text-align: center;\">For general questions, fill out the \"Get in Touch\" form or reach out to the individual properties listed below.</p>"
+    },
+    "advanced_options": {
+      "custom_classes": "p-3"
     }
   }
 ]
