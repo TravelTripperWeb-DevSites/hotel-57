@@ -30,9 +30,6 @@ footer:
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - page_id: _pages/privacy-policy.html
-    label: Privacy Policy
-    url: "/privacy-policy/"
   - page_id: _pages/terms.html
     label: Terms & Conditions
     url: "/terms/"
