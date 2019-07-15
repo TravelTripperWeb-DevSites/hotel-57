@@ -336,3 +336,20 @@
     }
   }
 }
+
+
+.hotel-amenities-inner .amenities-name>img {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hotel-amenities-inner .amenities-name {
+  margin-bottom: $spacer;
+}
+
+.hotel-amenities-inner .amenities-txt {
+  margin-left: 15px;
+  vertical-align: middle;
+}
