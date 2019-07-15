@@ -33,6 +33,3 @@ footer:
   - page_id: _pages/contact.html
     label: Contact
     url: "/contact/"
-  - page_id: _pages/hotel-policies.html
-    label: Hotel Policies
-    url: "/hotel-policies/"
