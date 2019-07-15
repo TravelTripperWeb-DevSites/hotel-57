@@ -12,8 +12,11 @@ main:
   - page_id: _pages/sagamore-is-art.html
     folder: true
     label: Sagamore is Art
-    url_localized: ''
+    url_localized:
+      en: "/location/"
     items: 
+    label_localized:
+      en: Location
   - folder: false
     url_localized:
       en: "/contact/"
