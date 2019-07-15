@@ -40,11 +40,11 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     background-color: $white;
-    border: 1px solid $secondary;
+    border: 1px solid $primary;
     @include transition(.3s);
     &:hover {
       color: $white;
-      background-color: $secondary;
+      background-color: $primary;
     }
 
     &--light {
