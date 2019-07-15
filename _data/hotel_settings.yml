@@ -1,15 +1,15 @@
 ---
-latitude: 25.79163
-longitude: -80.12927
+latitude: 34.3188346
+longitude: -95.7084137
 map_zoom: 17
-name: The Sagamore Hotel
-email: reservations@sagamorehotel.com
+name: The Hotel @ Fifth Avenue
+email: thafave@applecorehotels.com
 phone_number: 305-535-8088
 address:
-  street1: 1671 Collins Ave
-  state: FL
-  city: Miami Beach
-  zip_code: 33139
+  street1: 17 W 32nd St
+  state: NY
+  city: New York
+  zip_code: '10001'
 default_currency: USD
 default_timezone: America/New_York
 _hotel_id: 
@@ -47,8 +47,8 @@ __EDITABLE_FIELDS__:
   longitude:
     type: float
 alternate_phone_number: 877-242-6673
-booking_url: https://be.synxis.com/?chain=12125&&hotel=6465
-booking_link: https://be.synxis.com/
+booking_url: https://hotelatfifthavenue.reztrip.com
+booking_link: https://hotelatfifthavenue.reztrip.com
 site_url: https://www.newsteadbelmonthills.com
 toll_free_phone: 866-706-7801
 _root_path: https://rt3api-prd.ttaws.com
@@ -73,3 +73,6 @@ logo:
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562865810/vroehtv5vn6ikyx8ogrp.png"
   file_size: 
   alt: the-hotel-fifth-avenue-new-york-logo
+  caption: ''
+  description: ''
+phone: 212-736-1600 ext.3
