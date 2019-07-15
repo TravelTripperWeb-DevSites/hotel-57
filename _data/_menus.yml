@@ -36,6 +36,3 @@ footer:
   - page_id: _pages/hotel-policies.html
     label: Hotel Policies
     url: "/hotel-policies/"
-  - page_id: _pages/accessibility-statement.html
-    label: Accessibility Statement
-    url: "/accessibility-statement/"
