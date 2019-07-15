@@ -30,9 +30,6 @@ footer:
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - page_id: _pages/terms.html
-    label: Terms & Conditions
-    url: "/terms/"
   - page_id: _pages/contact.html
     label: Contact
     url: "/contact/"
