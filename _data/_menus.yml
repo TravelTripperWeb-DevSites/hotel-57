@@ -30,9 +30,6 @@ footer:
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - page_id: _pages/press.html
-    label: Press
-    url: "/press/"
   - page_id: _pages/weddings-events.html
     label: Weddings & Events
     url: "/weddings-events/"
