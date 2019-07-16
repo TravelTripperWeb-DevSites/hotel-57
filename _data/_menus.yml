@@ -9,7 +9,7 @@ main:
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - page_id: _pages/sagamore-is-art.html
+  - page_id: _pages/user_created/location.html
     folder: true
     label: Sagamore is Art
     url_localized:
