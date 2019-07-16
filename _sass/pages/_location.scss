@@ -1,2 +1,125 @@
 // Location Page Elements
 // ==========================================================================
+
+
+.page-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+
+    .page-title {
+        font-family: "AdobeCaslonW01-Regular";
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 40px;
+        letter-spacing: 4px;
+        padding-left: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 85px 0;
+
+        @include media-breakpoint-up(md) {
+            font-size: 88px;
+            letter-spacing: 6px;
+        }
+    }
+}
+
+.things-to-do-cat-img {
+    background-color: #b8b397;
+    height: 100%;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        height: auto;
+        transition: all .6s ease 0s;
+        width: 100%;
+    }
+}
+
+.ttd-top-section {
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 23px;
+    padding: 0 60px;
+    position: absolute;
+    top: 100%;
+    transition: all .4s ease 0s;
+    text-align: left;
+    background-color: rgba(55,55,55,.8);
+
+    @include media-breakpoint-down(md) {
+        top: 0;
+    }
+}
+
+.things-to-do-cat-img:hover .ttd-top-section {
+    top: 0;
+}
+
+.ttd-desc-inner {
+    display: table;
+    height: 100%;
+    position: relative;
+}
+
+.ttd-desc-inner-inner {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 400;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.things-to-do-title.things-to-do-title-onhover:before {
+    background: #daa520 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 85px;
+}
+
+.things-to-do-title.things-to-do-title-onhover {
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.things-to-do-long-des {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.things-to-do-content-sec {
+    padding: 15px 0 30px;
+    text-align: center;
+}
+
+.things-to-do-title {
+    color: #373737;
+    font-size: 24px;
+    padding-bottom: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.things-to-do-short-des {
+    color: #daa520;
+}

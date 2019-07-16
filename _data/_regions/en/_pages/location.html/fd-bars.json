@@ -1,7 +1,0 @@
-[
-	{
-		"_template": "html",
-		"content": "<h2 class=\"title-head\">Top Bars</h2>\n<ul class=\"con-five-list\">\n<li><a href=\"http://www.rextavernchicago.com/\" target=\"_blank\">Rex Tavern</a></li>\n<li><a href=\"http://www.kitkatchicago.com/\" target=\"_blank\">Kit Kat Supper Club</a></li>\n<li><a href=\"http://www.hopleafbar.com/\" target=\"_blank\">Hopleaf</a></li>\n<li><a href=\"http://www.delilahschicago.com/\" target=\"_blank\">Delilah's</a></li>\n<li><a href=\"http://lottiespub.com/\" target=\"_blank\">Lotties Pub</a></li>\n<li><a href=\"https://www.exit-chicago.com/\" target=\"_blank\">Exit</a></li>\n<li><a href=\"http://kingstonmines.com/\" target=\"_blank\">Kingston Mines</a></li>\n</ul>",
-		"rendered_height": 500
-	}
-]
