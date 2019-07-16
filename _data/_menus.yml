@@ -39,6 +39,6 @@ footer:
   - folder: false
     url_localized:
       en: "/location/"
-    page_id: _pages/sagamore-is-art.html
+    page_id: _pages/user_created/location.html
     label_localized:
       en: Location
