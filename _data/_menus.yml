@@ -6,21 +6,25 @@ main:
   - page_id: _pages/rooms.html
     label: Rooms & Suites
     url: "/rooms/"
+    items: 
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
-  - folder: false
-    url_localized:
-      en: "/contact/"
-    page_id: _pages/contact.html
-    label_localized:
-      en: Contact
+    items: 
   - folder: false
     url_localized:
       en: "/location/"
     page_id: _pages/user_created/location.html
     label_localized:
       en: Location
+    items: 
+  - folder: false
+    url_localized:
+      en: "/contact/"
+    page_id: _pages/contact.html
+    label_localized:
+      en: Contact
+    items: 
 footer:
   depth: 2
   name: Footer Menu
