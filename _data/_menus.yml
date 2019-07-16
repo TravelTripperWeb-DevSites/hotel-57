@@ -15,6 +15,12 @@ main:
     page_id: _pages/contact.html
     label_localized:
       en: Contact
+  - folder: false
+    url_localized:
+      en: "/location/"
+    page_id: _pages/user_created/location.html
+    label_localized:
+      en: Location
 footer:
   depth: 2
   name: Footer Menu
