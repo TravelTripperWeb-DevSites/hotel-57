@@ -1,0 +1,92 @@
+---
+layout: default
+--- 
+<section>
+    <div class="container-fluid no-padding">
+        <div class="page-banner" style="background-image: url(/images/location/location-banner.jpg)">
+            <h1 class="page-title">Location</h1>
+            <!--div class="btn-holder text-center"><a href="/" target="_blank" class="button-common">DOWNLAOD MAP</a>
+              <a href="/" target="_blank" class="button-common">DOWNLAOD FACT SHEET</a>
+            </div-->
+        </div>
+    </div>
+</section>
+<section class="loc-con-one">
+    <div class="container no-padding">
+        <div class="col-sm-6 no-padding">
+            <div class="con-one">
+                {% region acttactions-todos %}
+            </div>
+        </div>
+        <div class="col-sm-6 no-padding">
+            <div class="con-two">
+                <span class="att">{% region attr-image-1 %}</span><span class="att">{% region attr-image-2 %}</span>
+            </div>
+        </div>
+    </div>
+    <div class="container no-padding">
+        <div class="col-md-6 no-padding">
+            <div class="con-tt">
+                <div class="con-three">
+                    <span class="att">{% region shopping-image-2 %}</span><span class="att-2">{% region shopping-image-3 %}</span>
+                </div>
+                <div class="con-four">
+                    <div class="col-sm-6 no-padding att">{% region attr-image-4 %}
+                    </div><div class="col-sm-6 no-padding att-con">
+                        <div class="add-1">in the Heart of
+                            <span class="nl">Downtown Chicago</span></div>
+                        <div class="add-2">Our<span class="nl">Address</span></div>
+                        <div class="add-3"> 162 E. Ohio St.,
+                            <br>Chicago, IL 60611</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 no-padding hot-spots">
+            <div class="loc-tabs">
+                <ul class="nav nav-pills gallery-nav">
+                    <li><a data-toggle="pill" href="#restaurants">Restaurants</a></li>
+                    <li class="active"><a data-toggle="pill" href="#attractions">Sites &amp; Attractions</a></li>
+                    <li><a data-toggle="pill" href="#bars">Bars</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="con-five tab-pane" id="restaurants">
+                    {% region fd-restaurants %}
+                </div>
+                <div class="con-five tab-pane fade in active" id="attractions">
+                    {% region fd-sites-attractions %}
+                </div>
+                <div class="con-five tab-pane" id="bars">
+                    {% region fd-bars %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="loc-map-cta">
+    <div class="container-fluid no-padding">
+        {% region location-bg %}
+    </div>
+</section>
+<section class="map-holder">
+    <div class="map-inner" id="map"></div>
+</section>
+<section class="loc-gal">
+    <div class="container-fluid no-padding">
+        <div class="col-xs-8 no-padding loc-gal-con" style="background-image: url(/images/location/loc-gal-3.jpg);">
+            <div class="strip"></div>
+        </div>
+        <div class="col-xs-4 no-padding loc-gal-con" style="background-image: url(/images/location/loc-gal-4.jpg);"></div>
+    </div>
+</section>
+<section class="loc-cta" style="background-image: url(//cdn.traveltripper.io/site-assets/192_577_9515/media/2017-11-22-031152/Michigan-Ae.jpg);">
+    <div class="container-fluid no-padding">
+        <div class="cta">
+            <h3>DISCOVER CHICAGO</h3>
+            <div class="cta-logo"><a href="/"><img src="/images/white-logo.png" alt="Inn of chicago Hotel"/></a></div>
+            <div class="btn-holder text-center"><a href="https://theinnofchicago.reztrip.com/" target="_blank" class="button-common" title="Book Your stay">Book Your Stay</a></div>
+        </div>
+    </div>
+</section>
+{% include twitter-instagram.html %}
