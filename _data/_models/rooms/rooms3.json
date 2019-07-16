@@ -10,9 +10,16 @@
     "en": "<p>Spacious two Queen beds with premier NYC location.</p>\n<p>Experience NYC and it&rsquo;s major attractions, including the world-famous Empire State Building just a short two block walk from the hotel. The double Queen room features two Queen beds, a flat screen TV, in-room safe, unlimited nationwide phone calls, coffee maker, and bath amenities. Refrigerator and rollaway beds may be available by request for an additional fee. Enjoy daily continental breakfast and access to our onsite fitness and business centers. In this prime location, you&rsquo;ll experience all that NYC has to offer, just steps away from your stay!</p>"
   },
   "amenities": [
+    "room_amenities2",
     "room_amenities4",
     "room_amenities5",
     "room_amenities6",
+    "room_amenities14",
+    "room_amenities13",
+    "room_amenities3",
+    "room_amenities10",
+    "room_amenities11",
+    "room_amenities12",
     "room_amenities7"
   ],
   "reztrip_room_id": "http://hotelatfifthavenue.reztrip.com/",
