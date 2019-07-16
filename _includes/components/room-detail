@@ -70,46 +70,29 @@
   </div>
 </section>
 
-<section class="c-2-col  container  twocol-intro">
-  <div class="row c-2-col__row no-gutters">
-    <div class="col-lg-6 col--left  col--">
-      <div class="col-html-content w-100 d-flex flex-column h-100 justify-content-center ">
-        <div class="text-center p-3 p-md-5 mt-auto">
-          <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
-          <div class="px-0 px-md-3" tabindex="0">{{ room.description }}</div>
-        </div>
-        <div class="two-img-grid mt-auto">
-          <div class="two-img-grid__single objectfit" tabindex="0">
-            <img src="{{ room.featured_image.url }}" alt="room.featured_image.alt">
-          </div>
-        </div>
-      </div>
+<section class="container">
+  <div class="row">
+    <div class="text-center p-3 p-md-5 mt-auto">
+      <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
+      <div class="px-0 px-md-3" tabindex="0">{{ room.description }}</div>
     </div>
-
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col--left">
+      <img src="{{ room.featured_image.url }}" alt="room.featured_image.alt" class="w-100">
+    </div>
     <div class="col-lg-6 col--right">
-      <div class="col-html-content">
-        <div class="my-3 ml-0 ml-lg-3 objectfit h-100 position-relative">
-          <picture class="visuval-gallery-img" tabindex="0">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1561101380/fyiohwxpn3vfltybfhzt.jpg" alt="Sagamore Night View Pool">
-          </picture>
-          <div class="visuval-gallery">
-            <h3 class="h4 light" tabindex="0"> TAKE A VISUAL JOURNEY</h3>
-            <a class="btn btn--secondary btn--secondary--transparent" href="/gallery/">View Gallery</a>
-          </div>
+      <div class="room-amenities ml-0 ml-lg-3">
+        <div class="room-amenities__heading text-center py-2">
+          <p class="overline" tabindex="0">ENJOY THE FOLLOWING<br>PRIVILEGES</p>
+          <h3 class="h5" tabindex="0">Room<br>Amenities</h3>
         </div>
-        <div class="room-amenities ml-0 ml-lg-3 mt-auto ">
-          <div class="room-amenities__heading text-center">
-            <p class="overline" tabindex="0">ENJOY THE FOLLOWING<br>PRIVILEGES</p>
-            <h3 class="h5" tabindex="0">Room<br>Amenities</h3>
-          </div>
-          <div class="room-amenities__list">
-            <ul>
-              {% for amenity in room.amenities %}
-              <li tabindex="0">{{ amenity.name }}</li>
-              {% endfor %}
-            </ul>
-        </div>
-        </div>
+        <div class="room-amenities__list">
+          <ul>
+            {% for amenity in room.amenities %}
+            <li tabindex="0">{{ amenity.name }}</li>
+            {% endfor %}
+          </ul>
       </div>
     </div>
   </div>
