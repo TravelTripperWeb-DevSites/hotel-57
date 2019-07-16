@@ -1,0 +1,7 @@
+[
+	{
+		"_template": "html",
+		"content": "<h2 class=\"title-head\">Top Restaurants</h2>\n<ul class=\"con-five-list\">\n<li><a href=\"http://badhunter.com/\" target=\"_blank\">Bad Hunter</a></li>\n<li><a href=\"http://www.rickbayless.com/restaurants/cerveceria-cruz-blanca/\" target=\"_blank\">Cruz Blanca</a></li>\n<li><a href=\"http://duckduckgoatchicago.com/\" target=\"_blank\">Duck Duck Goat</a></li>\n<li><a href=\"http://www.elchebarchicago.com/\" target=\"_blank\">El Che Bar</a></li>\n<li><a href=\"https://www.ententechicago.com/\" target=\"_blank\">Entente</a></li>\n<li><a href=\"http://www.giantrestaurant.com/\" target=\"_blank\">Giant </a></li>\n<li><a href=\"http://revivalfoodhall.com/\" target=\"_blank\">Revival Food Hall</a></li>\n</ul>",
+		"rendered_height": 500
+	}
+]
