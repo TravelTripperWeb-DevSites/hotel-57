@@ -28,9 +28,3 @@ footer:
   - page_id: _pages/contact.html
     label: Contact
     url: "/contact/"
-  - folder: false
-    url_localized:
-      en: "/location/"
-    page_id: _pages/user_created/location.html
-    label_localized:
-      en: Location
