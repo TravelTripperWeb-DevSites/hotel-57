@@ -48,3 +48,9 @@ footer:
     label: Contact
     url: "/contact/"
     items: 
+  - folder: false
+    url_localized:
+      en: "/sitemap/"
+    page_id: _pages/sitemap.html
+    label_localized:
+      en: Site Map
