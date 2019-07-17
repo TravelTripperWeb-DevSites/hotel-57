@@ -54,3 +54,9 @@ footer:
     page_id: _pages/sitemap.html
     label_localized:
       en: Site Map
+  - folder: false
+    url_localized:
+      en: "/terms/"
+    label_localized:
+      en: Terms of Use
+    page_id: _pages/terms.html
