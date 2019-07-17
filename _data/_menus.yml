@@ -60,3 +60,9 @@ footer:
     label_localized:
       en: Terms of Use
     page_id: _pages/terms.html
+  - folder: false
+    url_localized:
+      en: "/privacy-policy/"
+    label_localized:
+      en: Privacy Policy
+    page_id: _pages/privacy-policy.html
