@@ -12,8 +12,8 @@ address:
   zip_code: '10001'
 default_currency: USD
 default_timezone: America/New_York
-_hotel_id: 
-_portal_id: 
+_hotel_id:
+_portal_id: hotelatfifthavenue
 __EDITABLE_FIELDS__:
   name:
     required: true
@@ -70,7 +70,7 @@ logo:
   resource_type: image
   size: 7361
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1563375615/iiwv356ttkbv9kckxg7m.png"
-  file_size: 
+  file_size:
   alt: The-Hotel-at-Fifth-Avenue
   caption: ''
   description: ''
