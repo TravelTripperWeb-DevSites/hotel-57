@@ -12,7 +12,7 @@ address:
   zip_code: '10001'
 default_currency: USD
 default_timezone: America/New_York
-_hotel_id:
+_hotel_id: NYCH5
 _portal_id: hotelatfifthavenue
 __EDITABLE_FIELDS__:
   name:
