@@ -7,6 +7,10 @@ main:
     label: Rooms & Suites
     url: "/rooms/"
     items: 
+    label_localized:
+      en: Rooms & Suites
+    url_localized:
+      en: "/rooms/"
   - page_id: _pages/offers.html
     label: Offers
     url: "/offers/"
