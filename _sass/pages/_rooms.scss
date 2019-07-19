@@ -71,6 +71,18 @@
   }
 }
 
+.room-details-hero {
+  .hero {
+    display: inherit;
+    width: 100%;
+
+    div {
+      display: inherit;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 
 .room-nav {
   a,

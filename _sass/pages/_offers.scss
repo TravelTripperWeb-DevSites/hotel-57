@@ -11,6 +11,12 @@
     padding-right: 0;
     padding-left: 0;
 
+    &__select {
+      .ttweb-booking-button-offer__unavailable-message {
+        display: none !important;
+      }
+    }
+    
     &__image {
       @include make-col-ready;
       line-height: 0;

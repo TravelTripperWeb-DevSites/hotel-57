@@ -4,7 +4,7 @@ layout: default
 
 {% assign offer = page.data %}
 {% include components/offer %}
-
+{% if site.data._models.offers.length > 0 %}
 {% assign item = site.data._models.offers | sort: 'order'  %}
 {% for p in item %}
   {% if p.url_friendly_name == offer.url_friendly_name %}
@@ -20,6 +20,7 @@ layout: default
     {% endif %}
   {% endif %}
 {% endfor %}
+{% endif %}
 
 <section class="hero inner-hero" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561363171/d1twu8kq8priphv0yg54.jpg');">
   <div class="hero__body">

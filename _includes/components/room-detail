@@ -1,84 +1,89 @@
 {% assign item = site.data._models.rooms  %}
 {% for p in item | sort: "order" %}
-  {% if p.url_friendly_name == room.url_friendly_name %}
+  {% if p.reztrip_room_id == room.reztrip_room_id %}
     {% assign pInd = forloop.index0 | minus: 1 %}
     {% assign nInd = forloop.index0 | plus: 1 %}
     {% if forloop.first != true %}
-      {% assign prevItemTitle = item[pInd].title %}
-      {% assign prevItemUrl = item[pInd].url_friendly_name %}
+      {% assign prevItemTitle = item[pInd].name %}
+      {% assign prevItemUrl = item[pInd].reztrip_room_id | downcase %}
     {% endif %}
     {% if forloop.last != true %}
-      {% assign nextItemTitle = item[nInd].title %}
-      {% assign nextItemUrl = item[nInd].url_friendly_name %}
+      {% assign nextItemTitle = item[nInd].name %}
+      {% assign nextItemUrl = item[nInd].reztrip_room_id | downcase %}
     {% endif %}
   {% endif %}
 {% endfor %}
 
-{% assign sync = include.sync_content %}
+{% assign sync = true %}
 
 {% assign room_detail = page.data %}
-<section class="hero inner-hero" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
+<section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
   <div class="hero__body">
-    <h1 class="h1 light" tabindex="0" tabindex="0">{{ room.name }}</h1>
-    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank">Book Now</a>
+    <h1 class="h1 light" tabindex="0" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h1>
+    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Now</a>
   </div>
 </section>
 
 <div class="room-nav mt-3 text-center">
   {%if prevItemUrl %}
-  <a title="Previous Room" href="/rooms/{{ prevItemUrl }}/" aria-label="Press enter for previous room">Previous Room </a>
+  <a title="Previous Room" href="/rooms/room_{{ prevItemUrl }}/" aria-label="Press enter for previous room">Previous Room </a>
   {%else%}
   <a class="not-active" title="Previous Room" href="#">Previous Room </a>
   {%endif%}
   <span>{{ room.name }}</span>
   {%if nextItemUrl %}
-  <a  title="Next Room" href="/rooms/{{ nextItemUrl }}/" aria-label="Press enter for next room">Next Room</a>
+  <a  title="Next Room" href="/rooms/room_{{ nextItemUrl }}/" aria-label="Press enter for next room">Next Room</a>
   {%else%}
   <a class="not-active" title="Next Room" href="#">Next Room</a>
   {%endif%}
 </div>
-
+<section ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
 <section class="rooms-carousel">
-  <div class="rooms-slider">
-    {% for pic in room_detail.images %}
-    <div class="hero" style="background-image: url('{{ pic.url_xlarge }}');"></div>
-    {% endfor %}
+  <div class="room-details-hero rooms-slider">
+    <div class="hero">
+        <div class="room-item objectfit" {% if sync %}ttweb-room-component="RoomImageList"{% endif %}>
+          {% for pic in room.images %}
+            {% include components/image image=pic %}
+          {% endfor %}
+        </div>
+    </div>
+    <div class="slider-control">
+      <div class="slider-control__arrows">
+        <a href="javascript:void(0);" class="prev-slide" id="roomSliderPrev" title="Previous slide" aria-label="Press enter for previous slide">
+          <span class="prev">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+        </a>
+        <a href="javascript:void(0);" class="next-slide" id="roomSliderNext" title="Next slide" aria-label="Press enter for next slide">
+          <span class="next">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+      <div class="nav-slide d-none" id="roomSlider">
+        {% for pic in room.images %}
+        <span></span>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   <div class="rooms-carousel__info rooms-carousel__info--content">
     <p class="overline">LUXURY REDEFINED</p>
-    <h2 class="h4 dark" tabindex="0">{{ room.name }}</h2>
-    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank">Book Now</a>
+    <h2 class="h4 dark" tabindex="0" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h2>
+    <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Now</a>
   </div>
-  <div class="slider-control">
-    <div class="slider-control__arrows">
-      <a href="javascript:void(0);" class="prev-slide" id="roomSliderPrev" title="Previous slide" aria-label="Press enter for previous slide">
-        <span class="prev">
-          <i class="fas fa-chevron-left"></i>
-        </span>
-      </a>
-      <a href="javascript:void(0);" class="next-slide" id="roomSliderNext" title="Next slide" aria-label="Press enter for next slide">
-        <span class="next">
-          <i class="fas fa-chevron-right"></i>
-        </span>
-      </a>
-    </div>
-    <div class="nav-slide d-none" id="roomSlider">
-      {% for pic in room_detail.images %}
-      <span></span>
-      {% endfor %}
-    </div>
-  </div>
+
 </section>
 
 <section class="container">
   <div class="row">
     <div class="text-center p-3 p-md-5 mt-auto">
       <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
-      <div class="px-0 px-md-3" tabindex="0">{{ room.description }}</div>
+      <div class="px-0 px-md-3" tabindex="0" {% if sync %}ttweb-room-component="RoomDescription"{% endif %}>{{ room.description }}</div>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6 col--left">
+    <div class="col-lg-6 col--left"  data-tt-image-class="w-100" {% if sync %}ttweb-room-component="RoomPrimaryImage"{% endif %}>
       <img src="{{ room.featured_image.url }}" alt="room.featured_image.alt" class="w-100">
     </div>
     <div class="col-lg-6 col--right">
@@ -87,7 +92,7 @@
           <p class="overline" tabindex="0">ENJOY THE FOLLOWING<br>PRIVILEGES</p>
           <h3 class="h5" tabindex="0">Room<br>Amenities</h3>
         </div>
-        <div class="room-amenities__list">
+        <div class="room-amenities__list" {% if sync %}ttweb-room-component="RoomAmenities"{% endif %}>
           <ul>
             {% for amenity in room.amenities %}
             <li tabindex="0">{{ amenity.name }}</li>
@@ -97,17 +102,17 @@
     </div>
   </div>
 </section>
-
+</section>
 {% assign rooms = site.data._models.rooms | sort: 'order' %}
 <section class="more-rooms my-3">
   <div class="more-rooms__wrap">
   <div class="more-rooms__left text-center ">
     <div class="content-slider">
       {% for room in rooms %}
-      <div>
+      <div ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
         <p class="overline" tabindex="0">VIEW MORE LUXURIOUS <br>ROOMS & SUITES</p>
-        <h3 class="h4 dark" tabindex="0">{{ room.name }}</h3>
-        <a href="/rooms/{{ room.url_friendly_name }}" class="btn btn--secondary">View This Room</a><br>
+        <h3 class="h4 dark" tabindex="0" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h3>
+        <a href="/rooms/room_{{ room.reztrip_room_id | downcase }}/" class="btn btn--secondary">View This Room</a><br>
         <a href="/rooms/" class="btn btn--secondary">View All Room</a>
       </div>
       {% endfor %}
@@ -135,9 +140,11 @@
   <div class="more-rooms__right">
     <div class="images-slider">
       {% for room in rooms %}
-      <div tabindex="0">
+      <div tabindex="0" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" >
         {% assign featured_image = room.featured_image | default: room.images[1] %}
+        <div {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
         {% include components/image image=featured_image max_width=600 %}
+        </div>
       </div>
       {% endfor %}
     </div>
