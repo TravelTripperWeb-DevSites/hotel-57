@@ -1,0 +1,29 @@
+{
+  "name_localized": {
+    "en": "1 Queen Bed",
+    "es": "1 Queen Bed"
+  },
+  "short_description_localized": {
+    "en": "Spacious accommodations just a short two block walk from the world-famous Empire State Building",
+    "es": "Spacious accommodations just a short two block walk from the world-famous Empire State Building"
+  },
+  "description_localized": {
+    "en": "Spacious accommodations just a short two block walk from the world-famous Empire State Building",
+    "es": "Spacious accommodations just a short two block walk from the world-famous Empire State Building"
+  },
+  "amenities": [
+
+  ],
+  "images": [
+
+  ],
+  "reztrip_room_id": "1QB",
+  "order": 3,
+  "guest_size_max": 2,
+  "size": " ft<sup>2</sup>",
+  "room_category": null,
+  "ada_room": false,
+  "bed_types": [
+    "bed_type_1QB"
+  ]
+}

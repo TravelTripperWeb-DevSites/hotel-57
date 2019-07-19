@@ -22,21 +22,21 @@
 
 {% assign sync = include.sync_content %}
 
-<div class="c-offer">
-  <div class="c-offer__image" tabindex="0">
+<div class="c-offer" data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
+  <div class="c-offer__image" tabindex="0" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
     {% include components/image image=offer.image max_width=1000 %}
   </div>
   <div class="c-offer__content">
     <div class="c-offer__content__inner">
       <h3 class="c-offer__name">
-        <a href="{{ offer.url_friendly_name | permalink: model_dir: 'offers' }}">{{ offer.name }}</a>
+        <a href="{{ offer.id | permalink: model_dir: 'offers' }}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</a>
       </h3>
-      <p class="c-offer__short-description" tabindex="0">
+      <p class="c-offer__short-description" tabindex="0" {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
         {{ offer.short_description }}
       </p>
       <div class="c-offer__select">
-        <a href="{{ offer.url_friendly_name | permalink: model_dir: 'offers' }}" class="btn btn--secondary mr-0 mr-md-2 mb-2">View this Offer</a>
-        <a href="{{ offer.book_now }}" class="btn btn--secondary mb-2" target="_blank">Book Now</a>
+        <a href="{{ offer.id | permalink: model_dir: 'offers' }}" class="btn btn--secondary mr-0 mb-2">View this Offer</a>
+        <a href="{{ offer.book_now }}" class="btn btn--secondary mb-2" target="_blank" ttweb-offer-component="OfferBookingButton">Book Now</a>
       </div>
     </div>
   </div>

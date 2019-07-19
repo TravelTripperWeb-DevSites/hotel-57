@@ -2,7 +2,7 @@
   @include make-container;
   max-width: 1237px;
 
-  .c-offer {
+  .c-offer{
     @include make-row;
     flex: auto;
     width: auto;
@@ -76,6 +76,12 @@
         padding-bottom: 50px;
       }
     }
+
+    .ttweb-offer {
+      @include media-breakpoint-up(md) {
+        display: flex;
+      }
+    }
   }
 }
 
@@ -117,4 +123,7 @@
   img {
     width: 100%;
   }
+}
+.ttweb-booking-button-offer__unavailable-message {
+  display: none !important;
 }

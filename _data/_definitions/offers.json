@@ -19,8 +19,9 @@
   "image": {
     "type": "image"
   },
-  "book_now": {
-    "required": true
+  "reztrip_offer_id": {
+    "Label": "Reztrip ID",
+    "instructions": "The reztrip ID for this offer"
   },
   "featured": {
     "type": "boolean",
@@ -32,6 +33,12 @@
   },
   "featured_order": {
     "type": "order"
+  },
+  "features": {
+    "type": "model",
+    "multiple": true,
+    "display_field": "title",
+    "model_name": "features"
   },
   "__META__": {
     "remote": {
