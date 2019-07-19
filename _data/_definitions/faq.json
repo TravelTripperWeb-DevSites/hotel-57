@@ -1,0 +1,17 @@
+{
+  "title": {
+    "label": "Faq Question",
+    "required": true,
+    "localizable": true
+  },
+  "faq_content": {
+    "label": "Faq Answer",
+    "type": "richtext",
+    "required": true,
+    "localizable": true
+  },
+  "order": {
+    "type": "order",
+    "required": false
+  }
+}

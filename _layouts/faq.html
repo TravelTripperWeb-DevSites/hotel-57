@@ -1,0 +1,28 @@
+---
+layout: generic
+title_localized:
+ en: Frequently Asked Questions About our Broadway Hotel NYC
+meta_description_localized:
+  en: Find the answers to all your questions about Casa Tua. Our Broadway Hotel NYC offers comfortable accommodations and low rates for the perfect Manhattan vacation.
+permalink_localized:
+  en: /faq/
+meta_tags:
+  robots:
+---
+
+
+<section class="static-page">
+  <div class="floating-text"><span>Frequently Asked Questions</span></div>
+  <div class="static-pages__wrap">
+    {% assign faqs = site.data._models.faq | sort: "order" %}
+    {% for faq in faqs %}
+    <div class="static-pages__item">
+      <h3 class="h6">Q: {{faq.title}}</h3>
+      <div class="faq-answer">
+        {{faq.faq_content}}
+      </div>
+    </div>
+  {% endfor %}
+
+  </div>
+</section>
