@@ -1,0 +1,29 @@
+{
+  "name_localized": {
+    "en": "2 Queen Beds",
+    "es": "2 Queen Beds"
+  },
+  "short_description_localized": {
+    "en": "Spacious two Queen beds with premier NYC location",
+    "es": "Spacious two Queen beds with premier NYC location"
+  },
+  "description_localized": {
+    "en": "Spacious two Queen beds with premier NYC location",
+    "es": "Spacious two Queen beds with premier NYC location"
+  },
+  "amenities": [
+
+  ],
+  "images": [
+
+  ],
+  "reztrip_room_id": "2QB",
+  "order": 2,
+  "guest_size_max": 4,
+  "size": " ft<sup>2</sup>",
+  "room_category": null,
+  "ada_room": false,
+  "bed_types": [
+    "bed_type_2QB"
+  ]
+}
