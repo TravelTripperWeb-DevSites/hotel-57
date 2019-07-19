@@ -2,7 +2,7 @@
   @include make-container;
   max-width: 1237px;
 
-  .c-offer {
+  .c-offer{
     @include make-row;
     flex: auto;
     width: auto;
@@ -16,7 +16,7 @@
         display: none !important;
       }
     }
-    
+
     &__image {
       @include make-col-ready;
       line-height: 0;
@@ -80,6 +80,12 @@
 
       @include media-breakpoint-up(md) {
         padding-bottom: 50px;
+      }
+    }
+
+    .ttweb-offer {
+      @include media-breakpoint-up(md) {
+        display: flex;
       }
     }
   }

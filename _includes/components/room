@@ -15,8 +15,7 @@
         {{ room.short_description }}
       </p>
       <div class="c-room__btn mt-auto">
-        <a class="btn btn--secondary mb-1" href="/rooms/room_{{ room.reztrip_room_id | downcase }}/">View Room</a>
-        <a class="btn btn--secondary mb-1" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Room</a>
+        <a class="btn btn--secondary mb-1" href="/rooms/room_{{ room.reztrip_room_id | downcase }}/">View Room</a> <a class="btn btn--secondary mb-1" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Room</a>
       </div>
     </div>
   </div>

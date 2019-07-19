@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign offer = page.data %}
-{% include components/offer %}
+<!-- {% include components/offer %} -->
 {% if site.data._models.offers.length > 0 %}
 {% assign item = site.data._models.offers | sort: 'order'  %}
 {% for p in item %}
@@ -54,53 +54,6 @@ layout: default
           <p class="overline">Special Offer</p>
           <h2 class="h4 dark" tabindex="0">{{ offer.name }}</h2>
           <a class="btn btn--secondary" href="{{ offer.book_now }}" target="_blank">Book this offer</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="c-2-col container twocol-intro offer-details mt-2">
-      <div class="row c-2-col__row no-gutters">
-        <div class="col-lg-6 col--left  col--">
-          <div class="col-html-content w-100 d-flex flex-column h-100 justify-content-center ">
-            <div class="text-center p-3 p-md-5">
-              <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">All in the details</h2>
-              <h3 class="overline dark" tabindex="0">BOOK IN ADVANCE FOR BEST OFFERS</h3>
-              <div class="px-0 px-md-3" tabindex="0">
-                {{ offer.description }}
-              </div>
-              <div class="d-flex flex-column">
-                <a href="{{ offer.book_now }}" class="btn btn--secondary mb-3">Book this offer</a>
-                <a class="btn btn--secondary" href="/contact/">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col--right">
-          <div class="col-html-content">
-            <div class="objectfit w-100 h-100 visual-gallery" tabindex="0">
-              <img alt="Sagamore Visual Gallery" src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561360415/xkzkvhtssk7js00gcuta.jpg">
-            </div>
-            <div class="overlay-content">
-              <div class="overlay-content__copy">
-                <h3 class="h4 light" tabindex="0">Take a Visual Journey</h3>
-                <a class="btn btn--secondary btn--secondary--transparent w-auto h-auto" href="/gallery/">View Gallery</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="offer-collage mt-2" tabindex="0">
-      <img alt="Sagamore Miami Beach Ariel View" src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561374136/ohjx3lnserzxrtomuhm5.jpg">
-    </div>
-
-    <section class="hero cta-banner mt-2" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561374706/sz3mpyx46xaw4nk0norc.jpg');">
-      <div class="hero__body">
-        <div class="wrap">
-          <h4 class="overline pb-50" tabindex="0">The Perfect Stay</h4>
-          <p class="pb-2"><img alt="Sagamore - Miami Beach" class=" " data-image-large="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-medium="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-small="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-thumb="//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1561013144/u0epu5j0aewrwozcs2k3.png" data-image-xsmall="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1561013144/u0epu5j0aewrwozcs2k3.png" id="1561013148461" src="//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1561013144/u0epu5j0aewrwozcs2k3.png"></p>
-          <a class="btn btn--secondary" href="https://be.synxis.com/?chain=12125&amp;&amp;hotel=6465" rel="no-follow noopener noreferrer" style="z-index: 2;" target="_blank">Book Your Stay</a>
         </div>
       </div>
     </section>
