@@ -5,6 +5,7 @@ layout: default
 {% assign offer = page.data %}
 <!-- {% include components/offer %} -->
 
+{% if site.data._models.offers.count > 0 %}
 {% assign item = site.data._models.offers | sort: 'order'  %}
 {% for p in item %}
   {% if p.reztrip_offer_id == offer.reztrip_offer_id %}
@@ -20,6 +21,7 @@ layout: default
     {% endif %}
   {% endif %}
 {% endfor %}
+{% endif %}
 
 {% assign sync = true %}
 <section data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
