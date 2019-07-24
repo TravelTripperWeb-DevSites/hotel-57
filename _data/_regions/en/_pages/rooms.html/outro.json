@@ -1,5 +1,8 @@
 [
   {
-    "_template": "1_col"
+    "_template": "1_col",
+    "html": {
+      "content": "<p style=\"text-align: center;\">Please note that our rooms and suites are ADA compliant under the Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991. ADA rooms are available. Standard rooms do not have accessible features. We also invite you to view our Accessibility Statement.&nbsp;</p>"
+    }
   }
 ]
