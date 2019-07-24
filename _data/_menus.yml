@@ -29,6 +29,12 @@ main:
     label_localized:
       en: Contact
     items: 
+  - folder: false
+    url_localized:
+      en: "/gallery/"
+    label_localized:
+      en: Gallery
+    page_id: _pages/user_created/image-gallery.html
 footer:
   depth: 2
   name: Footer Menu
