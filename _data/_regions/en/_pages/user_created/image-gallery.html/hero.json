@@ -3,6 +3,10 @@
     "hero_html": {
       "content": "<p>GALLERY</p>"
     },
-    "_template": "hero"
+    "_template": "hero",
+    "hero_title": {
+      "content": "Gallery",
+      "_template": "header"
+    }
   }
 ]
