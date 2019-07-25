@@ -1,0 +1,29 @@
+{
+  "name_localized": {
+    "en": "1 King Bed",
+    "es": "1 King Bed"
+  },
+  "short_description_localized": {
+    "en": "Comfortable King bed room just a short two block walk from the Empire State Building",
+    "es": "Comfortable King bed room just a short two block walk from the Empire State Building"
+  },
+  "description_localized": {
+    "en": "Comfortable King bed room just a short two block walk from the Empire State Building",
+    "es": "Comfortable King bed room just a short two block walk from the Empire State Building"
+  },
+  "amenities": [
+
+  ],
+  "images": [
+
+  ],
+  "reztrip_room_id": "1KB",
+  "order": 1,
+  "guest_size_max": 2,
+  "size": " ft<sup>2</sup>",
+  "room_category": null,
+  "ada_room": false,
+  "bed_types": [
+    "bed_type_1KB"
+  ]
+}

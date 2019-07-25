@@ -1,3 +1,87 @@
-<div class="copyright m-2">
-  &copy; {{ "now" | date: "%Y" }}
+<div class="info">
+  <div class="info__wrap">
+    <div class="info__logo">
+      <span data-live-edit-settings='hotel_settings'
+        data-live-edit-settings-field='logo'
+        data-live-editable-type='image'>
+        {% if site.data.hotel_settings.logo and site.data.hotel_settings.logo.url and site.data.hotel_settings.logo.url != '' %}
+          {% assign logo_url = site.data.hotel_settings.logo.url_large | default: site.data.hotel_settings.logo.url %}
+          <img src="{{logo_url}}" alt="{{site.data.hotel_settings.logo.alt | default: 'Logo' }}" />
+        {% else %}
+          <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
+        {% endif %}
+      </span>
+    </div>
+    <div class="info__address mb-1 mb-md-0">
+      <p class="accordion" type="button" tabindex="0">Contact</p>
+      <div class="accordion__body">
+        <p>
+          <a href="{{ site.data.hotel_settings.get_directions_url }}" rel="nofollow" target="_blank"><b>{{ site.data.hotel_settings.name }}</b><br>{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }} {{ site.data.hotel_settings.address.zip_code }}<br>United States</a></p>
+        <p>
+          <a href="tel:{{ site.data.hotel_settings.phone_number }}">{{ site.data.hotel_settings.phone_number }}</a><br>
+          <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}3">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
+          <a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a>
+        </p>
+      </div>
+    </div>
+    <div class="info__links mb-1 mb-md-0">
+      <p class="accordion" type="button" tabindex="0">Learn More</p>
+      <div class="accordion__body">
+        {% assign footer-items = site.data._menus.footer.items %}
+        <ul>
+          {% for item in footer-items %}
+          {% if item.page_id %}
+            {% for page in site.pages %}
+              {% if page.path == item.page_id %}
+                {% assign url = page | permalink %}
+                {% assign text = item.label| default: page.title | default: page.name %}
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% assign url = item.url %}
+            {% assign text = item.label %}
+          {% endif %}
+          <li>
+            <a href="{{url}}" {% if url contains 'http' %}target="_blank"{% endif %}>{{text}}</a>
+          </li>
+          {% endfor %}
+          </ul>
+      </div>
+    </div>
+    <!-- <div class="info__signup">
+      <p class="title" type="button" tabindex="0">Newsletter Sign-up</p>
+      {% include forms/jotform/newsletter.html %}
+      <a class="d-block my-3 mx-auto mx-md-0 text-center text-md-left" href="http://www.highgate.com/" target="_blank"><img src="//res.cloudinary.com/traveltripperweb/image/upload/v1560164604/ywfc0ulqkxet3z6o8zuu.jpg" alt="A Highgate Groups Property" /></a>
+      <p class="title text-center text-md-left" tabindex="0">Follow us on</p>
+      <ul class="social">
+        {% if site.data.social.facebook.username %}
+        <li>
+          <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+        {% if site.data.social.twitter.username %}
+        <li>
+          <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+        {% if site.data.social.instagram.username %}
+        <li>
+          <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+      </ul>
+    </div> -->
+  </div>
+</div>
+
+<!-- Copyrights section -->
+<div class="copyrights">
+  <div class="copyrights__wrap">
+    <div class="copyrights__copy d-block d-md-flex justify-content-between align-items-center">
+      <div tabindex="0">&copy; {{ site.data.hotel_settings.name }} {{ "now" | date: "%Y" }}. All Rights Reserved </div>
+      <a href="/accessibility-statement/" title="Traveltripper" class="mt-2 mt-md-0">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562063985/uaq0rfr8xwyrhzybjeac.png" alt="This site is a WCAG 2.1 ADA Compliant, powered by Travel Tripper">
+      </a>
+    </div>
+  </div>
 </div>

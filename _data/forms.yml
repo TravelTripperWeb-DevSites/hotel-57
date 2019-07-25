@@ -1,0 +1,16 @@
+# Forms
+jotform:
+  contact-id: 91965676762172
+  rfp-id: 83243753541456
+  newsletter-id: 83243432437454
+__EDITABLE_FIELDS__:
+  jotform:
+    type: nested
+    multiple: false
+    fields:
+      contact-id:
+        type: string
+      rfp-id:
+        type: string
+      newsletter-id:
+        type: string

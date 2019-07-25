@@ -1,0 +1,27 @@
+{
+  "name": "sagamore-southbeach-events-video",
+  "content_type": "video/mp4",
+  "date_added": "2019-06-21-063958",
+  "audio": {
+    "codec": "aac",
+    "bit_rate": "113735",
+    "frequency": 48000,
+    "channels": 2,
+    "channel_layout": "stereo"
+  },
+  "video": {
+    "pix_format": "yuv420p",
+    "codec": "h264",
+    "level": 40,
+    "profile": "High",
+    "bit_rate": "18459280",
+    "dar": "16:9"
+  },
+  "bit_rate": 18629948,
+  "frame_rate": 29.97002997002997,
+  "duration": 27.6276,
+  "format": "mp4",
+  "url": "//res.cloudinary.com/traveltripperweb/video/upload/v1561113599/dg5jl0sm89s5mjlwfqme.mp4",
+  "resource_type": "video",
+  "size": 64337595
+}

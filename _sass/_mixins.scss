@@ -1,0 +1,40 @@
+@mixin placeholder-text($font, $size, $color) {
+  &::-webkit-input-placeholder { // Edge
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+  }
+
+  &:-ms-input-placeholder { // Internet Explorer 10-11
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+  }
+
+  &::placeholder {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+  }
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+@mixin absolute-position($top,$right,$bottom,$left,$width,$height) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
+  content: '';
+}

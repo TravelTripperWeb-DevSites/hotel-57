@@ -1,0 +1,19 @@
+{
+  "title": {
+    "label": "Press Title",
+    "required": true
+  },
+  "publication": {
+    "type": "text",
+    "required": true,
+    "label": "Publication Name"
+  },
+  "url_read_more": {
+    "type": "text",
+    "label": "Read More Link",
+    "required": true
+  },
+  "order": {
+    "type": "integer"
+  }
+}

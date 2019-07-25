@@ -1,23 +1,65 @@
 ---
 layout: home
-title_localized: 
-  en: Home
-meta_description:
+sync_content: true
+title_localized:
+  en: Hotel @ Fifth Avenue | Near the Empire State Building
+meta_description: Situated within the historic Miami Beach Art Deco District, Sagamore
+  South Beach offers 93 rooms, two-story bungalows and spacious oceanfront penthouses.
 permalink:
 meta_tags:
   robots:
+published_localized:
+  en: true
+  es: true
+permalink_localized:
+  en: "/"
+meta_description_localized:
+  en: 'Enjoy Manhattan to the fullest at the Hotel @ Fifth Avenue. Located near the
+    Empire State Building, we offer comfortable accommodations in an ideal location. '
+
 ---
 
-{% region test %}
+{% assign slider = site.data._models.homepage_slider | sort: "sort_order" %}
+<div class="home-banner">
+  <div class="banner-carousel">
+    {% for slide in slider %}
+      <div>
+        {% if slide.image.content_type == "video/mp4"%}
+          <video poster="{{ slide.image.url | replace: 'mp4','jpg'}}" autoplay muted>
+            <source src="{{ slide.image.url }}" type="video/mp4">
+          </video>
+        {% else %}
+          <div class="home-banner__content">
+            <img src="{{ slide.image.url_large }}" alt="{{ slide.image.alt }}">
+            <!-- <div class="home-banner__caption ">
+              <p class="slider-title slider-title--light" tabindex="0">
+                <span>{{ slide.title }}</span>
+              </p>
+              <a href="{{ slide.button_link }}/" class="btn btn--secondary mt-2">{{ slide.button_text }}</a>
+            </div> -->
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
 
-<section class='container'>
-  <div class='row text-center'>
-    <div class='col '>
-      <h1 class="h3">Edit this file</h1>
-      <p>This content is written directly into the index.html home page. You should replace it with editable regions and/or standard components</p>
+  <div class="slider-control">
+    <div class="slider-control__arrows">
+      <a aria-label="Press enter for previous slide" class="prev-slide" href="javascript:void(0);" id="bannerSliderPrev" title="Previous Slide">
+        <span class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+      </a>
+      <a aria-label="Press enter for next slide" class="next-slide" href="javascript:void(0);" id="bannerSliderNext" title="Next Slide">
+        <span class="next">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+      </a>
+    </div>
+    <div class="nav-slide" id="bannerSlider" tabindex="-1">
+      {% for slide in slider %}
+        <span></span>
+      {% endfor %}
     </div>
   </div>
-</section>
-
-
-{% include components/instagram %}
+</div>

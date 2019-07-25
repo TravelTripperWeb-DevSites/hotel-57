@@ -1,0 +1,20 @@
+{
+  "title": {
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "button_text": {
+    "type": "text",
+    "required": true
+  },
+  "button_link": {
+    "type": "url_slug",
+    "required": true
+  },
+  "sort_order": {
+    "type": "integer"
+  }
+}

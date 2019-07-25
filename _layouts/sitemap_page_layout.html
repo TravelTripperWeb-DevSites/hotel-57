@@ -1,0 +1,10 @@
+---
+layout: generic
+---
+
+{% assign items = site.data._menus.main.items %}
+<div class="sitemap-links">
+  <ul>
+    {% include nav/nav-item-list.html items=items %}
+  </ul>
+</div>

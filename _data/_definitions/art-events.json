@@ -1,0 +1,21 @@
+{
+  "title": {
+    "required": true,
+    "localizable": true
+  },
+  "description": {
+    "type": "text",
+    "required": true,
+    "localizable": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "view_demo_link": {
+    "type": "text"
+  },
+  "order": {
+    "type": "order"
+  }
+}

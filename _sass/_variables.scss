@@ -1,17 +1,18 @@
 //    //grays
-//    $gray-100: #f8f9fa !default;
+$gray-100: #f1f1f1 !default;
 //    $gray-200: #e9ecef !default;
-//    $gray-300: #dee2e6 !default;
+$gray-300: #dee2e6 !default;
 //    $gray-400: #ced4da !default;
 //    $gray-500: #adb5bd !default;
-//    $gray-600: #6c757d !default;
+$gray-600: #373737 !default;
 //    $gray-700: #495057 !default;
 //    $gray-800: #343a40 !default;
-//    $gray-900: #212529 !default;
+$gray-900: #232525 !default;
 //
 //    // colors
-//    $primary: #007bff !default;
-//    $secondary: $gray-600;
+$primary: #daa520 !default;
+$secondary: $gray-600 !default;
+$terciary: #2e6a80 !default;
 //    $black: #16141a;
 //    $white: #fff;
 //
@@ -43,13 +44,13 @@
 //    );
 //
 //    $body-bg: $white;
-//    $base-text-color: $black;
+$base-text-color: $gray-600;
 //    $secondary-hover: #1e1c23;
 //    $background-gray: $gray-100;
 //    $footer-color: $black;
 //    $form-border-color: $base-text-color;
 //    $error: $red;
-//    $text-muted: $gray-600;
+$text-muted: $gray-300;
 //
 //    // Set a specific jump point for requesting color jumps
 //    $theme-color-interval: 8% !default;
@@ -61,19 +62,19 @@
 //    $yiq-text-dark: $gray-900 !default;
 //    $yiq-text-light: $white !default;
 //
-//    $link-color: $base-text-color;
+$link-color: $primary;
 //    $link-decoration: none !default;
-//    $link-hover-color: $primary;
+$link-hover-color: $secondary;
 //    $link-hover-decoration: underline !default;
 //
 //    // Fonts
-//    $family-primary: "Open Sans", sans-serif;
-//    $family-secondary: "Playfair Display", serif;
-//    $family-terciary: "Roboto", sans-serif;
+$family-primary: 'Futura LT W01 Light';
+$family-secondary: 'Futura LT W01 Book';
+$family-terciary: 'Futura LT W01 Bold';
 //
 //    $base-font-color: $base-text-color;
-//    $base-body-font: $family-primary;
-//    $base-font-size: 1rem; //1rem = 16px
+$base-body-font: $family-primary;
+$base-font-size: 1rem; //1rem = 16px
 //    $base-line-height: 1.5;
 //    $font-size-lg: ($base-font-size * 1.25) !default;
 //    $font-size-sm: ($base-font-size * 0.875) !default;
@@ -88,10 +89,15 @@
 //    $font-weight-bold: 700 !default;
 //    $font-weight-bolder: bolder !default;
 //
-//    $display1-size: 6rem !default;
-//    $display2-size: 5.5rem !default;
-//    $display3-size: 4.5rem !default;
-//    $display4-size: 3.5rem !default;
+$display1-size: 6.25rem !default;
+$display2-size: 4.313rem !default;
+$display3-size: 3rem !default;
+$display4-size: 1.75rem !default;
+$display5-size: 1.5rem !default;
+$display6-size: 1.25rem !default;
+$display7-size: .875rem !default;
+$display8-size: .75rem !default;
+$display9-size: .8125rem !default; // 13px
 //
 //    $display1-weight: 300 !default;
 //    $display2-weight: 300 !default;

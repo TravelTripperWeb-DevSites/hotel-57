@@ -1,0 +1,129 @@
+[
+  {
+    "_template": "2_col",
+    "advanced_options": {
+      "tabindex": "-1",
+      "custom_classes": "pageintro"
+    },
+    "container_classes": "container-fluid",
+    "include_gap": false,
+    "breakpoint": "lg",
+    "col1_type": "html",
+    "col2_type": "html",
+    "col1_image": {
+      "content": {
+        "name": "sagamore-south-beach-swimming-pool",
+        "content_type": "image/jpeg",
+        "date_added": "2019-06-18-084713",
+        "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "width": 870,
+        "height": 1200,
+        "format": "jpg",
+        "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "resource_type": "image",
+        "size": 297290,
+        "git_file_name": "_assets/image_data/sagamore-south-beach-swimming-pool.jpg.json",
+        "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1560862033/gigq15vcxsi61cftgrny.jpg",
+        "file_size": null,
+        "alt": "Sagamore South Beach Hotel Swimming Pool"
+      },
+      "_template": "image"
+    },
+    "col2_html": {
+      "content": "<div class=\"pageintro__inner\">\n<h3 class=\"h3\" tabindex=\"0\">Welcome To</h3>\n<h1 class=\"h2 mb-3 mb-md-4 w-md-75\" tabindex=\"0\">The Hotel @ Fifth Avenue</h1>\n<p class=\"overline mb-3 mb-md-4 w-md-75\" tabindex=\"0\">A SUITE DEAL STEPS FROM THE EMPIRE STATE BUILDING</p>\n<div class=\"w-md-75\" tabindex=\"0\">\n<p>Located on 32nd Street between Broadway and Fifth Avenue, The Hotel @ Fifth Avenue is just a short two block walk away from the Empire State Building. The iconic Fashion District, 34th Street Macy's, and Madison Square Garden are within walking distance and the Jacob Javits Convention Center is a quick taxi ride away. Experience the captivating energy of Midtown Manhattan from this intimate, boutique location with easy access to Grand Central Station, Penn Station, and the Port Authority Bus Terminal. At The Hotel @ Fifth Avenue, you will enjoy:</p>\n<ul>\n<li>Daily continental breakfast</li>\n<li>High speed Wi-Fi for up to six devices</li>\n<li>24-hour fitness and business centers</li>\n<li>Reduced rate parking</li>\n<li>In-room coffee maker, safe and bath amenities</li>\n<li>Easy access to NYC transportation options</li>\n<li>Concierge to arrange sight seeing and transportation</li>\n</ul>\n<p>The Hotel @ Fifth Avenue welcomes guests of all abilities. Our building entrance, registration desk, elevators and rooms are ADA compliant in accordance with the 1991 construction statutes of the ADA (Department of Justice ADA Title III Regulation 28 CFR Part 36, 1991). For more information about accessible and non-accessible features, please see our <a href=\"accessibility/\" target=\"_blank\" rel=\"noopener noreferrer\">Accessibility Statement</a>.&nbsp;</p>\n</div>\n</div>",
+      "custom_classes": [
+        "inner: w-100 d-flex flex-column h-100 justify-content-center",
+        "inner: p-md-4"
+      ]
+    },
+    "col1_html": {
+      "content": "<p class=\"mr-md-5 pr-md-0 pr-xl-5 d-none d-lg-block\" tabindex=\"0\"><img id=\"1562948792210\" class=\"objectfit\" src=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" alt=\"la-quinta-inn-and-suites-manhattan-hotel-amenities-new-york-th\" data-image-large=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" data-image-medium=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" data-image-small=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" data-image-xsmall=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" data-image-thumb=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1562948742/m7iqjlk8nkcmiirc9jur.jpg\" /></p>"
+    }
+  },
+  {
+    "_template": "2_col",
+    "advanced_options": {
+      "tabindex": "-1",
+      "custom_classes": "cs-twocol"
+    },
+    "container_classes": "container-fluid",
+    "col1_type": "html",
+    "col2_type": "html",
+    "col1_html": {
+      "custom_classes": [
+        "inner: w-100 d-flex flex-column h-100 justify-content-center",
+        "inner: p-4"
+      ],
+      "background_image": {
+        "image": {
+          "name": "location",
+          "content_type": "image/jpeg",
+          "date_added": "2019-07-12-142935",
+          "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "width": 554,
+          "height": 391,
+          "format": "jpg",
+          "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "resource_type": "image",
+          "size": 51637,
+          "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562956175/pr0eqi66fvkx3vhiaebg.jpg",
+          "file_size": null,
+          "alt": "Local Attractions",
+          "caption": "",
+          "description": ""
+        },
+        "mask_color": "#daa520",
+        "mask_opacity": ".5"
+      },
+      "style": "",
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">LOCAL ATTRACTIONS</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"attractions/\">Discover</a></p>"
+    },
+    "col2_html": {
+      "custom_classes": [
+        "inner: w-100 d-flex flex-column h-100 justify-content-center",
+        "inner: p-4"
+      ],
+      "background_image": {
+        "image": {
+          "name": "faq",
+          "content_type": "image/jpeg",
+          "date_added": "2019-07-12-142823",
+          "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "width": 554,
+          "height": 391,
+          "format": "jpg",
+          "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "resource_type": "image",
+          "size": 63851,
+          "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562956103/va9tav5xpjyyyrexikd4.jpg",
+          "file_size": null,
+          "alt": "faq",
+          "caption": "",
+          "description": ""
+        },
+        "mask_color": "#daa520",
+        "mask_opacity": ".5"
+      },
+      "style": "white text-primary",
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">FAQ</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"faq/\">Discover</a></p>"
+    },
+    "include_gap": true
+  }
+]

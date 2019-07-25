@@ -1,2 +1,99 @@
 // Events Page Elements
 // ==========================================================================
+
+.video-wrap {
+  max-width: 920px;
+  margin: 20px auto 0;
+  padding: 0 5px;
+
+  @include media-breakpoint-up(sm) {
+    margin: 40px auto;
+    padding: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+.art-events-list {
+  @include make-container;
+  max-width: 1237px;
+
+  .art-events {
+    @include make-row;
+    flex: auto;
+    width: auto;
+    max-width: none;
+    margin-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+
+    &__image {
+      @include make-col-ready;
+      line-height: 0;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    &__content {
+      @include make-col-ready;
+      margin-right: 15px;
+      margin-left: 15px;
+      background-color: $gray-100;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+        display: flex;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 15px;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          padding: 50px 30px;
+        }
+      }
+    }
+
+    &__name {
+      @extend .h4;
+      padding-bottom: 30px;
+      color: $primary;
+
+      @include media-breakpoint-up(md) {
+        padding-bottom: 60px;
+      }
+
+      a {
+        color: $primary;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__short-description {
+      padding-bottom: 30px;
+
+      @include media-breakpoint-up(md) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
