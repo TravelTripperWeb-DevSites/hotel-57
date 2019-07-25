@@ -15,7 +15,7 @@
       ]
     },
     "col2_html": {
-      "content": "<p class=\"objectfit\" tabindex=\"0\"><img id=\"1563197408008\" class=\" \" src=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1563197402/qix7uhdawoggmhyywtgi.jpg\" alt=\"Hotel @ Fifth Avenue Location Map\" data-image-large=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1563197402/qix7uhdawoggmhyywtgi.jpg\" data-image-medium=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1563197402/qix7uhdawoggmhyywtgi.jpg\" data-image-small=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1563197402/qix7uhdawoggmhyywtgi.jpg\" data-image-xsmall=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1563197402/qix7uhdawoggmhyywtgi.jpg\" data-image-thumb=\"//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1563197402/qix7uhdawoggmhyywtgi.jpg\" /></p>",
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">LOCAL ATTRACTIONS</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"attractions/\">Discover</a></p>",
       "custom_classes": "",
       "background_image": {
         "image": {
