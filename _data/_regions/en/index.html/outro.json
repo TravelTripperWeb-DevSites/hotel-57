@@ -122,7 +122,7 @@
         "mask_opacity": ".5"
       },
       "style": "white text-primary",
-      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">FAQ</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"faq/\">Discover</a></p>"
+      "content": "<p class=\"h3 light mb-3 mb-md-3\" style=\"text-align: center;\" tabindex=\"0\">Gallery</p>\n<p style=\"text-align: center;\"><a class=\"btn btn--secondary\" href=\"gallery/\">Discover</a></p>"
     },
     "include_gap": true
   }
