@@ -1,0 +1,20 @@
+.ttweb-booking-widget {
+  &__submit {
+    background-color: $primary !important;
+  }
+  .ttweb-calendar-month {
+    .ttweb-calendar-month__grid {
+      .ttweb-day--in-selection {
+        background: $primary !important;
+      }
+      .ttweb-day {
+        &__arrival-label, &__departure-label {
+          color: $white;
+        }
+      }
+    }
+  }
+  .radioPad--icon-on {
+    color: $primary !important;
+  }
+}
