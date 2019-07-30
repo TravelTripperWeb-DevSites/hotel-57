@@ -1,2 +1,373 @@
 // Shared Page Elements
 // ==========================================================================
+
+.hero {
+  &__body {
+    max-width: 100%;
+  }
+}
+
+.container {
+  max-width: 1320px;
+}
+
+.inner-hero {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0,0,0,.5);
+  }
+
+  h1, p {
+    position: relative;
+    z-index: 2;
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+  }
+}
+
+
+//slider control
+.slider-control {
+  position: absolute;
+  display: flex;
+
+  &__arrows {
+    display: flex;
+
+    .next-slide {
+      margin-left: -1px;
+    }
+  }
+}
+
+.nav-slide {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: $white;
+    border: solid 2px $white;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+    &.tns-nav-active {
+      background-color: transparent;
+    }
+  }
+}
+
+.cta-banner {
+  .wrap {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 42px 20px;
+    background: $white;
+
+    img {
+      max-width: 214px;
+    }
+
+    .btn {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      z-index: 0;
+      content: '';
+      border: 1px solid $primary;
+    }
+    &.large {
+      max-width: 600px;
+    }
+  }
+}
+
+.reverse-img-mobile {
+  .col {
+    &--left {
+      order: 2;
+      @include media-breakpoint-up(lg) {
+        order: 1;
+      }
+    }
+
+    &--right {
+      order: 1;
+      @include media-breakpoint-up(lg) {
+        order: 2;
+      }
+    }
+  }
+}
+
+.two-img-grid {
+  img {
+    width: 48%;
+    margin: 0 2%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__single {
+    img {
+      width: 100%;
+      margin: 0 2%;
+    }
+  }
+}
+
+.twocol-intro {
+  .col {
+    &--right {
+      .col-html-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%;
+
+        .objectfit {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.canvas {
+  padding: 35px 15px;
+  background: $gray-100;
+
+  @include media-breakpoint-up(md) {
+    padding: 78px 97px;
+  }
+
+  ul {
+    padding-left: 15px;
+
+    li {
+      font-family: $family-secondary;
+      font-size: $display8-size;
+    }
+  }
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.modalbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  background-color: rgba($black, .5);
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+  &__content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    max-width: 800px;
+    max-height: 100%;
+    margin: auto;
+    padding: 20px 17px 30px;
+    overflow: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+    @include media-breakpoint-up(md) {
+      padding: 46px 40px 40px;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: -5px;
+    right: 18px;
+    width: 40px;
+    color: $white;
+    text-align: right;
+    opacity: .8;
+    @include media-breakpoint-up(md) {
+      top: 16px;
+      right: 40px;
+    }
+    &:hover {
+      color: $white;
+      opacity: 1;
+    }
+  }
+}
+.open-modalbox {
+  display: block;
+  padding-bottom: 20px;
+  color: $primary;
+  text-align: right;
+  &.btn {
+    display: inline-block;
+    padding-bottom: 12px;
+  }
+}
+
+
+// Top Banner
+
+.top-banner {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: $primary !important;
+
+  a,
+  p {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  p {
+    padding-bottom: 0;
+    font-family: $family-secondary;
+    font-size: $base-font-size;
+    color: $white;
+    vertical-align: middle;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+      font-size: $display7-size;
+    }
+  }
+
+  a {
+    padding: 10px 17px;
+    font-family: $family-secondary;
+    font-size: $display8-size;
+    color: $primary !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    background-color: $white !important;
+    border: 1px solid $black;
+    transition: .2s all;
+    @include media-breakpoint-down(sm) {
+      font-size: $display9-size;
+    }
+    &:hover {
+      color: $black !important;
+      text-decoration: none;
+      background-color: $white !important;
+      border-color: $white !important;
+    }
+  }
+}
+
+.skip-main {
+  position: absolute;
+  top: auto;
+  left: -999px;
+  z-index: -999;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus, &:active {
+    top: auto;
+    left: auto;
+    z-index: 99999;
+    width: 30%;
+    height: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    overflow: auto;
+    font-size: 1.2em;
+    color: $white;
+    text-align: center;
+    background-color: $black;
+    border: 4px solid #ff0;
+    border-radius: 15px;
+  }
+}
+
+.static-page {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 1220px;
+  padding: 20px;
+  margin-bottom: 1.875rem;
+  background-color: #f1f1f1;
+
+  @include media-breakpoint-down(md) {
+    padding: 70px 50px 25px;
+    margin-bottom: 2.875rem;
+  }
+}
+
+.static-page .faq-answer {
+  position: relative;
+  padding-left: 20px;
+}
+
+.static-page .faq-answer:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: 'A:';
+}

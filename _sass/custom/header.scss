@@ -1,0 +1,153 @@
+.navbar {
+  width: auto;
+  height: auto !important;
+  padding: 0;
+  background: $white;
+
+  .container {
+    max-width: 1400px;
+  }
+
+  .navbar-brand {
+    width: 100px;
+    @include transition(.3s);
+
+    @include media-breakpoint-up(md) {
+      width: 186px;
+    }
+
+    span {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: 100% !important;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      margin-top: inherit;
+      margin-right: inherit;
+      margin-bottom: inherit;
+      margin-left: auto;
+    }
+
+    &:before {
+      position: absolute;
+      top: 18px;
+      left: 23px;
+      font-family: 'Font Awesome 5 Pro';
+      font-size: 18px;
+      font-weight: 400;
+      color: $primary;
+      content: '\f0c9';
+    }
+
+    &.is-active {
+      &:before {
+        top: 16px;
+        left: 24px;
+        font-size: 20px;
+        font-weight: 300;
+        color: $primary;
+        content: '\f00d';
+      }
+    }
+  }
+
+  .nav {
+    &__link {
+      margin: 0;
+      padding: 24px 12px;
+      font-family: $family-secondary;
+      font-size: $display8-size;
+      color: $base-text-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: $primary !important;
+        text-decoration: none !important;
+      }
+    }
+    &--device {
+      top: 164px;
+      border: solid 1px $gray-300;
+      @include transition(.3s);
+
+      .nav__link {
+        padding: 10px 15px;
+
+        &:hover {
+          color: $secondary !important;
+        }
+      }
+    }
+  }
+
+  .brand-bar {
+    height: 100px;
+    border-bottom: 2px solid $primary;
+    @include transition(.3s);
+  }
+
+  .subnav {
+    padding: 10px 0;
+    background: $white;
+    border: solid 1px $gray-300;
+
+    .nav__link {
+      padding: 10px 15px !important;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  }
+
+  &.sticky {
+
+    .navbar-brand {
+      width: 100px;
+
+      @include media-breakpoint-up(md) {
+        width: 130px;
+      }
+    }
+
+    .brand-bar {
+      height: 68px;
+    }
+
+    .nav--device {
+      top: 132px;
+      height: calc(100vh - 132px);
+      overflow-y: scroll;
+
+      @include media-breakpoint-up(sm) {
+        height: auto;
+        overflow-y: inherit;
+      }
+    }
+  }
+}
+
+.booking-widget-button {
+  .btn {
+    @include media-breakpoint-only(xs) {
+      padding: 10px 30px 8px 15px;
+      letter-spacing: normal;
+
+      span {
+        top: 12px;
+      }
+    }
+  }
+}
+
+.main {
+  padding-top: 166px !important;
+}

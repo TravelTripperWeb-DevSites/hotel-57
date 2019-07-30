@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<section class="hero inner-hero" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1560774163/x6nkjl2bvtwm87girqjr.jpg');">
+  <div class="hero__body">
+    <h1 class="h1 light">Page Not Found</h1>
+  </div>
+</section>
+
+{% assign items = site.data._menus.main.items %}
+<p class="h4 text-center mt-4">SITEMAP</p>
+<div class="sitemap-links mt-3">
+  <ul>
+    {% include nav/nav-item-list.html items=items %}
+  </ul>
+</div>

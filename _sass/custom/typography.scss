@@ -1,0 +1,160 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  display: block;
+  margin: 0;
+  font-weight: normal;
+}
+
+.slider-title {
+  position: relative;
+  font-family: $family-secondary;
+  font-size: $display6-size;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $display1-size;
+    letter-spacing: 20px;
+  }
+
+  span {
+    border-bottom: solid 2px;
+
+    @include media-breakpoint-up(lg) {
+      border-bottom: solid 5px;
+    }
+  }
+
+  &--light {
+    color: $white;
+    span {
+      border-color: $white;
+    }
+  }
+}
+
+.h1 {
+  font-family: $family-secondary;
+  font-size: $display3-size;
+  line-height: normal;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display2-size;
+    letter-spacing: 6px;
+  }
+}
+
+.h2 {
+  font-family: $family-secondary;
+  font-size: $display4-size;
+  line-height: normal;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display3-size;
+  }
+}
+
+.h3 {
+  font-family: $family-secondary;
+  font-size: $display5-size;
+  line-height: normal;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display4-size;
+    letter-spacing: 2px;
+  }
+}
+
+.h4 {
+  font-family: $family-secondary;
+  font-size: $display6-size;
+  line-height: normal;
+  color: $secondary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display5-size;
+    letter-spacing: 2px;
+  }
+}
+
+.h5 {
+  font-family: $family-secondary;
+  font-size: $display7-size;
+  line-height: normal;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display6-size;
+    letter-spacing: 2px;
+  }
+}
+
+.h6 {
+  font-family: $family-secondary;
+  font-size: $display6-size;
+  line-height: normal;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display7-size;
+  }
+}
+
+.overline {
+  margin: 0;
+  font-family: $family-secondary;
+  font-size: $display7-size;
+  line-height: normal;
+  color: $base-text-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: $family-primary;
+  font-size: $display7-size;
+  line-height: 24px;
+  color: $gray-900;
+  letter-spacing: 1px;
+}
+
+.book {
+  font-family: $family-secondary !important;
+}
+
+.bold {
+  font-family: $family-terciary !important;
+}
+
+.light {
+  color: $white !important;
+}
+
+.dark {
+  color: $black !important;
+}
+
+.primary {
+  color: $primary !important;
+}

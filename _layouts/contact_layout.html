@@ -1,25 +1,10 @@
 ---
-layout: default
+layout: generic
 ---
 
-{% comment %}
-
-  TODO: Optionally just change to "generic" layout?
-
-  Name:
-
-    Contact Page
-
-  Description:
-
-    Static content that can be modified by editable regions.
-
-  Usage:
-
-    Text   - {% regionblock region_name, type:html %}{% endregionblock %}
-
-    Header - {% regionblock region_name, type:header %}{% endregionblock %}
-
-    Image  - {% regionblock region_name, type:image %}{% endregionblock %}
-
-{% endcomment %}
+<div class="container form-wrap">
+  <p class="h3 mb-2 text-center" tabindex="0">GET IN TOUCH</p>
+  <p tabindex="0">Personal information collected is used solely for serving request for proposals and other marketing materials. Contact us to review or delete the data collected. Visit our <a href="/privacy-policy/">privacy policy</a> page to contact us to review or delete the data collected.</p>
+  <p class="text-center" tabindex="0"><i>Required fields are marked *</i></p>
+  {% include forms/jotform/contact.html %}
+</div>

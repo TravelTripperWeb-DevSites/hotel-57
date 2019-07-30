@@ -1,0 +1,34 @@
+<section class="art-events-list">
+  {% for event in art-events %}
+  <div class="art-events">
+    <div class="art-events__image" tabindex="0">
+      {% include components/image image=event.image max_width=600 %}
+    </div>
+    <div class="art-events__content">
+      <div class="art-events__content__inner">
+        <div class="art-events__name" tabindex="0">
+          {{ event.title }}
+        </div>
+        <div class="art-events__short-description" tabindex="0">
+          {{ event.description }}
+        </div>
+        {% if event.view_demo_link != "" %}
+        <div class="art-events__select">
+          <a href="javascript:void(0);" data-target="view-demo_{{forloop.index}}" class="btn btn--terciary mr-0 mr-md-2 mb-2 open-modalbox" data-video="{{ event.view_demo_link }}?controls=1">View Demo</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="modalbox full-bio" id="view-demo_{{forloop.index}}">
+    <div class="modalbox__content">
+      <a href="javascript:void(0);" class="modalbox__close"><i class="modalbox__close-icon fas fa-times"></i></a>
+      <div class="full-bio__wrap">
+        <div class="full-bio__basic-info">
+          <iframe src="" width="560" height="315" autoplay> </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>

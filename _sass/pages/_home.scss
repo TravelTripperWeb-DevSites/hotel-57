@@ -1,0 +1,345 @@
+// Home Page Elements
+// ==========================================================================
+
+.home-banner {
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    margin: 0 50px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 65px;
+  }
+
+  .banner-carousel {
+    .tns-item {
+      position: relative;
+      line-height: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    &:after {
+      @include absolute-position(0,0,0,0,auto,auto);
+      background-color: rgba($black, .6);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      bottom: 200px;
+    }
+
+    .slider-title {
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .slider-control {
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(lg) {
+      right: 65px;
+      bottom: 50px;
+      left: 65px;
+    }
+  }
+}
+
+.pageintro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    max-width: 680px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .col-html-content {
+    display: flex;
+    height: 100%;
+  }
+
+  .col--left {
+    padding: 0;
+  }
+
+  .col--right {
+    padding: 0 15px;
+  }
+}
+
+.cs-twocol {
+  margin-top: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  .col--left {
+    margin-bottom: 15px;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      border-right: solid 10px $white;
+    }
+  }
+
+  .col--right {
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      border-left: solid 10px $white;
+    }
+  }
+
+  .mask {
+    @include absolute-position(0,0,0,0,auto,auto);
+  }
+
+  .col-html-content {
+    position: relative;
+    z-index: 10;
+
+    @include media-breakpoint-up(md) {
+      height: 300px !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 518px !important;
+    }
+  }
+}
+
+.rooms-carousel {
+  @include make-container;
+  position: relative;
+  margin-top: 20px;
+  padding: 0;
+
+  &__content {
+    position: relative;
+    padding: 100px 0;
+    line-height: 0;
+
+
+    @include media-breakpoint-up(lg) {
+      height: 780px;
+      padding: 150px 0 200px;
+    }
+  }
+
+  &__image {
+    @include absolute-position(0,0,0,0,auto,auto);
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    position: relative;
+    z-index: 10;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: $white;
+
+    @include media-breakpoint-up(md) {
+      max-width: 460px;
+      padding: 75px;
+    }
+
+    &:before {
+      @include absolute-position(10px,10px,10px,10px,auto,auto);
+      z-index: -1;
+      border: solid 1px $primary;
+    }
+
+    .h4 {
+      margin-bottom: 35px;
+    }
+
+    &__descripton {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    &--content {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      background-color: rgba($white, .8);
+      transform: translateY(-50%);
+      .overline {
+        margin-bottom: 20px;
+      }
+      .btn--secondary {
+        background-color: transparent;
+        &:hover {
+          background-color: $secondary !important;
+        }
+      }
+    }
+
+    &.transparent {
+      background-color: rgba($white, .8);
+      @include media-breakpoint-down(sm) {
+        max-width: 280px;
+      }
+
+      .overline {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .slider-control {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &__arrows {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      left: 10px;
+      z-index: 10;
+      justify-content: space-between;
+      transform: translateY(-50%);
+
+      @include media-breakpoint-up(lg) {
+        right: 65px;
+        left: 65px;
+      }
+    }
+
+    .nav-slide {
+      position: relative;
+      z-index: 10;
+      flex-wrap: wrap;
+      align-items: center;
+      align-self: flex-end;
+      justify-content: center;
+      width: 100%;
+      max-width: 1010px;
+      margin: 0 auto;
+      padding: 10px 60px;
+      background-color: $primary;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      span {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 0 44px 0 0;
+        font-family: $family-secondary;
+        font-size: $display9-size;
+        color: $white;
+        background-color: transparent;
+        border: 0;
+
+        &:after {
+          @include absolute-position(50%,0,auto,auto,32px,1px);
+          background-color: $white;
+        }
+
+        &:last-child {
+          &:after {
+            content: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-location {
+  @include make-container;
+  margin-top: 50px;
+  padding: 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .col--left {
+    margin-bottom: 20px;
+    padding: 0 15px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      padding: 15px 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 30px 140px;
+    }
+  }
+
+  &__content {
+    max-width: 585px;
+  }
+
+  .col--right {
+    padding: 0;
+
+    .col-html-content {
+      display: flex;
+      height: 100%;
+    }
+  }
+}
+
+// homepage amenities text
+.hotel-amenities-inner .amenities-txt {
+  vertical-align: middle;
+  font-size: .875rem;
+  line-height: 24px;
+}

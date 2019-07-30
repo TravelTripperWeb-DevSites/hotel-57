@@ -1,0 +1,116 @@
+// Custom overwrite for InstaFeed
+
+.c-instagram-feed {
+  width: 100%;
+  max-width: 100%;
+  margin: 60px 0 0 !important;
+
+  &__container {
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  &__tag-link {
+    font-size: $display4-size;
+    text-transform: capitalize !important;
+
+    @include media-breakpoint-up(md) {
+      font-size: $display3-size;
+    }
+  }
+
+  &__profile-link {
+    padding: 15px 0 60px;
+    font-size: $display7-size;
+    color: $secondary !important;
+  }
+
+  .c-instagram-feed__list {
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  .photo-list {
+    display: inline-block !important;
+    width: 100%;
+    height: auto;
+    @include media-breakpoint-up(md) {
+      display: flex !important;
+    }
+    .photo {
+      width: 20%;
+      height: 160px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .photo-list {
+    display: inline-block !important;
+    height: auto;
+    @include media-breakpoint-up(md) {
+      display: flex !important;
+    }
+
+    .photo {
+      float: left;
+
+      @include media-breakpoint-only(xs) {
+        width: 33.33%;
+        height: 120px;
+
+        &:nth-child(1n+7) {
+          display: none;
+        }
+      }
+
+      @include media-breakpoint-only(sm) {
+
+        &:nth-child(1n+6) {
+          display: none;
+        }
+      }
+
+      @include media-breakpoint-only(md) {
+
+        &:nth-child(1n+6) {
+          display: none;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 10vw;
+        height: 10vw;
+
+        &:nth-child(1n+11) {
+          display: none;
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        width: 10vw;
+        height: 10vw;
+
+        &:nth-child(1n+11) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.c-instagram-feed__profile-link {
+  @extend .h4;
+}
+
+.c-instagram-feed__tag-link {
+  @extend .h5;
+  text-transform: uppercase;
+  // &:before {
+  //   font-family: "Font Awesome 5 Free";
+  //   content: '\f16d';
+  // }
+}

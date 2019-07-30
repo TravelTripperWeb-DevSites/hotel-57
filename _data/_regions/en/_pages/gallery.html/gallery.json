@@ -1,0 +1,25 @@
+[
+  {
+    "advanced_options": {
+    },
+    "galleries": [
+      {
+        "gallery": "area",
+        "label": "Area"
+      },
+      {
+        "label": "Events",
+        "gallery": "events"
+      },
+      {
+        "label": "Exteriors",
+        "gallery": "exteriors"
+      },
+      {
+        "label": "Rooms",
+        "gallery": "rooms"
+      }
+    ],
+    "_template": "galleries"
+  }
+]

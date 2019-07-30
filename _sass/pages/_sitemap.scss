@@ -1,0 +1,39 @@
+.sitemap-links {
+  max-width: 350px;
+  margin: 50px auto 0;
+  padding: 20px;
+  background: $gray-100;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 5px;
+      margin-left: 35px;
+      text-transform: uppercase;
+      list-style-type: disc;
+      span {
+        margin: 0 5px;
+        font-family: $family-secondary;
+        font-size: 1rem;
+        color: $primary;
+      }
+      .subnav {
+        li {
+          margin: 0 0 0 20px;
+          text-transform: capitalize;
+          background: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      a {
+        margin: 0 5px;
+        font-family: $family-secondary;
+        font-size: 1rem;
+        color: $primary;
+        white-space: normal;
+      }
+    }
+  }
+}

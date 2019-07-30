@@ -1,0 +1,17 @@
+[
+  {
+    "advanced_options": {
+    },
+    "galleries": [
+      {
+        "label": "Rooms",
+        "gallery": "rooms"
+      },
+      {
+        "gallery": "location",
+        "label": "Location"
+      }
+    ],
+    "_template": "galleries"
+  }
+]

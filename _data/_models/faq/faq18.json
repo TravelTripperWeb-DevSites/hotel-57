@@ -1,0 +1,9 @@
+{
+  "order": 20,
+  "title_localized": {
+    "en": "Does Apple Core Hotels charge a deposit for incidentals?"
+  },
+  "faq_content_localized": {
+    "en": "<p>Yes, you can pay in advance with the below instructions.</p>\n<p>Business travelers coming to Apple Core Hotels may use a company credit card, however, our hotels will only recognize company cards on which your name and the company's name are present and visible.</p>\n<p>Please find below each hotel's Advance Pay and 3rd party credit card authorization form to fill out prior to arrival:</p>\n<ul>\n<li><a href=\"https://www.applecorehotels.com/ResourceFiles/pdf/thats-cc-authorizationform-individual.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Hotel @ Times Square (pdf)</a></li>\n<li><a href=\"https://www.applecorehotels.com/ResourceFiles/pdf/bats-cc-authorizationform-individual.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Broadway @ Times Square Hotel (pdf) </a></li>\n<li><a href=\"https://www.applecorehotels.com/ResourceFiles/pdf/thafave-cc-authorizationform-individual.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Hotel @ Fifth Avenue (pdf)</a></li>\n<!-- <li><a href=\"https://www.applecorehotels.com/ResourceFiles/pdf/preapproval-credit-card-laquinta.pdf\" target=\"_blank\">La Quinta Inn Suites Manhattan (pdf)</a></li> -->\n<li><a href=\"https://www.applecorehotels.com/ResourceFiles/pdf/thanyc-cc-authorizationform-individual.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Hotel @ New York City (pdf)</a></li>\n</ul>"
+  }
+}
