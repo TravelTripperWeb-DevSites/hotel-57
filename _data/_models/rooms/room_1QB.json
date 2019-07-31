@@ -35,10 +35,11 @@
       "caption": "",
       "description": "",
       "alt": "",
-      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283451_1_master.jpg"
+      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283451_1_master.jpg",
+      "git_file_name": "_assets/image_data/1-Queen-Bed-.json"
     }
   ],
-  "reztrip_room_id": "NQB",
+  "reztrip_room_id": "1QB",
   "order": 3,
   "guest_size_max": 2,
   "size": "600 ft<sup>2</sup>",
