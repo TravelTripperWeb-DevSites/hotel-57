@@ -35,10 +35,11 @@
       "caption": "",
       "description": "",
       "alt": "",
-      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283450_1_master.jpg"
+      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283450_1_master.jpg",
+      "git_file_name": "_assets/image_data/2-Queen-Beds-.json"
     }
   ],
-  "reztrip_room_id": "NQQ",
+  "reztrip_room_id": "2QB",
   "order": 2,
   "guest_size_max": 4,
   "size": " ft<sup>2</sup>",
