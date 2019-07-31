@@ -123,17 +123,26 @@ readyDoc(function() {
     }
 
     if (document.getElementsByClassName("rooms-slider")[0]) {
-      var roomSlider = tns({
-        container: '.rooms-slider',
-        "items": 1,
-        "mouseDrag": true,
-        "swipeAngle": false,
-        "speed": 400,
-        // "autoHeight": true,
-        navContainer: "#roomSlider",
-        prevButton: "#roomSliderPrev",
-        nextButton: "#roomSliderNext",
-      });
+      setTimeout(function(){
+        var roomSlider = tns({
+          container: '.rooms-slider',
+          "items": 1,
+          "mouseDrag": true,
+          "swipeAngle": false,
+          "speed": 400,
+          "loop": false,
+          onInit: function(){
+            let navSlides = document.querySelectorAll(".rooms-carousel .nav-slide span");
+            for(let i=0; i<navSlides.length; i++) {
+              navSlides[i].setAttribute("tabindex", -1);
+            }
+          },
+          // "autoHeight": true,
+          navContainer: "#roomSlider",
+          prevButton: "#roomSliderPrev",
+          nextButton: "#roomSliderNext",
+        });
+      }, 1000);
     }
     // Rooms carousel
     if (document.getElementsByClassName("content-slider")[0]) {
