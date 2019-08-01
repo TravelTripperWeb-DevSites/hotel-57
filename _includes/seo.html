@@ -2,7 +2,7 @@
 {% if site.url %}
   {% assign seo_url = site.url %}
 {% endif %}
-{% if page.url contains "rooms" %}
+{% if page.url contains "room_" %}
   {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Hotel Room NYC near Empire State Building" %}
 {% else %}
   {% if page.title %}
@@ -17,7 +17,7 @@
 {% endif %}
 
 <title>{{ seo_title }}</title>
-{% if page.url contains "rooms" %}
+{% if page.url contains "room_" %}
 {% assign seo_description = "Visit the Hotel @ Fifth Avenue and enjoy a comfortable hotel room in NYC in an incomparable location. Our accommodations have plush amenities for a great stay." %}
 {% else %}
   {% assign seo_description = page.meta_description | default: site.data.seo.default_description %}
