@@ -50,12 +50,12 @@
       </div>
       <div class="slider-control">
         <div class="slider-control__arrows">
-          <a href="javascript:void(0);" class="prev-slide" id="roomSliderPrev" title="Previous slide" aria-label="Press enter for previous slide">
+          <a href="javascript:void(0);" class="prev-slide" id="roomSliderPrev" title="Previous slide" aria-label="Press enter for previous slide" tabindex="-1">
             <span class="prev">
               <i class="fas fa-chevron-left"></i>
             </span>
           </a>
-          <a href="javascript:void(0);" class="next-slide" id="roomSliderNext" title="Next slide" aria-label="Press enter for next slide">
+          <a href="javascript:void(0);" class="next-slide" id="roomSliderNext" title="Next slide" aria-label="Press enter for next slide"  tabindex="-1">
             <span class="next">
               <i class="fas fa-chevron-right"></i>
             </span>
@@ -69,8 +69,8 @@
       </div>
     </div>
     <div class="rooms-carousel__info rooms-carousel__info--content">
-      <p class="overline">LUXURY REDEFINED</p>
-      <h2 class="h4 dark" tabindex="0" {% if sync %}ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h2>
+      <p class="overline"  tabindex="-1">LUXURY REDEFINED</p>
+      <h2 class="h4 dark" tabindex="-1" {% if sync %}ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h2>
       <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Now</a>
     </div>
 
@@ -80,7 +80,9 @@
     <div class="row">
       <div class="text-center p-3 p-md-5 mt-auto">
         <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
-        <div class="px-0 px-md-3" tabindex="0" {% if sync %}ttweb-room-component="RoomDescription" {% endif %}>{{ room.description }}</div>
+        <div tabindex="0" >
+          <div class="px-0 px-md-3" {% if sync %}ttweb-room-component="RoomDescription" {% endif %}>{{ room.description }}</div>
+        </div>
       </div>
     </div>
     <div class="row m-0">
@@ -111,10 +113,10 @@
       <div class="content-slider">
         {% for room in rooms %}
         <div ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
-          <p class="overline" tabindex="0">VIEW MORE LUXURIOUS <br>ROOMS & SUITES</p>
-          <h3 class="h4 dark" tabindex="0" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h3>
-          <a href="/rooms/room_{{ room.reztrip_room_id | downcase }}/" class="btn btn--secondary">View This Room</a><br>
-          <a href="/rooms/" class="btn btn--secondary">View All Room</a>
+          <p class="overline" tabindex="-1">VIEW MORE LUXURIOUS <br>ROOMS & SUITES</p>
+          <h3 class="h4 dark" {% if sync %} ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h3>
+          <a href="/rooms/room_{{ room.reztrip_room_id | downcase }}/" class="btn btn--secondary" tabindex="-1">View This Room</a><br>
+          <a href="/rooms/" class="btn btn--secondary">View All Rooms</a>
         </div>
         {% endfor %}
       </div>
@@ -141,7 +143,7 @@
     <div class="more-rooms__right">
       <div class="images-slider">
         {% for room in rooms %}
-        <div tabindex="0" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+        <div tabindex="-1" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
           {% assign featured_image = room.featured_image | default: room.images[1] %}
           <div {% if sync %} ttweb-room-component="RoomPrimaryImage" {% endif %}>
             {% include components/image image=featured_image max_width=600 %}
