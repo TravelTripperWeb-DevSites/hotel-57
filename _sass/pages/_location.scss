@@ -40,6 +40,11 @@
         transition: all .6s ease 0s;
         width: 100%;
     }
+    &:focus {
+      .ttd-top-section {
+        top: 0;
+      }
+    }
 }
 
 .ttd-top-section {

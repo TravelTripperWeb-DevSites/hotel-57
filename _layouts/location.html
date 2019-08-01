@@ -3,34 +3,43 @@ layout: default
 ---
 <section class="hero inner-hero" style="background-image: url(http://res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1563285850/uay69zehvfnkj6gqrdrh.jpg)">
   <div class="hero__title">
-    <h1 class="h1 light">Location</h1>
+    {% regionblock page_header, type:header %}
+      <h1 class="h1 light">Location</h1>
+    {% endregionblock %}
   </div>
 </section>
 <section class="container">
   <section class="row p-3 text-center">
-    <h2 class="h2 m-auto pb-3">EXPERIENCE QUINTESSENTIAL NYC</h2>
-    <p>
-      New York City is the most exciting destination in the world. It's got it
-      all, amazing food, exuberant art and culture, the trendiest shopping, and
-      iconic landmarks. Whether you're looking to explore the city's cultural
-      side at MoMA, feast on the ethnic fare in Chinatown, shop Fifth Avenue's
-      designer stores, or catch stunning views from the Top of the Rock, it's
-      all right outside your door.
-    </p>
-    <p>
-      Ride to the top of the Empire State Building, tour the Statue of Liberty
-      and St. Patrick's Cathedral, and make time for stops to Dylan's Candy Bar
-      or Serendipity for their "Frozen Hot Chocolate." Walk the High Line for
-      magnificent views overlooking the Hudson River, or hit the ice rink at
-      Rockefeller Center. If art is your thing, admire the striking works at the
-      Guggenheim or Metropolitan Museum of Art, and top it off with an
-      award-winning musical on Broadway. Here are some can't miss things to do
-      in NYC so you don't miss a beat.
-    </p>
+    <div class="text-center m-auto">
+      {% regionblock intro_header, type:header %}
+      <h2 class="h2 pb-3" tabindex="0">EXPERIENCE QUINTESSENTIAL NYC</h2>
+      {% endregionblock %}
+    </div>
+    <div tabindex="0">
+      {% regionblock intro_text, type:text %}
+        <p>
+          New York City is the most exciting destination in the world. It's got it
+          all, amazing food, exuberant art and culture, the trendiest shopping, and
+          iconic landmarks. Whether you're looking to explore the city's cultural
+          side at MoMA, feast on the ethnic fare in Chinatown, shop Fifth Avenue's
+          designer stores, or catch stunning views from the Top of the Rock, it's
+          all right outside your door.
+        </p>
+        <p>
+          Ride to the top of the Empire State Building, tour the Statue of Liberty
+          and St. Patrick's Cathedral, and make time for stops to Dylan's Candy Bar
+          or Serendipity for their "Frozen Hot Chocolate." Walk the High Line for
+          magnificent views overlooking the Hudson River, or hit the ice rink at
+          Rockefeller Center. If art is your thing, admire the striking works at the
+          Guggenheim or Metropolitan Museum of Art, and top it off with an
+          award-winning musical on Broadway. Here are some can't miss things to do
+          in NYC so you don't miss a beat.
+        </p>
+      {% endregionblock %}
+    </div>
   </section>
 </section>
->
-<section class="loc-map-cta">
+<section class="loc-map-cta" tabindex="-1">
   <div class="container-fluid no-padding">
     {% region location-bg %}
   </div>
@@ -40,7 +49,7 @@ layout: default
   <div class="row">
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category1">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/chrysler-building-at-new-york-city-th.jpg" alt="Chrysler Building at New York City" title="Chrysler Building at New York City" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -48,7 +57,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Chrysler Building
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   As one of Manhattan's most eye-catching skyscrapers with its
                   triangular shaped windows in its crown, this prominent building
                   in Murray Hill adds to the quintessential New York City skyline.
@@ -76,7 +85,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category2">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/new-york-city-central-park-th.jpg" alt="New York City, Central Park" title="New York City, Central Park" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -84,7 +93,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Central Park
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Spanning 50 blocks up the center of NYC, escape to this urban
                   oasis after a day of traversing the city streets. Designed in
                   1858, CP offers trails, sports fields, concert stage, and
@@ -113,7 +122,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category3">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/ellis-island-of-new-york-th.jpg" alt="Ellis Island of New York" title="Ellis Island of New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -121,7 +130,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Ellis Island
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Sail across the Hudson River by ferry to Ellis Island and wave
                   hello to Lady Liberty. Climb to the top of the iconic
                   statue&nbsp;for&nbsp;panoramic view of New York Harbor and shop
@@ -150,7 +159,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category4">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/empire-state-building-in-new-york-th.jpg" alt="Empire State Building in New York" title="Empire State Building in New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -158,7 +167,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Empire State Building
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Arguably the most famous structure in Manhattan, travel up 102
                   floors to the observatory deck offering sweeping views of New
                   York City and beyond, or stay ground-level to dine and shop on
@@ -188,7 +197,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category5">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/grand-central-station-at-new-york-city-th.jpg" alt="Grand Central Station at New York City" title="Grand Central Station at New York City" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -196,7 +205,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Grand Central Station
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   As the nation's biggest transit hub, admire the beautiful
                   Beaux-Arts train terminal's ornately painted ceiling and visit
                   the enormous concourse filled with shops and eateries perfect
@@ -226,7 +235,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category6">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/new-york-madison-square-garden-th.jpg" alt="New York, Madison Square Garden" title="New York, Madison Square Garden" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -234,7 +243,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Madison Square Garden
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   As Manhattan's premier sports and entertainment complex, MSG is
                   home to the NHL's New York Rangers, the NBA's Knicks, and it
                   also offers the best stage to see your favorite musicians
@@ -264,7 +273,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category7">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/rockefeller-center-at-new-york-city-th.jpg" alt="Rockefeller Center at New York City" title="Rockefeller Center at New York City" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -272,7 +281,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Rockefeller Center
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   This Art Deco building offers stunning views at the "Top of the
                   Rock" and boasts an eclectic shopping and dining concourse. In
                   winter months, visit&nbsp;the city's biggest Christmas tree and
@@ -302,7 +311,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category8">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/saint-patrick-s-cathedral-new-york-th.jpg" alt="Saint Patrick's Cathedral, New York" title="Saint Patrick's Cathedral, New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -310,7 +319,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Saint Patrick's Cathedral
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Take a peek at the intricate details of this&nbsp;Gothic Revival
                   house of worship that sits amid the hustle and bustle of
                   Rockefeller Center and offers visitors
@@ -340,7 +349,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category9">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/united-nations-headquarters-at-new-york-city-th.jpg" alt="United Nations Headquarters at New York City" title="United Nations Headquarters at New York City" width="554"
             height="391" />
           <div class="ttd-top-section">
@@ -349,7 +358,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   United Nations Headquarters
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   See the world-famous diplomatic collective in action and tour
                   the historic location where world-leaders convene to discuss
                   global issues, solve problems, and develop international peace
@@ -379,7 +388,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category10">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/union-square-at-new-york-th.jpg" alt="Union Square in New York" title="Union Square in New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -387,7 +396,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Union Square
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Located at the union of&nbsp;Broadway and Fourth Avenue, this
                   geometric grassy patch of land welcomes visitors daily to
                   congregate and frolic to escape the city grind. It's also home
@@ -417,7 +426,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category11">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/911-memorial-and-museum-at-new-york-th.jpg" alt="9/11 Memorial and Museum at New York" title="9/11 Memorial and Museum at New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -425,7 +434,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   9/11 MEMORIAL AND MUSEUM
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Visit&nbsp;North America's largest man-made waterfalls, twin
                   reflecting pools, and&nbsp;museum built as a place to pay
                   respects to those that lost their lives and as a solemn reminder
@@ -455,7 +464,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category12">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/the-high-line-of-new-york-city-th.jpg" alt="The High Line of New York City" title="The High Line of New York City" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -463,7 +472,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   The High Line
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Once a railroad track, NYC's elevated park and walking
                   playground is covered in grass and wildflowers. Walk this urban
                   park and promenade that spans 1.5 miles from Hudson Yards to
@@ -493,7 +502,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-lg-6">
       <div id="things-to-do-category13">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0" aria-label="Columbus Circle">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/columbus-circle-at-new-york-city-th.jpg" alt="Columbus Circle at New York City" title="Columbus Circle at New York City" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -501,7 +510,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   Columbus Circle
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Located at the SW corner of Central Park, this roundabout is
                   home to many high-end shops and restaurants, the Time Warner
                   Building, and marked by the 76-foot monument at its
@@ -531,7 +540,7 @@ layout: default
     </div>
     <div class="things-to-do-category-section col-md-6">
       <div id="things-to-do-category14">
-        <div class="things-to-do-cat-img">
+        <div class="things-to-do-cat-img" tabindex="0">
           <img src="https://www.applecorehotels.com/resourcefiles/attraction-snippets/public-library-of-new-york-th.jpg" alt="Public Library of New York" title="Public Library of New York" width="554" height="391" />
           <div class="ttd-top-section">
             <div class="ttd-desc-inner">
@@ -539,7 +548,7 @@ layout: default
                 <div class="things-to-do-title things-to-do-title-onhover">
                   New York Public Library
                 </div>
-                <div class="things-to-do-long-des">
+                <div class="things-to-do-long-des" tabindex="0">
                   Adjacent to Bryant Park, step inside of this NYC landmark that
                   houses 25,000 books and bindings, a handwritten copy of the
                   Declaration of Independence, and a rotating series of art and
