@@ -19,7 +19,9 @@
           <a href="{{ site.data.hotel_settings.get_directions_url }}" rel="nofollow" target="_blank"><b>{{ site.data.hotel_settings.name }}</b><br>{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }} {{ site.data.hotel_settings.address.zip_code }}<br>United States</a></p>
         <p>
           <a href="tel:{{ site.data.hotel_settings.phone_number }}">{{ site.data.hotel_settings.phone_number }}</a><br>
-          <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}3">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
+          {% if site.data.hotel_settings.alternate_phone_number %}
+            <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
+          {% endif %}
           <!-- <a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a> -->
         </p>
       </div>
@@ -79,7 +81,7 @@
   <div class="copyrights__wrap">
     <div class="copyrights__copy d-block d-md-flex justify-content-between align-items-center">
       <div tabindex="0">&copy; {{ site.data.hotel_settings.name }} {{ "now" | date: "%Y" }}. All Rights Reserved </div>
-      <a href="/accessibility-statement/" title="Traveltripper" class="mt-2 mt-md-0">
+      <a href="/accessibility-statement/" title="Powered by Traveltripper" class="mt-2 mt-md-0">
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562063985/uaq0rfr8xwyrhzybjeac.png" alt="This site is a WCAG 2.1 ADA Compliant, powered by Travel Tripper">
       </a>
     </div>
