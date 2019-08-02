@@ -6,7 +6,6 @@
     "type": "image"
   },
   "description": {
-    "localizable": true,
     "type": "richtext"
   },
   "address": {
