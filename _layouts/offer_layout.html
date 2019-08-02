@@ -22,7 +22,6 @@ layout: default
   {% endif %}
 {% endfor %}
 {% endif %}
-
 {% assign sync = true %}
 <section data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
   <section class="hero inner-hero" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561363171/d1twu8kq8priphv0yg54.jpg');">
@@ -34,30 +33,30 @@ layout: default
 
   <div class="room-nav mt-3 text-center">
     {%if prevItemUrl %}
-      <a href="{{ prevItemUrl | permalink: model_dir: 'offers' }}" title="Previous Offer">Previous Offer
-      </a>
-      {%else%}
-      <a class="not-active" href="#" title="Previous Offer">Previous Offer
-      </a>
-      {%endif%}
-      <span>{{ offer.name }}</span>
-      {%if nextItemUrl %}
-        <a href="{{ nextItemUrl | permalink: model_dir: 'offers' }}" title="Next Offer">Next Offer</a>
-        {%else%}
-        <a class="not-active" href="#" title="Next Offer">Next Offer</a>
-        {%endif%}
-      </div>
+    <a href="{{ prevItemUrl | permalink: model_dir: 'offers' }}" title="Previous Offer">Previous Offer
+    </a>
+    {%else%}
+    <a class="not-active" href="#" title="Previous Offer" tabindex="-1">Previous Offer
+    </a>
+    {%endif%}
+    <span>{{ offer.name }}</span>
+    {%if nextItemUrl %}
+    <a href="{{ nextItemUrl | permalink: model_dir: 'offers' }}" title="Next Offer">Next Offer</a>
+    {%else%}
+    <a class="not-active" href="#" title="Next Offer" tabindex="-1">Next Offer</a>
+    {%endif%}
+  </div>
 
-    <section class="rooms-carousel offer-detail-carousel mt-2" >
-      <div class="rooms-carousel__content">
-        <div class="rooms-carousel__image" {% if sync %}ttweb-offer-component="OfferImage"{% endif %}>
-          {% include components/image image=offer.image max_width=1600 %}
-        </div>
-        <div class="rooms-carousel__info transparent">
-          <p class="overline">Special Offer</p>
-          <h2 class="h4 dark" tabindex="0" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</h2>
-          <a class="btn btn--secondary" href="{{ offer.book_now }}" target="_blank" ttweb-offer-component="OfferBookingButton">Book this offer</a>
-        </div>
+  <section class="rooms-carousel offer-detail-carousel mt-2">
+    <div class="rooms-carousel__content">
+      <div class="rooms-carousel__image" {% if sync %}ttweb-offer-component="OfferImage" {% endif %}>
+        {% include components/image image=offer.image max_width=1600 %}
       </div>
-    </section>
+      <div class="rooms-carousel__info transparent">
+        <p class="overline">Special Offer</p>
+        <h2 class="h4 dark" tabindex="0" {% if sync %}ttweb-offer-component="OfferTitle" {% endif %}>{{ offer.name }}</h2>
+        <a class="btn btn--secondary" href="{{ offer.book_now }}" target="_blank" ttweb-offer-component="OfferBookingButton">Book this offer</a>
+      </div>
+    </div>
+  </section>
 </section>

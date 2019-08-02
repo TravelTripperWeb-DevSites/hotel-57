@@ -1,0 +1,33 @@
+{
+  "order": 6,
+  "name": "MADISON SQUARE GARDEN",
+  "image": {
+    "name": "new-york-madison-square-garden-th",
+    "content_type": "image/jpeg",
+    "date_added": "2019-07-24-161200",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "width": 554,
+    "height": 391,
+    "format": "jpg",
+    "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "resource_type": "image",
+    "size": 38797,
+    "git_file_name": "_assets/image_data/new-york-madison-square-garden-th.jpg.json",
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1563999120/bafwwpuss7chf4odxpit.jpg",
+    "file_size": null,
+    "alt": "new-york-madison-square-garden-th",
+    "caption": "",
+    "description": ""
+  },
+  "description": "<p>As Manhattan's premier sports and entertainment complex, MSG is home to the NHL's New York Rangers, the NBA's Knicks, and it also offers the best stage to see your favorite musicians perform in the Big Apple.</p>",
+  "address": "<p>4 Pennsylvania Plaza, New York, NY 10001</p>",
+  "directions_link": "https://www.google.com/maps/dir/''/madison+square+garden+phone+number/@40.7504833,-74.0634786,12z/data=!3m1!5s0x89c259ae1546fb27:0x93ba42deb43c8368!4m8!4m7!1m0!1m5!1m1!1s0x89c25a21fb011c85:0x33df10e49762f8e4!2m2!1d-73.9934387!2d40.7505045",
+  "phone": "212-465-6741",
+  "website_link": "https://www.msg.com/madison-square-garden"
+}

@@ -29,11 +29,15 @@
   <div class="c-offer__content">
     <div class="c-offer__content__inner">
       <h3 class="c-offer__name">
-        <a href="{{ offer.id | permalink: model_dir: 'offers' }}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</a>
+        <div tabindex="0">
+          <a href="{{ offer.id | permalink: model_dir: 'offers' }}" {% if sync %}ttweb-offer-component="OfferTitle"{% endif %}>{{ offer.name }}</a>
+        </div>
       </h3>
-      <p class="c-offer__short-description" tabindex="0" {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
-        {{ offer.short_description }}
-      </p>
+      <div tabindex="0">
+        <p class="c-offer__short-description" tabindex="0" {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
+          {{ offer.short_description }}
+        </p>        
+      </div>
       <div class="c-offer__select">
         <a href="{{ offer.id | permalink: model_dir: 'offers' }}" class="btn btn--secondary mr-0 mb-2">View this Offer</a>
         <a href="{{ offer.book_now }}" class="btn btn--secondary mb-2" target="_blank" ttweb-offer-component="OfferBookingButton">Book Now</a>

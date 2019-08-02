@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<p class=\"h4 pb-4\" style=\"text-align: center;\" tabindex=\"0\">The Hotel @ Fifth Avenue</p>\n<p style=\"text-align: center;\">If you booked through an online travel agent and to need modify or cancel your reservation, please visit the channel from which you booked. For general questions, fill out the \"Get in Touch\" form or reach out to the individual properties listed below.</p>"
+      "content": "<p class=\"h4 pb-4\" style=\"text-align: center;\">The Hotel @ Fifth Avenue</p>\n<p style=\"text-align: center;\">If you booked through an online travel agent and to need modify or cancel your reservation, please visit the channel from which you booked. For general questions, fill out the \"Get in Touch\" form or reach out to the individual properties listed below.</p>"
     },
     "advanced_options": {
       "custom_classes": "p-3"

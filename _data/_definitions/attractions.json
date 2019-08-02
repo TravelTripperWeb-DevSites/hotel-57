@@ -1,0 +1,30 @@
+{
+  "name": {
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "description": {
+    "type": "richtext",
+    "required": true
+  },
+  "address": {
+    "required": true,
+    "type": "richtext"
+  },
+  "phone": {
+    "required": true
+  },
+  "website_link": {
+    "required": true
+  },
+  "directions_link": {
+    "required": true
+  },
+  "order": {
+    "type": "order",
+    "required": false
+  }
+}
