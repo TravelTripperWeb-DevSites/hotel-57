@@ -9,12 +9,16 @@
     "type": "richtext"
   },
   "address": {
-    "required": true
+    "required": true,
+    "type": "richtext"
   },
   "phone": {
     "required": true
   },
   "website_link": {
+    "required": true
+  },
+  "directions_link": {
     "required": true
   },
   "order": {
