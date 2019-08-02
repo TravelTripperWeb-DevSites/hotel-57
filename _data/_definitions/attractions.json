@@ -3,10 +3,12 @@
     "required": true
   },
   "image": {
-    "type": "image"
+    "type": "image",
+    "required": true
   },
   "description": {
-    "type": "richtext"
+    "type": "richtext",
+    "required": true
   },
   "address": {
     "required": true,
