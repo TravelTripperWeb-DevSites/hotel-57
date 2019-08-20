@@ -4,8 +4,8 @@
     "es": "AAA"
   },
   "short_description_localized": {
-    "en": "AAA ID required upon arrival",
-    "es": "AAA ID required upon arrival"
+    "en": "Save up to 10% off our Best Available Rate, just by presenting your valid AAA card at your time of check-in. Displayed rate already reflects your savings. Please note that it is not valid for groups of 10 or more rooms. May not combine with any other discounts or offers.",
+    "es": "Save up to 10% off our Best Available Rate, just by presenting your valid AAA card at your time of check-in. Displayed rate already reflects your savings. Please note that it is not valid for groups of 10 or more rooms. May not combine with any other discounts or offers."
   },
   "description_localized": {
     "en": null,
@@ -31,7 +31,8 @@
     "caption": "",
     "description": "",
     "alt": "",
-    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283175_1_master.jpg"
+    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/283175_1_master.jpg",
+    "git_file_name": "_assets/image_data/AAA-.json"
   },
   "reztrip_offer_id": "AAA"
 }
