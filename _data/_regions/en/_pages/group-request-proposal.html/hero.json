@@ -32,7 +32,7 @@
     },
     "_template": "hero",
     "hero_title": {
-      "content": "<h1 class=\"h1 light\">Contact Us</h1>",
+      "content": "<h1 class=\"h1 light\">Group Request For Propsal</h1>",
       "_template": "header"
     }
   }
