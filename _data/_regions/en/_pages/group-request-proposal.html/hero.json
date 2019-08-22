@@ -1,6 +1,7 @@
 [
   {
     "advanced_options": {
+      "custom_classes": "inner-hero"
     },
     "hero_image": {
       "image": {
