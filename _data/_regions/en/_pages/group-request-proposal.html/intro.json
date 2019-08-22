@@ -1,5 +1,8 @@
 [
   {
-    "_template": "1_col"
+    "_template": "1_col",
+    "html": {
+      "content": "<p class=\"h4 pb-4\" style=\"text-align: center;\">Get in touch</p>\n<p style=\"text-align: center;\" tabindex=\"0\">Personal information collected is used solely for serving request for proposals and other marketing materials. Contact us to review or delete the data collected. Visit our <a href=\"../privacy-policy/\">privacy policy</a> page to contact us to review or delete the data collected.</p>"
+    }
   }
 ]
