@@ -30,6 +30,10 @@
         "file_size": null
       }
     },
-    "_template": "hero"
+    "_template": "hero",
+    "hero_title": {
+      "content": "<h1 class=\"h1 light\">Contact Us</h1>",
+      "_template": "header"
+    }
   }
 ]
