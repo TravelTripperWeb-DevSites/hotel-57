@@ -24,6 +24,7 @@
 
     &__content {
       @include make-col-ready;
+      width: auto;
       margin-right: 15px;
       margin-left: 15px;
       background-color: $gray-100;
@@ -38,16 +39,20 @@
       }
 
       &__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
         width: 100%;
         padding: 30px 15px;
         text-align: center;
 
         @include media-breakpoint-up(md) {
           padding: 50px 30px;
+        }
+
+        .ttweb-booking-button-offer {
+          display: block;
         }
       }
     }
@@ -79,7 +84,10 @@
 
     .ttweb-offer {
       @include media-breakpoint-up(md) {
-        display: flex;
+        @include make-row;
+        flex: auto;
+        margin-right: 0;
+        margin-left: 0;
       }
     }
   }
