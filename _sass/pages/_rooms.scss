@@ -74,6 +74,13 @@
         order: 0;
       }
     }
+
+    &__title-description {
+      @include media-breakpoint-up(md) {
+        min-height: 160px;
+        overflow: hidden;
+      }
+    }
   }
 }
 
