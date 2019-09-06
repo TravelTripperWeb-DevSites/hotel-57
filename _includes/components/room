@@ -11,8 +11,8 @@
   <div class="c-room__text-group h-100">
     <div class="justify-content-between d-flex flex-column wrap">
       <div class="c-room__title-description">
-        <a class="mb-2" href="{{ room.id | permalink: model_dir: 'rooms' }}">
-          <h3 class="c-room__name h4 dark" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
+        <a class="" href="{{ room.id | permalink: model_dir: 'rooms' }}">
+          <h3 class="c-room__name h4 dark mb-2" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
         </a>
         <div tabindex="0">
           <p class="c-room__short-description" {% if sync %}ttweb-room-component="RoomShortDescription" {% endif %}>
