@@ -10,13 +10,15 @@
   </div>
   <div class="c-room__text-group h-100">
     <div class="justify-content-between d-flex flex-column h-100 wrap">
-      <a class="mb-2" href="{{ room.id | permalink: model_dir: 'rooms' }}">
-        <h3 class="c-room__name h4 dark" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
-      </a>
-      <div tabindex="0">
-        <p class="c-room__short-description" {% if sync %}ttweb-room-component="RoomShortDescription" {% endif %}>
-          {{ room.short_description }}
-        </p>
+      <div class="c-room__title-description">
+        <a class="" href="{{ room.id | permalink: model_dir: 'rooms' }}">
+          <h3 class="c-room__name h4 dark mb-2" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
+        </a>
+        <div tabindex="0">
+          <p class="c-room__short-description" {% if sync %}ttweb-room-component="RoomShortDescription" {% endif %}>
+            {{ room.short_description }}
+          </p>
+        </div>
       </div>
       <div class="c-room__btn mt-auto">
         <a class="btn btn--secondary mb-1" href="/rooms/room_{{ room.reztrip_room_id | downcase }}/">View Room</a> <a class="btn btn--secondary mb-1" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Room</a>

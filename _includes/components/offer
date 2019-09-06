@@ -36,7 +36,7 @@
       <div tabindex="0">
         <p class="c-offer__short-description" tabindex="0" {% if sync %}ttweb-offer-component="OfferShortDescription"{% endif %}>
           {{ offer.short_description }}
-        </p>        
+        </p>
       </div>
       <div class="c-offer__select">
         <a href="{{ offer.id | permalink: model_dir: 'offers' }}" class="btn btn--secondary mr-0 mb-2">View this Offer</a>
