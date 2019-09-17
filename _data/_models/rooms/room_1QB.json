@@ -1,15 +1,15 @@
 {
   "name_localized": {
-    "en": "1 Queen Bed",
-    "es": "1 Queen Bed"
+    "en": "Superior Queen",
+    "es": "Superior Queen"
   },
   "short_description_localized": {
-    "en": "Spacious accommodations just a short two block walk from the world-famous Empire State Building",
-    "es": "Spacious accommodations just a short two block walk from the world-famous Empire State Building"
+    "en": "Immerse yourself in Midtown. These 200-square-foot rooms offer a queen bed, and every guest enjoys daily continental breakfast.",
+    "es": "Immerse yourself in Midtown. These 200-square-foot rooms offer a queen bed, and every guest enjoys daily continental breakfast."
   },
   "description_localized": {
-    "en": "Spacious accommodations just a short two block walk from the world-famous Empire State Building",
-    "es": "Spacious accommodations just a short two block walk from the world-famous Empire State Building"
+    "en": "These elegant accommodations will host you in comfort without breaking the bank, so you can spend on the sights, restaurants, shows, and museums that New York is known for. Book this 200-square-foot room with a queen bed, and enjoy our proximity to the Empire State Building and much more. Max. 2 guests.",
+    "es": "These elegant accommodations will host you in comfort without breaking the bank, so you can spend on the sights, restaurants, shows, and museums that New York is known for. Book this 200-square-foot room with a queen bed, and enjoy our proximity to the Empire State Building and much more. Max. 2 guests."
   },
   "amenities": [
 
@@ -40,10 +40,10 @@
     }
   ],
   "reztrip_room_id": "1QB",
-  "order": 3,
+  "order": 1,
   "guest_size_max": 2,
-  "size": "600 ft<sup>2</sup>",
-  "room_category": "Standard Rooms",
+  "size": "200 ft<sup>2</sup>",
+  "room_category": "Superior Rooms",
   "ada_room": false,
   "bed_types": [
     "bed_type_1QB"
