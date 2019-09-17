@@ -1,15 +1,15 @@
 {
   "name_localized": {
-    "en": "2 Queen Beds",
-    "es": "2 Queen Beds"
+    "en": "Superior Queen Queen",
+    "es": "Superior Queen Queen"
   },
   "short_description_localized": {
-    "en": "Spacious two Queen beds with premier NYC location",
-    "es": "Spacious two Queen beds with premier NYC location"
+    "en": "Our premier location and this 200-square-foot room with two queen beds make the Hotel @ Fifth a great choice for families.",
+    "es": "Our premier location and this 200-square-foot room with two queen beds make the Hotel @ Fifth a great choice for families."
   },
   "description_localized": {
-    "en": "Spacious two Queen beds with premier NYC location",
-    "es": "Spacious two Queen beds with premier NYC location"
+    "en": "At affordable rates and with two queen beds, the Superior Queen Queen room means a family vacation to New York City should be in the works. You’ll have 200 square feet of space, a comfortable bath, two queen beds, and daily continental breakfast so you don’t hit the streets hungry. Max. 4 guests.",
+    "es": "At affordable rates and with two queen beds, the Superior Queen Queen room means a family vacation to New York City should be in the works. You’ll have 200 square feet of space, a comfortable bath, two queen beds, and daily continental breakfast so you don’t hit the streets hungry. Max. 4 guests."
   },
   "amenities": [
 
@@ -40,10 +40,10 @@
     }
   ],
   "reztrip_room_id": "2QB",
-  "order": 2,
+  "order": 3,
   "guest_size_max": 4,
-  "size": " ft<sup>2</sup>",
-  "room_category": "Standard Rooms",
+  "size": "200 ft<sup>2</sup>",
+  "room_category": "Superior Rooms",
   "ada_room": false,
   "bed_types": [
     "bed_type_2QB"
