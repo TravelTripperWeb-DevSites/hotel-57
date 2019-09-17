@@ -1,15 +1,15 @@
 {
   "name_localized": {
-    "en": "1 King Bed",
-    "es": "1 King Bed"
+    "en": "Superior King",
+    "es": "Superior King"
   },
   "short_description_localized": {
-    "en": "Comfortable King bed room just a short two block walk from the Empire State Building",
-    "es": "Comfortable King bed room just a short two block walk from the Empire State Building"
+    "en": "Two blocks from the Empire State Building, this Superior room at Hotel @ Fifth Avenue offers 200 square feet and a king-size bed.",
+    "es": "Two blocks from the Empire State Building, this Superior room at Hotel @ Fifth Avenue offers 200 square feet and a king-size bed."
   },
   "description_localized": {
-    "en": "Comfortable King bed room just a short two block walk from the Empire State Building",
-    "es": "Comfortable King bed room just a short two block walk from the Empire State Building"
+    "en": "Experience New York from our centrally located hotel in Midtown Manhattan. This comfortable room is 200 square feet and features a king-size bed for great sleeps. Enjoy your first cup of coffee in your room before taking advantage of our daily continental breakfast. By booking directly on our website, you’ll get the best nightly rates. Max. 2 guests.   ",
+    "es": "Experience New York from our centrally located hotel in Midtown Manhattan. This comfortable room is 200 square feet and features a king-size bed for great sleeps. Enjoy your first cup of coffee in your room before taking advantage of our daily continental breakfast. By booking directly on our website, you’ll get the best nightly rates. Max. 2 guests.   "
   },
   "amenities": [
 
@@ -40,10 +40,10 @@
     }
   ],
   "reztrip_room_id": "1KB",
-  "order": 1,
+  "order": 2,
   "guest_size_max": 2,
-  "size": " ft<sup>2</sup>",
-  "room_category": "Standard Rooms",
+  "size": "200 ft<sup>2</sup>",
+  "room_category": "Superior Rooms",
   "ada_room": false,
   "bed_types": [
     "bed_type_1KB"
