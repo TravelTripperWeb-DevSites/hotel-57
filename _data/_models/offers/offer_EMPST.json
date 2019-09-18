@@ -4,8 +4,8 @@
     "es": "Empire State Package"
   },
   "short_description_localized": {
-    "en": "Revel in the spectacular views of this historic building and visit it in person—it’s just a few steps from our front door. This is one NYC attraction offer you can't miss! Our Empire State Package includes:\r\n\r\nDiscounted room rates\r\nPrime view from our Empire State rooms\r\nTwo admission tickets to Empire State Building's Sustainability exhibit, Dare to Dream exhibit, and the 86th-floor observation deck",
-    "es": "Revel in the spectacular views of this historic building and visit it in person—it’s just a few steps from our front door. This is one NYC attraction offer you can't miss! Our Empire State Package includes:\r\n\r\nDiscounted room rates\r\nPrime view from our Empire State rooms\r\nTwo admission tickets to Empire State Building's Sustainability exhibit, Dare to Dream exhibit, and the 86th-floor observation deck"
+    "en": "Revel in the spectacular views of this historic building and visit it in person. This is one NYC attraction offer you can't miss! Our Empire State Package includes:\r\n<br><br>\r\nDiscounted room rates\r\n<br>\r\nPrime view from our Empire State rooms\r\n<br>\r\nTwo admission tickets to Empire State Building's Sustainability exhibit, Dare to Dream exhibit, and the 86th-floor observation deck",
+    "es": "Revel in the spectacular views of this historic building and visit it in person. This is one NYC attraction offer you can't miss! Our Empire State Package includes:\r\n<br><br>\r\nDiscounted room rates\r\n<br>\r\nPrime view from our Empire State rooms\r\n<br>\r\nTwo admission tickets to Empire State Building's Sustainability exhibit, Dare to Dream exhibit, and the 86th-floor observation deck"
   },
   "description_localized": {
     "en": null,
@@ -31,7 +31,8 @@
     "caption": "",
     "description": "",
     "alt": "",
-    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/285537_1_master.JPG"
+    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/285537_1_master.JPG",
+    "git_file_name": "_assets/image_data/Empire-State-Package-.json"
   },
   "reztrip_offer_id": "EMPST"
 }
