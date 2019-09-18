@@ -36,6 +36,11 @@ main:
     label_localized:
       en: Contact
     items: 
+  - folder: false
+    url_localized: ''
+    page_id: _pages/group-request-proposal.html
+    label_localized:
+      en: Groups
 footer:
   depth: 2
   name: Footer Menu
