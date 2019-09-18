@@ -1,11 +1,11 @@
 {
   "name_localized": {
-    "en": "Stay 4",
-    "es": "Stay 4"
+    "en": "Stay Longer and Save!",
+    "es": "Stay Longer and Save!"
   },
   "short_description_localized": {
-    "en": "Save for booking four or more nights!",
-    "es": "Save for booking four or more nights!"
+    "en": "Save up to 15% off when you stay for four nights or more in the heart of the city, just moments from the Empire State Building, Javits Center, Central Park, Rockefeller Center, Times Square, the Theatre District, and Lincoln Center.",
+    "es": "Save up to 15% off when you stay for four nights or more in the heart of the city, just moments from the Empire State Building, Javits Center, Central Park, Rockefeller Center, Times Square, the Theatre District, and Lincoln Center."
   },
   "description_localized": {
     "en": null,
@@ -31,7 +31,8 @@
     "caption": "",
     "description": "",
     "alt": "",
-    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/284871_1_master.jpg"
+    "original_url": "https://d31f902anbz5po.cloudfront.net/2113/284871_1_master.jpg",
+    "git_file_name": "_assets/image_data/Stay-4-.json"
   },
   "reztrip_offer_id": "STAY4"
 }
