@@ -5,11 +5,13 @@ layout: generic
 {% if site.data._models.offers %}
   {% assign offers = site.data._models.offers | sort:"order" %}
   <section class="c-offer-list">
-    <!-- <div class="c-offer-list__items"> -->
+    <div class="c-offer-list__wrap">
+      <!-- <div class="c-offer-list__items"> -->
       {% for offer in offers %}
         {% include components/offer sync_content=page.sync_offer_content %}
       {% endfor %}
-    <!-- </div> -->
+      <!-- </div> -->
+    </div>
   </section>
 {% else %}
   {% regionblock no_list_items, type:html %}
