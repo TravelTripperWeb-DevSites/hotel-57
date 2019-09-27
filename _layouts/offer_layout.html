@@ -1,26 +1,24 @@
 ---
 layout: default
 ---
-
 {% assign offer = page.data %}
 <!-- {% include components/offer %} -->
-
-{% if site.data._models.offers.count > 0 %}
-{% assign item = site.data._models.offers | sort: 'order'  %}
-{% for p in item %}
-  {% if p.reztrip_offer_id == offer.reztrip_offer_id %}
-    {% assign pInd = forloop.index0 | minus: 1 %}
-    {% assign nInd = forloop.index0 | plus: 1 %}
-    {% if forloop.first != true %}
-      {% assign prevItemTitle = item[pInd].title %}
-      {% assign prevItemUrl = 'offer_' | append: item[pInd].reztrip_offer_id %}
+{% if site.data._models.offers.size > 0 %}
+  {% assign item = site.data._models.offers | sort: 'order' %}
+  {% for p in item %}
+    {% if p.reztrip_offer_id == offer.reztrip_offer_id %}
+      {% assign pInd = forloop.index0 | minus: 1 %}
+      {% assign nInd = forloop.index0 | plus: 1 %}
+      {% if forloop.first != true %}
+        {% assign prevItemTitle = item[pInd].title %}
+        {% assign prevItemUrl = 'offer_' | append: item[pInd].reztrip_offer_id %}
+      {% endif %}
+      {% if forloop.last != true %}
+        {% assign nextItemTitle = item[nInd].title %}
+        {% assign nextItemUrl = 'offer_' | append: item[nInd].reztrip_offer_id %}
+      {% endif %}
     {% endif %}
-    {% if forloop.last != true %}
-      {% assign nextItemTitle = item[nInd].title %}
-      {% assign nextItemUrl = 'offer_' | append: item[nInd].reztrip_offer_id %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+  {% endfor %}
 {% endif %}
 {% assign sync = true %}
 <section data-tt-rate-code="{{offer.reztrip_offer_id}}" ttweb-component="Offer">
