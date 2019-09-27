@@ -1,7 +1,7 @@
 {
   "name_localized": {
-    "en": "1 King Bed ADA Room Accessible Bathtub",
-    "es": "1 King Bed ADA Room Accessible Bathtub"
+    "en": "1 King Bed ADA Room With Accessible Bathtub",
+    "es": "1 King Bed ADA Room With Accessible Bathtub"
   },
   "short_description_localized": {
     "en": "Relax in a 200-square-foot mobility accessible room with an ADA tub and a luxurious king bed—in an unbeatable location.",
@@ -35,7 +35,8 @@
       "caption": "",
       "description": "",
       "alt": "",
-      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/284835_1_master.jpg"
+      "original_url": "https://d31f902anbz5po.cloudfront.net/2113/284835_1_master.jpg",
+      "git_file_name": "_assets/image_data/1-King-Bed-ADA-Room-Accessible-Bathtub-.json"
     }
   ],
   "reztrip_room_id": "1KAD",
