@@ -1,15 +1,15 @@
 ---
-latitude: 34.3188346
-longitude: -95.7084137
+latitude: 40.757187
+longitude: -73.9812456
 map_zoom: 17
-name: The Hotel @ Fifth Avenue
-email: thafave@applecorehotels.com
+name: The Hotel @ Times Square
+email: reservations@hotelattimessquare.com
 phone_number: 212-736-1600
 address:
-  street1: 17 W 32nd St
+  street1: 59 W 46th St
   state: NY
   city: New York
-  zip_code: '10001'
+  zip_code: '10036'
 default_currency: USD
 default_timezone: America/New_York
 _hotel_id: NYCH5
@@ -46,8 +46,8 @@ __EDITABLE_FIELDS__:
     type: float
   longitude:
     type: float
-booking_url: https://hotelatfifthavenue.reztrip.com
-booking_link: https://hotelatfifthavenue.reztrip.com
+booking_url: https://hotelattimessqaure.reztrip.com
+booking_link: https://hotelattimessqaure.reztrip.com
 site_url: https://www.newsteadbelmonthills.com
 toll_free_phone: 866-706-7801
 _root_path: https://rt3api-prd.ttaws.com
@@ -73,4 +73,6 @@ logo:
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569955953/ny4lewfrbzpfbipi2qac.png"
   file_size: 
   alt: the hotel at times square logo
-phone: 212-736-1600 ext.3
+  caption: ''
+  description: ''
+phone: 212-719-2300
