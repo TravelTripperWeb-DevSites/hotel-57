@@ -8,7 +8,7 @@
     "container_classes": "container-fluid",
     "include_gap": false,
     "breakpoint": "lg",
-    "col1_type": "html",
+    "col1_type": "image",
     "col2_type": "html",
     "col1_image": {
       "content": {
