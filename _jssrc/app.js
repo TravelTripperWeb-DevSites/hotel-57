@@ -71,6 +71,14 @@ document.ready(() => {
 
 readyDoc(function() {
 
+  //remove html tags from offers short description
+  setTimeout(function() {
+    var shortDesc = document.querySelectorAll(".c-offer__short-description");
+    for(var i = 0; i < shortDesc.length; i++) {
+      shortDesc[i].innerHTML = shortDesc[i].innerText;
+    }
+  }, 3000);
+
   // Prevent Double Click on ipad and iphone devices
   if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
     var elements = document.getElementsByClassName('btn--secondary');
