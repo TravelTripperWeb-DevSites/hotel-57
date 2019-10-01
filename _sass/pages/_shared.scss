@@ -286,7 +286,6 @@
     padding-bottom: 0;
     font-family: $family-secondary;
     font-size: $base-font-size;
-    color: $white;
     vertical-align: middle;
     @include media-breakpoint-down(sm) {
       margin-bottom: 10px;
@@ -298,20 +297,20 @@
     padding: 10px 17px;
     font-family: $family-secondary;
     font-size: $display8-size;
-    color: $primary !important;
+    //color: $primary !important;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3.5px;
-    background-color: $white !important;
+    background-color: $white;
     border: 1px solid $black;
     transition: .2s all;
     @include media-breakpoint-down(sm) {
       font-size: $display9-size;
     }
     &:hover {
-      color: $black !important;
+      color: $primary !important;
       text-decoration: none;
-      background-color: $white !important;
+      background-color: $black !important;
       border-color: $white !important;
     }
   }
