@@ -7,7 +7,7 @@
     },
     "container_classes": " ",
     "col1_type": "html",
-    "col2_type": "html",
+    "col2_type": "image",
     "col1_html": {
       "content": "<div class=\"hotel-amenities-inner\">\n<h3 class=\"h3\" tabindex=\"0\">HOTEL Amenities</h3>\n<h3 tabindex=\"0\">At The Hotel @ Times Square, you will enjoy:</h3>\n<div class=\"amenities-list-sec\">\n<ul class=\"amenity-group\">\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Daily continental breakfast&nbsp;</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">High speed Wi-Fi for up to six devices</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">24-hour fitness and business centers</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">In-room coffee maker, safe, and bath amenities</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Easy access to NYC transportation options</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Concierge to arrange sight seeing and transportation&nbsp;&nbsp;</span></li>\n</ul>\n</div>\n</div>",
       "custom_classes": [
@@ -53,7 +53,8 @@
       "image": {
         "alt": "",
         "caption": "",
-        "description": ""
+        "description": "",
+        "url": ""
       },
       "mask_color": "",
       "mask_opacity": ""
