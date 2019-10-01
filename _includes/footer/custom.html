@@ -1,6 +1,6 @@
-<div class="info">
-  <div class="info__wrap">
-    <div class="info__logo">
+<div class="info container">
+  <div class="info__wrap row">
+    <div class="info__logo col-md-4">
       <span data-live-edit-settings='hotel_settings'
         data-live-edit-settings-field='logo'
         data-live-editable-type='image'>
@@ -12,13 +12,13 @@
         {% endif %}
       </span>
     </div>
-    <div class="info__address mb-1 mb-md-0">
+    <div class="info__address mb-1 mb-md-0 col-md-5">
       <p class="accordion" type="button" tabindex="0">Contact</p>
       <div class="accordion__body">
         <p>
           <a href="{{ site.data.hotel_settings.get_directions_url }}" rel="nofollow" target="_blank"><b>{{ site.data.hotel_settings.name }}</b><br>{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }} {{ site.data.hotel_settings.address.zip_code }}<br>United States</a></p>
         <p>
-          <p>Email:<a href="mailto:reservations@hotelatfifthavenue.com">reservations@hotelatfifthavenue.com</a></p>
+          <p>Email:<a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a></p>
          <p> Reservations:<a href="tel:917-472-9075"> 917-472-9075</a></br>
           Front Desk: <a href="tel:{{ site.data.hotel_settings.phone_number }}">{{ site.data.hotel_settings.phone_number }}</a><br>
           {% if site.data.hotel_settings.alternate_phone_number %}
@@ -29,7 +29,7 @@
         </p>
       </div>
     </div>
-    <div class="info__links mb-1 mb-md-0">
+    <div class="info__links mb-1 mb-md-0 col-md-3">
       <p class="accordion" type="button" tabindex="0">Learn More</p>
       <div class="accordion__body">
         {% assign footer-items = site.data._menus.footer.items %}
@@ -53,29 +53,7 @@
           </ul>
       </div>
     </div>
-    <!-- <div class="info__signup">
-      <p class="title" type="button" tabindex="0">Newsletter Sign-up</p>
-      {% include forms/jotform/newsletter.html %}
-      <a class="d-block my-3 mx-auto mx-md-0 text-center text-md-left" href="http://www.highgate.com/" target="_blank"><img src="//res.cloudinary.com/traveltripperweb/image/upload/v1560164604/ywfc0ulqkxet3z6o8zuu.jpg" alt="A Highgate Groups Property" /></a>
-      <p class="title text-center text-md-left" tabindex="0">Follow us on</p>
-      <ul class="social">
-        {% if site.data.social.facebook.username %}
-        <li>
-          <a href="https://facebook.com/{{ site.data.social.facebook.username }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        </li>
-        {% endif %}
-        {% if site.data.social.twitter.username %}
-        <li>
-          <a href="https://twitter.com/{{ site.data.social.twitter.username }}" target="_blank" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        {% endif %}
-        {% if site.data.social.instagram.username %}
-        <li>
-          <a href="https://www.instagram.com/{{ site.data.social.instagram.username }}" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </li>
-        {% endif %}
-      </ul>
-    </div> -->
+-->
   </div>
 </div>
 
