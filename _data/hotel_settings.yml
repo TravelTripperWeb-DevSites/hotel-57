@@ -13,7 +13,7 @@ address:
 default_currency: USD
 default_timezone: America/New_York
 _hotel_id: NYCH5
-_portal_id: hotelatfifthavenue
+_portal_id: hotelattimessquare
 __EDITABLE_FIELDS__:
   name:
     required: true
