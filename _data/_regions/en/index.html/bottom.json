@@ -7,9 +7,9 @@
     },
     "container_classes": " ",
     "col1_type": "html",
-    "col2_type": "html",
+    "col2_type": "image",
     "col1_html": {
-      "content": "<div class=\"hotel-amenities-inner\">\n<h3 class=\"h3\" tabindex=\"0\">HOTEL Amenities</h3>\n<p tabindex=\"0\">All the amenities you love without busting your budget in a location that's the envy of other NYC hotels. At The Hotel @ Fifth Avenue, you will enjoy:</p>\n<div class=\"amenities-list-sec\">\n<ul class=\"amenity-group\">\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">Daily continental breakfast</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">High speed Wi-Fi for up to six devices</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">24-hour fitness and business centers</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">Reduced rate parking</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">In-room coffee maker, safe and bath amenities</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">Easy access to NYC transportation options</span></li>\n<li tabindex=\"0\" class=\"amenities-name\"><span style=\"font-size: 14px;\">Concierge to arrange sightseeing and transportation</span></li>\n</ul>\n</div>\n</div>",
+      "content": "<div class=\"hotel-amenities-inner\">\n<h3 class=\"h3\" tabindex=\"0\">HOTEL Amenities</h3>\n<h3 tabindex=\"0\">At The Hotel @ Times Square, you will enjoy:</h3>\n<div class=\"amenities-list-sec\">\n<ul class=\"amenity-group\">\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Daily continental breakfast&nbsp;</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">High speed Wi-Fi for up to six devices</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">24-hour fitness and business centers</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">In-room coffee maker, safe, and bath amenities</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Easy access to NYC transportation options</span></li>\n<li class=\"amenities-name\" tabindex=\"0\"><span style=\"font-size: 14px;\">Concierge to arrange sight seeing and transportation&nbsp;&nbsp;</span></li>\n</ul>\n</div>\n</div>",
       "custom_classes": [
         "inner: w-100 d-flex flex-column h-100 justify-content-center"
       ]
@@ -53,10 +53,36 @@
       "image": {
         "alt": "",
         "caption": "",
-        "description": ""
+        "description": "",
+        "url": ""
       },
       "mask_color": "",
       "mask_opacity": ""
+    },
+    "col2_image": {
+      "content": {
+        "name": "parking valet",
+        "content_type": "image/jpeg",
+        "date_added": "2019-10-01-145229",
+        "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "width": 584,
+        "height": 437,
+        "format": "jpg",
+        "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "resource_type": "image",
+        "size": 72075,
+        "git_file_name": "_assets/image_data/apple-core-hotels-parking-valet.jpg.json",
+        "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1569955949/poj36woit0jp5jx7vszn.jpg",
+        "file_size": null,
+        "alt": "parking valet"
+      },
+      "_template": "image"
     }
   }
 ]

@@ -10,52 +10,53 @@ layout: default
 
 {% region outro, type:mixed %}
 
-
-{% assign rooms = site.data._models.rooms | sort: 'order' %}
-{% assign sync = page.sync_content %}
-<section class="rooms-carousel" tabindex="-1">
-  <!-- Slider Arrows and Indicators -->
-  <div class="slider-control">
-    <div class="slider-control__arrows">
-      <a aria-label="Press enter for previous slide" class="prev-slide" href="javascript:void(0);" id="roomSliderPrev" title="Previous Slide" tabindex="-1">
-        <span class="prev">
-          <i class="fas fa-chevron-left"></i>
-        </span>
-      </a>
-      <a aria-label="Press enter for next slide" class="next-slide" href="javascript:void(0);" id="roomSliderNext" title="Next Slide" tabindex="-1">
-        <span class="next">
-          <i class="fas fa-chevron-right"></i>
-        </span>
-      </a>
+{% if site.data._models.rooms %}
+  {% assign rooms = site.data._models.rooms | sort: 'order' %}
+  {% assign sync = page.sync_content %}
+  <section class="rooms-carousel" tabindex="-1">
+    <!-- Slider Arrows and Indicators -->
+    <div class="slider-control">
+      <div class="slider-control__arrows">
+        <a aria-label="Press enter for previous slide" class="prev-slide" href="javascript:void(0);" id="roomSliderPrev" title="Previous Slide" tabindex="-1">
+          <span class="prev">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+        </a>
+        <a aria-label="Press enter for next slide" class="next-slide" href="javascript:void(0);" id="roomSliderNext" title="Next Slide" tabindex="-1">
+          <span class="next">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+      <div class="nav-slide" id="roomSlider">
+        {% for room in rooms %}
+          <span tabindex="0">{{ room.name }}</span>
+        {% endfor %}
+      </div>
     </div>
-    <div class="nav-slide" id="roomSlider">
+    <!-- Slider -->
+    <div class="rooms-slider">
       {% for room in rooms %}
-        <span tabindex="0">{{ room.name }}</span>
-      {% endfor %}
-    </div>
-  </div>
-  <!-- Slider -->
-  <div class="rooms-slider">
-    {% for room in rooms %}
-      <div ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
-        <div class="rooms-carousel__content">
-          <div class="rooms-carousel__image" {% if sync %}ttweb-room-component="RoomPrimaryImage"{% endif %}>
-            {% assign featured_image = room.featured_image | default: room.images[1] %}
-            {% include components/image image=featured_image max_width=1600 %}
-          </div>
-          <div class="rooms-carousel__info">
-            <div tabindex="-1">
-              <h3 class="h4" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
+        <div ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}">
+          <div class="rooms-carousel__content">
+            <div class="rooms-carousel__image" {% if sync %}ttweb-room-component="RoomPrimaryImage"{% endif %}>
+              {% assign featured_image = room.featured_image | default: room.images[1] %}
+              {% include components/image image=featured_image max_width=1600 %}
             </div>
-            <div class="rooms-carousel__info__descripton" tabindex="-1" >
-              <p {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %}>{{ room.short_description }}</p>
+            <div class="rooms-carousel__info">
+              <div tabindex="-1">
+                <h3 class="h4" {% if sync %}ttweb-room-component="RoomName"{% endif %}>{{ room.name }}</h3>
+              </div>
+              <div class="rooms-carousel__info__descripton" tabindex="-1" >
+                <p {% if sync %}ttweb-room-component="RoomShortDescription"{% endif %}>{{ room.short_description }}</p>
+              </div>
+            <a class="btn btn--secondary" href="/rooms/room_{{ room.reztrip_room_id | downcase }}/" tabindex="-1">View This Room</a>
             </div>
-          <a class="btn btn--secondary" href="/rooms/room_{{ room.reztrip_room_id | downcase }}/" tabindex="-1">View This Room</a>
           </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
 {% region bottom, type:mixed %}

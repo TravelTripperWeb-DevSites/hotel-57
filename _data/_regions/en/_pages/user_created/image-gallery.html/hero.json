@@ -1,15 +1,15 @@
 [
   {
     "hero_html": {
-      "content": "<h1 class=\"h1 light\">Gallery</h1>"
+      "content": "Gallery"
     },
     "_template": "hero",
     "hero_title": {
-      "content": "",
+      "content": "GALLERY",
       "_template": "header"
     },
     "advanced_options": {
-      "custom_classes": "inner-hero"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
@@ -37,6 +37,6 @@
         "description": ""
       }
     },
-    "skip_h1": true
+    "skip_h1": false
   }
 ]

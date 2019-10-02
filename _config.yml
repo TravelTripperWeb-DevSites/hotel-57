@@ -1,14 +1,13 @@
 ---
-title: Hotel @ Fifth Avenue
+title: Hotel @ Times Square
 title_separator: "|"
-name: Hotel @ Fifth Avenue
-description: Enjoy Manhattan to the fullest at the Hotel @ Fifth Avenue. Located near the Empire State Building, we offer comfortable accommodations in an ideal location.
-url: https://www.hotelatfifthavenuenyc.com/
+name: Hotel @ Times Square
+description: Enjoy Manhattan to the fullest at the Hotel @ Times Square. Located near Times Square, we offer comfortable accommodations in an ideal location.
+url: https://www.hotelattimessquare.com/
 repository: 
 default_lang: en
 languages:
 - en
-- es
 include:
 - _ttio_templates
 - _pages
