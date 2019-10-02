@@ -1,19 +1,20 @@
 {% assign item = site.data._models.rooms  %}
-{% for p in item | sort: "order" %}
-  {% if p.reztrip_room_id == room.reztrip_room_id %}
-    {% assign pInd = forloop.index0 | minus: 1 %}
-    {% assign nInd = forloop.index0 | plus: 1 %}
-    {% if forloop.first != true %}
-      {% assign prevItemTitle = item[pInd].name %}
-      {% assign prevItemUrl = item[pInd].reztrip_room_id | downcase %}
+{% if item %}
+  {% for p in item | sort: "order" %}
+    {% if p.reztrip_room_id == room.reztrip_room_id %}
+      {% assign pInd = forloop.index0 | minus: 1 %}
+      {% assign nInd = forloop.index0 | plus: 1 %}
+      {% if forloop.first != true %}
+        {% assign prevItemTitle = item[pInd].name %}
+        {% assign prevItemUrl = item[pInd].reztrip_room_id | downcase %}
+      {% endif %}
+      {% if forloop.last != true %}
+        {% assign nextItemTitle = item[nInd].name %}
+        {% assign nextItemUrl = item[nInd].reztrip_room_id | downcase %}
+      {% endif %}
     {% endif %}
-    {% if forloop.last != true %}
-      {% assign nextItemTitle = item[nInd].name %}
-      {% assign nextItemUrl = item[nInd].reztrip_room_id | downcase %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
+  {% endfor %}
+{% endif %}
 {% assign sync = true %}
 {% assign room_detail = page.data %}
 <section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
