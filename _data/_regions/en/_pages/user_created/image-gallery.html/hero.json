@@ -1,7 +1,7 @@
 [
   {
     "hero_html": {
-      "content": "<h1 class=\"h1 light\">Gallery</h1>"
+      "content": "Gallery"
     },
     "_template": "hero",
     "hero_title": {
@@ -9,7 +9,7 @@
       "_template": "header"
     },
     "advanced_options": {
-      "custom_classes": "inner-hero"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
