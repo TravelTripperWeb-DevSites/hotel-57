@@ -28,9 +28,9 @@
       }
     },
     "_template": "hero",
-    "hero_html": {
-      "content": "BOUTIQUE ACCOMMODATIONS"
-    },
-    "skip_h1": true
+    "hero_title": {
+      "content": "BOUTIQUE ACCOMMODATIONS",
+      "_template": "header"
+    }
   }
 ]
