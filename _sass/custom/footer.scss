@@ -71,6 +71,8 @@
 
     @include media-breakpoint-up(md) {
       padding-top: 58px;
+      padding-bottom: 58px;
+      border-top: 0;
     }
     
 
@@ -107,6 +109,7 @@
     @include media-breakpoint-up(md) {
       border-top: 0;
       padding-top: 58px;
+      padding-bottom: 58px;
       
     }
 
