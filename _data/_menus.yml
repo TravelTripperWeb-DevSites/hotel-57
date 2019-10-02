@@ -89,3 +89,8 @@ footer:
     label_localized:
       en: Accessibility Statement
     page_id: _pages/accessibility.html
+  - folder: false
+    url_localized: ''
+    page_id: _pages/user_created/faq.html
+    label_localized:
+      en: ''
