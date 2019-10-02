@@ -1,17 +1,17 @@
 ---
 twitter:
-  username:
+  username: 
 facebook:
-  username: TheHotelatFifthAvenue
-  app_id:
-  publisher:
-og_image: https://res.cloudinary.com/traveltripperweb/image/upload/v1562873208/feu2hgsblwvguftwna9g.jpg
+  username: TheHotelatTimesSquare
+  app_id: 
+  publisher: 
+og_image: https://res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_600,w_600/v1569955952/hrwoujvolcp3oq9tr3nx.jpg
 instagram:
-  username:
+  username: 
 social:
-  type:
-  name:
-  links:
+  type: 
+  name: 
+  links: 
 __EDITABLE_FIELDS__:
   instagram:
     label: Instagram Account
@@ -40,7 +40,7 @@ __EDITABLE_FIELDS__:
         type: string
   og_image:
     hint: Open Graph/Twitter default site image
-    type: image
+    type: String
   social:
     label: Social Profile
     instructions: 'For specifying social profiles: https://developers.google.com/structured-data/customize/social-profiles'

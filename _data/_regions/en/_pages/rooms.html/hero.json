@@ -1,7 +1,7 @@
 [
   {
     "advanced_options": {
-      "custom_classes": "inner-hero"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
@@ -28,9 +28,9 @@
       }
     },
     "_template": "hero",
-    "hero_html": {
-      "content": "<h1 class=\"h1 light\">BOUTIQUE ACCOMMODATIONS</h1>"
-    },
-    "skip_h1": true
+    "hero_title": {
+      "content": "BOUTIQUE ACCOMMODATIONS",
+      "_template": "header"
+    }
   }
 ]

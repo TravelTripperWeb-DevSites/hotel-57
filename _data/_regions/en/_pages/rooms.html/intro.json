@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<div class=\"p-4\">\n<p>Relax in our elegant rooms near the Empire State Building, Madison Square Garden, the fashion district and so much more. Our boutique hotel NYC has it all.</p>\n</div>"
+      "content": "<div class=\"p-4\">\n<p>Relax in our elegant rooms near the Times Square and so much more. Our boutique hotel NYC has it all.</p>\n</div>"
     },
     "advanced_options": {
       "custom_classes": "my-3 my-md-4  text-center"

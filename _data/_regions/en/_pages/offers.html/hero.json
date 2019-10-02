@@ -1,7 +1,7 @@
 [
   {
     "advanced_options": {
-      "custom_classes": "inner-hero"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
@@ -24,14 +24,14 @@
         "git_file_name": "_assets/image_data/location-banner.jpg.json",
         "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1563285850/uay69zehvfnkj6gqrdrh.jpg",
         "file_size": null,
-        "alt": "Hotel @ Fifth Avenue Exclusive Offers",
+        "alt": "Hotel @ Times Square Exclusive Offers",
         "caption": "",
         "description": ""
       }
     },
     "_template": "hero",
     "hero_html": {
-      "content": "<h1 class=\"h1 light\">Exclusive Offers</h1>"
+      "content": "Exclusive Offers"
     }
   }
 ]

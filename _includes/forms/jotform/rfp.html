@@ -1,6 +1,7 @@
-<form class="contact__wrap" action="https://submit.jotform.me/submit/92333141758457/" method="post" name="form_92333141758457"
-    id="92333141758457" accept-charset="utf-8">
-    <input type="hidden" name="formID" value="92333141758457">
+{% assign form_id = "92333141758457" %}
+<form class="contact__wrap" action="https://submit.jotform.me/submit/{{form_id}}/" method="post" name="form_{{form_id}}"
+    id="{{form_id}}" accept-charset="utf-8">
+    <input type="hidden" name="formID" value="{{form_id}}">
     <div class="row">
       <div class="col-md-6">
         <input class="form-control custom-input md-mb-3" type="text" id="input_3" name="q1_firstName"  placeholder="First Name *" aria-label="Enter first name" required>
@@ -53,9 +54,9 @@
       </label>
     </div>
     <button class="btn btn btn--secondary" type="submit" id="input_2">Submit</button>
-    <input type="hidden" id="simple_spc" name="simple_spc" value="92333141758457">
+    <input type="hidden" id="simple_spc" name="simple_spc" value="{{form_id}}">
     <script type="text/javascript">
-        document.getElementById("si" + "mple" + "_spc").value = "92333141758457";
+        document.getElementById("si" + "mple" + "_spc").value = "{{form_id}}";
     </script>
 </form>
 
