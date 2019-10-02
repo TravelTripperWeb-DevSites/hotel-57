@@ -5,7 +5,7 @@
     },
     "_template": "hero",
     "hero_title": {
-      "content": "",
+      "content": "GALLERY",
       "_template": "header"
     },
     "advanced_options": {
