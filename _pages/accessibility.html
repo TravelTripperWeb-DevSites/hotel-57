@@ -12,12 +12,13 @@ meta_description_localized:
     Empire State Building, we offer comfortable accommodations in an ideal location. '
 
 ---
-
-<section class="hero inner-hero" style="background-image: url(//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562873208/feu2hgsblwvguftwna9g.jpg)">
-  <div class="hero__title">
-    <h1 class="h1 light">Accessibility Statement</h1>
-  </div>
-</section>
+{% regionblock hero, type:hero %}
+  <section class="hero inner-hero" style="background-image: url(//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562873208/feu2hgsblwvguftwna9g.jpg)">
+    <div class="hero__title">
+      <h1 class="h1 light">Accessibility Statement</h1>
+    </div>
+  </section>
+{% endregion %}
 
 <section class="contact privacy-content">
   <div class="container">
