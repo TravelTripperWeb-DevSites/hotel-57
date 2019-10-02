@@ -6,7 +6,7 @@
     },
     "_template": "hero",
     "advanced_options": {
-      "custom_classes": "light"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
