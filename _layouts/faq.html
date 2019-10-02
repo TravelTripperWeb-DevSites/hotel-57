@@ -13,15 +13,17 @@ meta_tags:
 
 <section class="static-page">
   <div class="static-pages__wrap">
-    {% assign faqs = site.data._models.faq | sort: "order" %}
-    {% for faq in faqs %}
-    <div class="static-pages__item">
-      <h3 class="h6">Q: {{faq.title}}</h3>
-      <div class="faq-answer">
-        {{faq.faq_content}}
-      </div>
-    </div>
-  {% endfor %}
-
+    {% assign faqs = site.data._models.faq %}
+    {% if faqs %}
+      {% assign faqs = site.data._models.faq | sort: "order" %}
+      {% for faq in faqs %}
+        <div class="static-pages__item">
+          <h3 class="h6">Q: {{faq.title}}</h3>
+          <div class="faq-answer">
+            {{faq.faq_content}}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </section>
