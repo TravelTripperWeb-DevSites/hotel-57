@@ -1,7 +1,7 @@
 [
   {
     "advanced_options": {
-      "custom_classes": "inner-hero"
+      "custom_classes": "inner-hero h1-light"
     },
     "hero_image": {
       "image": {
@@ -32,7 +32,7 @@
     },
     "_template": "hero",
     "hero_title": {
-      "content": "<h1 class=\"h1 light\">Group Request For Propsal</h1>",
+      "content": "Group Request For Propsal",
       "_template": "header"
     }
   }
