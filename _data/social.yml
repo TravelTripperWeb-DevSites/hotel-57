@@ -40,7 +40,7 @@ __EDITABLE_FIELDS__:
         type: string
   og_image:
     hint: Open Graph/Twitter default site image
-    type: image
+    type: String
   social:
     label: Social Profile
     instructions: 'For specifying social profiles: https://developers.google.com/structured-data/customize/social-profiles'
