@@ -10,11 +10,11 @@ $gray-600: #373737 !default;
 $gray-900: #232525 !default;
 //
 //    // colors
-$primary: #f3ca00 !default;
+$primary: #B48818 !default;
 $secondary: $gray-900 !default;
-$terciary: #B48818 !default;
+$terciary: #2e6a80 !default;
 //    $black: #16141a;
-      $white: #fff;
+//    $white: #fff;
 //
 //    $green: #28a745 !default;
 //    $cyan: #17a2b8 !default;
@@ -434,12 +434,12 @@ $display9-size: .8125rem !default; // 13px
 //    $navbar-fixed-z: 30 !default;
 //    $navbar-main-height: 124px;
 //    $navbar-device-height: 88px;
-//      $navbar-background: #000;
-//      $navbar-sticky-background: #000;
+//    $navbar-background: transparent;
+//    $navbar-sticky-background: $white;
 //    $navbar-padding-y: ($spacer / 2) !default;
 //    $navbar-padding-x: $spacer !default;
 //    $navbar-link-font-size: 0.875rem;
-//      $navbar-link-color: $white;
+//    $navbar-link-color: $link-color;
 //    $navbar-link-hover: $link-hover-color;
 //    $navbar-group-font-size: 0.875rem;
 //    $navbar-group-color: $link-color;
@@ -450,7 +450,7 @@ $display9-size: .8125rem !default; // 13px
 //    $navbar-link-hover-decoration: underline !default;
 //    $navbar-group-decoration: none !default;
 //    $navbar-group-hover-decoration: none !default;
-//      $navbar-sticky-link-color: $white;
+//    $navbar-sticky-link-color: $black;
 //    $navbar-sticky-link-decoration: none !default;
 //    $navbar-sticky-link-hover-decoration: underline !default;
 //    $navbar-sticky-link-hover: $primary;
