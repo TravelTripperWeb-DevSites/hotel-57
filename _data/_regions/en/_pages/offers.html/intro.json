@@ -1,8 +1,22 @@
 [
   {
+    "_template": "intro",
+    "header": {
+      "content": "<span id=\"docs-internal-guid-8a135304-7fff-0d8e-1437-b085cc32c5cf\">THE BEST DEALS AT ONE OF THE <br />BEST HOTELS IN MANHATTAN</span>",
+      "_template": "header"
+    },
+    "advanced_options": {
+    },
+    "h1_header_type": "h2",
+    "h1_text_alignment": "text-center",
+    "pre_header": {
+      "content": "<p><br /><br /></p>"
+    }
+  },
+  {
     "_template": "1_col",
     "html": {
-      "content": "<p class=\"my-4\" style=\"text-align: center;\">When it comes to hotel deals NYC, the Hotel @&nbsp;Times Square has some of the best offers around. Book directly with us and save big on your next vacation!</p>"
+      "content": "<p class=\"my-4\" style=\"text-align: center;\">Experience more in the Big Apple for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
     }
   }
 ]

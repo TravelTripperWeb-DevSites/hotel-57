@@ -32,6 +32,10 @@
     "_template": "hero",
     "hero_html": {
       "content": "Exclusive Offers"
+    },
+    "hero_title": {
+      "content": "",
+      "_template": "header"
     }
   }
 ]
