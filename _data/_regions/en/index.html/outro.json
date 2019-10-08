@@ -55,6 +55,9 @@
     }
   },
   {
-    "_template": "intro"
+    "_template": "intro",
+    "advanced_options": {
+    },
+    "layout": "2_col"
   }
 ]
