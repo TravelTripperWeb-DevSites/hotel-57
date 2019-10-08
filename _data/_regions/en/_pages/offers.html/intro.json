@@ -1,11 +1,5 @@
 [
   {
-    "_template": "1_col",
-    "html": {
-      "content": "<p class=\"my-4\" style=\"text-align: center;\">Experience more in the Big Apple for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
-    }
-  },
-  {
     "_template": "intro",
     "header": {
       "content": "<span id=\"docs-internal-guid-8a135304-7fff-0d8e-1437-b085cc32c5cf\">THE BEST DEALS AT ONE OF THE BEST HOTELS IN MANHATTAN</span>",
@@ -15,5 +9,11 @@
     },
     "h1_header_type": "h2",
     "h1_text_alignment": "text-center"
+  },
+  {
+    "_template": "1_col",
+    "html": {
+      "content": "<p class=\"my-4\" style=\"text-align: center;\">Experience more in the Big Apple for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
+    }
   }
 ]
