@@ -57,7 +57,7 @@
   {
     "_template": "intro",
     "advanced_options": {
-      "custom_classes": "reverse-columns"
+      "custom_classes": "reverse-columns pageintro"
     },
     "layout": "2_col",
     "header": {
