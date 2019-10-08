@@ -57,6 +57,7 @@
   {
     "_template": "intro",
     "advanced_options": {
+      "custom_classes": "reverse-columns"
     },
     "layout": "2_col",
     "header": {
@@ -98,6 +99,7 @@
         }
       },
       "_template": "image"
-    }
+    },
+    "h1_header_type": "h1"
   }
 ]
