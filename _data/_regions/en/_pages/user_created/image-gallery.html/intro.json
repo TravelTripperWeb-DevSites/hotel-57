@@ -1,5 +1,9 @@
 [
   {
-    "_template": "intro"
+    "_template": "intro",
+    "header": {
+      "content": "Your New Favorite Midtown Manhattan Hotel",
+      "_template": "header"
+    }
   }
 ]
