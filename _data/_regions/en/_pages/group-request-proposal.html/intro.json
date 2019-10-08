@@ -7,6 +7,10 @@
     },
     "post_header": {
       "content": "<p dir=\"ltr\" style=\"text-align: center;\">For Groups, We&rsquo;re the Best Among Boutique Hotels in New York&nbsp;</p>\n<p dir=\"ltr\" style=\"text-align: center;\">The Hotel @ Times Square is the right choice for group travel, thanks to our location, daily continental breakfast, and on-site fitness and business centers. Please contact us using the form below to get information about booking your next group trip to Manhattan.</p>\n<p dir=\"ltr\" style=\"text-align: center;\">Personal information collected is used solely for serving requests for proposals and other marketing materials. Visit our <a href=\"../privacy-policy/\">privacy policy</a> page to contact us to review or delete the data collected.</p>"
-    }
+    },
+    "advanced_options": {
+    },
+    "h1_header_type": "h2",
+    "h1_text_alignment": "text-center"
   }
 ]
