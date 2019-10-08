@@ -3,7 +3,9 @@
   {% assign seo_url = site.url %}
 {% endif %}
 {% if page.url contains "room_" %}
-  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Hotel Room NYC near Empire State Building" %}
+  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Affordable Hotels in NYC | The Hotel @ Times Square" %}
+{% elsif page.url contains "offer_" %}
+  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Times Square Hotel Deals | The Hotel @ Times Square" %}  
 {% else %}
   {% if page.title %}
     {% assign seo_title = page.title | normalize_whitespace | escape_once %}
@@ -18,7 +20,9 @@
 
 <title>{{ seo_title }}</title>
 {% if page.url contains "room_" %}
-{% assign seo_description = "Looking for affordable hotels in NYC? The Hotel @ Times Square offers spacious rooms, daily continental breakfast, and a great Midtown location." %}
+  {% assign seo_description = "Looking for affordable hotels in NYC? The Hotel @ Times Square offers spacious rooms, daily continental breakfast, and a great Midtown location." %}
+{% elsif page.url contains "offer_" %}
+  {% assign seo_description = "You’ll find tempting Times Square hotel deals here at The Hotel @ Times Square—special seasonal offers, deals for AAA members, and more." %}
 {% else %}
   {% assign seo_description = page.meta_description | default: site.data.seo.default_description %}
   {% if seo_description %}
