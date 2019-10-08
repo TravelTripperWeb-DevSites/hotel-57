@@ -4,6 +4,9 @@
     "header": {
       "content": "Your New Favorite Midtown Manhattan Hotel",
       "_template": "header"
+    },
+    "post_header": {
+      "content": "<p style=\"text-align: center;\">There are many options when it comes to accommodations in Midtown. The Hotel @ Times Square stands out for its spacious rooms, daily complimentary continental breakfast, and 24-hour fitness and business centers. Learn more about our accommodations and book with us soon.</p>"
     }
   }
 ]
