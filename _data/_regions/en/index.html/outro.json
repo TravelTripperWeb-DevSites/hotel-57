@@ -58,6 +58,10 @@
     "_template": "intro",
     "advanced_options": {
     },
-    "layout": "2_col"
+    "layout": "2_col",
+    "header": {
+      "content": "WELCOME TO THE HOTEL @ TIMES SQUARE",
+      "_template": "header"
+    }
   }
 ]
