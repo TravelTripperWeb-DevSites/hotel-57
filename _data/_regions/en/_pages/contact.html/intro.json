@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<h2 class=\"pb-4 h2\" style=\"text-align: center;\">The Hotel @&nbsp;Times Square</h2>\n<p style=\"text-align: center;\"><span id=\"docs-internal-guid-7597d7fd-7fff-c139-c2b0-ec4905a34c6f\">Please contact us regarding any questions about your stay or our accommodations. Visit our <a href=\"../faq/\">FAQ Page</a> for details about reserving with us, our services, transportation, and more.</span></p>"
+      "content": "<h2 class=\"pb-4 h2\" style=\"text-align: center;\">The Hotel @&nbsp;Times Square</h2>\n<p style=\"text-align: center;\"><span id=\"docs-internal-guid-7597d7fd-7fff-c139-c2b0-ec4905a34c6f\">Please contact us regarding any questions about your stay or our accommodations. Visit our <a href=\"../faq/\">FAQ Page</a> fo</span><span id=\"docs-internal-guid-7597d7fd-7fff-c139-c2b0-ec4905a34c6f\">r details about reserving with us, our services, transportation, and more.</span></p>\n<p style=\"text-align: center;\"><span id=\"docs-internal-guid-0281344a-7fff-32c3-bff5-da265b7f3a5a\">If you booked through an online travel agent and need to modify or cancel your reservation, please visit the channel from which you booked. For general questions, fill out the form below.</span><span></span></p>"
     },
     "advanced_options": {
       "custom_classes": "p-3"
