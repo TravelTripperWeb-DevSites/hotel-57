@@ -2,7 +2,7 @@
   {
     "_template": "intro",
     "header": {
-      "content": "<span id=\"docs-internal-guid-8a135304-7fff-0d8e-1437-b085cc32c5cf\">THE BEST DEALS AT ONE OF THE BEST HOTELS IN MANHATTAN</span>",
+      "content": "<span id=\"docs-internal-guid-8a135304-7fff-0d8e-1437-b085cc32c5cf\">THE BEST DEALS AT ONE OF THE <br />BEST HOTELS IN MANHATTAN</span>",
       "_template": "header"
     },
     "advanced_options": {
