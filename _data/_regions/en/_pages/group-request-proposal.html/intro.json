@@ -9,6 +9,10 @@
     }
   },
   {
-    "_template": "intro"
+    "_template": "intro",
+    "header": {
+      "content": "Get In Touch",
+      "_template": "header"
+    }
   }
 ]
