@@ -32,6 +32,10 @@
     "_template": "hero",
     "hero_html": {
       "content": "Exclusive Offers"
+    },
+    "hero_title": {
+      "content": "<span id=\"docs-internal-guid-8a135304-7fff-0d8e-1437-b085cc32c5cf\">The Best Deals at One of the Best Hotels in Manhattan</span>",
+      "_template": "header"
     }
   }
 ]
