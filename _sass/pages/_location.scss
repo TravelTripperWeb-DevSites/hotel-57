@@ -28,6 +28,12 @@
     }
 }
 
+.things-to-do-category {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .things-to-do-cat-img {
     background-color: #b8b397;
     height: 100%;
@@ -36,7 +42,8 @@
     position: relative;
 
     img {
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         transition: all .6s ease 0s;
         width: 100%;
         @include media-breakpoint-down(sm) {

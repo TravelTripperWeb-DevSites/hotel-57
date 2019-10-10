@@ -12,7 +12,7 @@ address:
   zip_code: '10036'
 default_currency: USD
 default_timezone: America/New_York
-_hotel_id: NYCH5
+_hotel_id: NYCHTS
 _portal_id: hotelattimessquare
 __EDITABLE_FIELDS__:
   name:
