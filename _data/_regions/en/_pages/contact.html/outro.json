@@ -1,5 +1,8 @@
 [
   {
-    "_template": "1_col"
+    "_template": "1_col",
+    "html": {
+      "content": "<p style=\"text-align: center;\">You can also find detailed information about accessibility in our <a href=\"../accessibility/\">Accessibility Statement</a>.</p>"
+    }
   }
 ]
