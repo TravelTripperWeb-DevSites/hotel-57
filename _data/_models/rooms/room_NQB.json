@@ -38,7 +38,8 @@
       "caption": "Non-smoking Queen Bed",
       "description": "",
       "alt": "This non-smoking Queen Room features one Queen bed and a bathroom stocked with amenities.",
-      "original_url": "https://d31f902anbz5po.cloudfront.net/2128/288559_1_master.jpg"
+      "original_url": "https://d31f902anbz5po.cloudfront.net/2128/288559_1_master.jpg",
+      "git_file_name": "_assets/image_data/Non-smoking-Queen-Bed-Non-smoking-Queen-Bed.json"
     }
   ],
   "reztrip_room_id": "NQB",
