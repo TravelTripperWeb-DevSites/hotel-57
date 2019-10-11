@@ -1,9 +1,9 @@
 {
-  "order": 7,
+  "order": 6,
   "title_localized": {
-    "en": "Does Apple Core Hotels charge a resort fee?"
+    "en": "Does the Hotel @ Times Square charge an amenities fee?"
   },
   "faq_content_localized": {
-    "en": "<p>The hotel has a daily Facilities Surcharge of $18 plus 8.875% tax, or $19.60USD daily. This is a mandatory daily fee for facility use and amenities bundle, inclusive of continental breakfast, premium Wi-Fi for up to six streaming devices per room during your stay, unlimited local and domestic long-distance telephone calls and messaging, and, where applicable, 24-hour use of business and fitness centers.</p>"
+    "en": "<p>Yes, there is a <em>mandatory daily facilities surcharge</em> of $38, inclusive of taxes, which covers daily continental breakfast, wi-fi for up to six devices, use of the on-site exercise and business facilities, and more.</p>"
   }
 }

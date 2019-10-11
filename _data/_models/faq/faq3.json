@@ -1,9 +1,9 @@
 {
-  "order": 3,
+  "order": 1,
   "title_localized": {
-    "en": "What time is check-in and check-out at the Apple Core Hotels?"
+    "en": "What time are check-in and check-out?"
   },
   "faq_content_localized": {
-    "en": "<p>Check-in is at 3PM EST. Check-out is at 12 Noon. If you wish to have a late checkout, there is cost involved, so please check in with the Front Desk staff at the beginning or during your stay. Additionally, you can store your luggage with the Bell Staff before or after your stay. For safety and security reasons, our hotels are unable to store luggage overnight.</p>"
+    "en": "<p>Check-in is at 3 p.m. EST. Check-out is at 12 noon. Late check-outs do incur extra cost, so please talk to our front desk staff at the beginning or during your stay.</p>"
   }
 }

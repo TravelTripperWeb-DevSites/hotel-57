@@ -1,9 +1,9 @@
 {
-  "order": 23,
+  "order": 8,
   "title_localized": {
-    "en": "Is smoking allowed at the hotels?"
+    "en": "Is smoking allowed?"
   },
   "faq_content_localized": {
-    "en": "<p>Apple Core Hotels offer both smoking and non-smoking rooms at The Hotel at Times Square, which is available upon request. The Hotel at New York City is smoke-free.</p>\n<p>You may also walk outside to the street to smoke. New York City's Smoke-Free Act of 2002 prohibits smoking in bars, restaurants, office building, parks, and public areas.</p>"
+    "en": "<p>We have a few rooms in which smoking is allowed. Learn more about <a href=\"/rooms-and-suites/\">our rooms</a> here.</p>"
   }
 }

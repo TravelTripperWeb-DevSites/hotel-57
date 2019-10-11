@@ -1,9 +1,9 @@
 {
-  "order": 10,
+  "order": 9,
   "title_localized": {
-    "en": "Do Apple Core Hotels offer pet-friendly accommodations?"
+    "en": "Is Hotel @ Times Square pet friendly?"
   },
   "faq_content_localized": {
-    "en": "<p>We love pets but do not offer pet-friendly accommodations at this time.</p>"
+    "en": "<p>No, we do not allow pets.</p>"
   }
 }

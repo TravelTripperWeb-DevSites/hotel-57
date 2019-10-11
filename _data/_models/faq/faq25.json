@@ -1,9 +1,9 @@
 {
-  "order": 25,
+  "order": 10,
   "title_localized": {
     "en": "Are laundry services available?"
   },
   "faq_content_localized": {
-    "en": "<p>There is no self-serve laundry available at our hotels. There is a laundry valet service Monday-Friday from 9AM-6PM. Please see the Front Desk for more information</p>"
+    "en": "<p>There is no self-serve laundry facility on site, but we do have a laundry service available. Please inquire with the front desk during your stay.</p>"
   }
 }
