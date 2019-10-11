@@ -1,9 +1,9 @@
 {
   "order": 4,
   "title_localized": {
-    "en": "Can I make a group reservation?"
+    "en": "Do you offer group reservations?"
   },
   "faq_content_localized": {
-    "en": "<p>Apple Core Hotels takes group reservations and offers special pricing. To personally reserve more than 4 rooms for your group, contact our Groups Coordinator at <a href=\"tel:800.567.7720\">800.567.7720</a> (within U.S.A.) or <a href=\"tel: 212.790.2742\">+1 212.790.2742</a> (international), or send your inquiry to Group.<a href=\"mailto:Reservations@applecorehotels.com\">Reservations@applecorehotels.com</a>. A seasoned member of our sales team will promptly get back to you to help fill your request for group accommodations.</p>"
+    "en": "<p id=\"docs-internal-guid-30435006-7fff-c1fb-9949-6811b6fb88ae\" dir=\"ltr\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\"><span style=\"font-family: Arial;\"><span style=\"font-size: 14.6667px; white-space: pre-wrap;\">Yes, we are an excellent choice for groups thanks to our special pricing, convenient location, on-site business center, and daily continental breakfast. Please visit our Groups page to fill out a request for proposal. </span></span></p>"
   }
 }
