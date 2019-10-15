@@ -18,6 +18,9 @@
 
     span {
       display: block;
+      &.nav__logo {
+        line-height: 1em;
+      }
     }
 
     img {
@@ -66,7 +69,7 @@
       padding: 24px 12px;
       font-family: $family-secondary;
       font-size: $display8-size;
-      color: $base-text-color;
+      //color: $base-text-color;
       text-transform: uppercase;
       letter-spacing: 1px;
 
