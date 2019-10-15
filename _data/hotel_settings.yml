@@ -13,7 +13,7 @@ address:
 default_currency: USD
 default_timezone: America/New_York
 _hotel_id: NYCHTS
-_portal_id: hotelattimessquare
+_portal_id: hotel-at-times-square
 __EDITABLE_FIELDS__:
   name:
     required: true
