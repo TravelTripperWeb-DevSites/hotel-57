@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<h2 class=\"h2\" style=\"text-align: center;\">THE BEST DEALS AT ONE OF THE<br />BEST HOTELS IN MANHATTAN</h2>\n<p class=\"my-2\" style=\"text-align: center;\">Experience more in the Big Apple for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
+      "content": "<h2 class=\"h2\" style=\"text-align: center;\">THE BEST DEALS AT ONE OF THE<br />BEST HOTELS IN MANHATTAN</h2>\n<p class=\"my-4\" style=\"text-align: center;\">Experience more in the Big Apple for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
     },
     "advanced_options": {
       "custom_classes": "mt-5"
