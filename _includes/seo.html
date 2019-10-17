@@ -3,7 +3,9 @@
   {% assign seo_url = site.url %}
 {% endif %}
 {% if page.url contains "room_" %}
-  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Hotel Room NYC near Empire State Building" %}
+  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "The Hotel @ Times Square" %}
+{% elsif page.url contains "offer_" %}
+  {% assign seo_title = page.title | normalize_whitespace | escape_once | append: " " | append: site.data.seo.title_separator | append: " " | append: "Times Square Hotel Deals | The Hotel @ Times Square" %}
 {% else %}
   {% if page.title %}
     {% assign seo_title = page.title | normalize_whitespace | escape_once %}
@@ -18,7 +20,9 @@
 
 <title>{{ seo_title }}</title>
 {% if page.url contains "room_" %}
-{% assign seo_description = "Visit the Hotel @ Times Square and enjoy a comfortable hotel room in NYC in an incomparable location. Our accommodations have plush amenities for a great stay." %}
+  {% assign seo_description = "Looking for affordable hotels in NYC? The Hotel @ Times Square offers spacious rooms, daily continental breakfast, and a great Midtown location." %}
+{% elsif page.url contains "offer_" %}
+  {% assign seo_description = "You'll find tempting Times Square hotel deals here at The Hotel @ Times Square—special seasonal offers, deals for AAA members, and more." %}
 {% else %}
   {% assign seo_description = page.meta_description | default: site.data.seo.default_description %}
   {% if seo_description %}
@@ -72,27 +76,12 @@
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 
-{% if site.data.social.og_image %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site.data.social.og_image | absolute_url | jsonify }}
-    }
-  </script>
+{% if page.url == "/" or page.url contains "location" %}
+  {% include schema/hotel.html %}
 {% endif %}
 
-{% if site.data.social %}
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.data.social.type %}{{ site.data.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.data.social.name | default: site.data.hotel_settings.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.data.social.links | jsonify }}
-    }
-  </script>
+{% if page.url contains "faq" %}
+  {% include schema/faq.html %}
 {% endif %}
 
 <meta http-equiv="Content-Language" content="{{ site.active_lang }}">

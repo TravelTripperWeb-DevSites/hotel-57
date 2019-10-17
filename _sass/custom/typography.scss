@@ -109,7 +109,7 @@
 }
 
 .h6 {
-  color: $primary;
+  color: $terciary;
   font-family: $family-secondary;
   font-size: $display6-size;
   line-height: normal;
@@ -147,7 +147,7 @@ p {
   font-family: $family-terciary !important;
 }
 
-.light, .h1-light h1 {
+.light, .h1-light h1, .h1-light .h1 {
   color: $white !important;
 }
 

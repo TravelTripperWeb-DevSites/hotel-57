@@ -1,0 +1,33 @@
+{
+  "order": 4,
+  "name": "MUSEUM OF MODERN ART",
+  "image": {
+    "name": "Museum Of Modern Art",
+    "content_type": "image/jpeg",
+    "date_added": "2019-10-09-110627",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "width": 4368,
+    "height": 2912,
+    "format": "jpg",
+    "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "resource_type": "image",
+    "size": 6191245,
+    "git_file_name": "_assets/image_data/Museum-Of-Modern-Art.jpg.json",
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1570633587/xkrtiqgb5nofnlk3ovvo.jpg",
+    "file_size": null,
+    "alt": "Museum Of Modern Art",
+    "caption": "",
+    "description": ""
+  },
+  "description": "<p>Home to the largest collection of modern paintings and sculptures in the world, the MoMa houses renowned works like Van Gogh's Starry Night and Monet's 14-foot wide Water Lilies. Experience art and culture at its finest.</p>",
+  "address": "<p>11 W 53rd St, New York, NY 10019</p>",
+  "phone": "212-708-9400",
+  "directions_link": "https://www.google.com/maps/place/The+Museum+of+Modern+Art/@40.7614327,-73.9776216,15z/data=!4m5!3m4!1s0x0:0xea9f8fc0b3ffff55!8m2!3d40.7614327!4d-73.9776216",
+  "website_link": "https://www.moma.org/"
+}

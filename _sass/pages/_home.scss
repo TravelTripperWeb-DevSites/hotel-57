@@ -74,13 +74,12 @@
 .pageintro {
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 0;
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
   }
 
-  &__inner {
+  &__inner, .col-html-content {
     max-width: 680px;
     text-align: center;
 
@@ -91,15 +90,27 @@
 
   .col-html-content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
   }
-
-  .col--left {
-    padding: 0;
+  
+  .c-intro__text, .c-intro__image {
+    @include make-col-ready;
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
   }
 
-  .col--right {
-    padding: 0 15px;
+  .col--right, .c-intro__text {
+    order: 1;
+    padding: 0 30px;
+  }
+
+  .col--left, .c-intro__image {
+    padding: 0;
+    order: 0;
   }
 }
 
@@ -279,7 +290,6 @@
         padding: 0 44px 0 0;
         font-family: $family-secondary;
         font-size: $display9-size;
-        color: $white;
         background-color: transparent;
         border: 0;
 

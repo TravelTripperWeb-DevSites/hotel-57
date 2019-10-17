@@ -17,7 +17,7 @@
 {% endif %}
 {% assign sync = true %}
 {% assign room_detail = page.data %}
-<section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
+<section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1571292801/xwpetffyy0un9xy23a7b.jpg');">
   <div class="hero__body">
     <div tabindex="0">
       <h1 class="h1 light" {% if sync %}ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h1>
@@ -70,7 +70,6 @@
       </div>
     </div>
     <div class="rooms-carousel__info rooms-carousel__info--content">
-      <p class="overline"  tabindex="-1">LUXURY REDEFINED</p>
       <h2 class="h4 dark" tabindex="-1" {% if sync %}ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h2>
       <a class="btn btn--secondary" href="{{ room.reztrip_room_id }}/" target="_blank" ttweb-room-component="BookingButton">Book Now</a>
     </div>
@@ -80,7 +79,7 @@
   <section class="container">
     <div class="row">
       <div class="text-center p-3 p-md-5 mt-auto">
-        <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">Room Information</h2>
+        <h2 class="h3 mb-4 mt-2 mt-md-0" tabindex="0">About This Room</h2>
         <div tabindex="0" >
           <div class="px-0 px-md-3" {% if sync %}ttweb-room-component="RoomDescription" {% endif %}>{{ room.description }}</div>
         </div>

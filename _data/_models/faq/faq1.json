@@ -1,9 +1,9 @@
 {
-  "order": "",
+  "order": 1,
   "title_localized": {
-    "en": "HOW OLD DO YOU HAVE TO BE TO MAKE A RESERVATION IN NEW YORK?"
+    "en": "Is the Hotel @ Times Square accessible and ADA compliant?"
   },
   "faq_content_localized": {
-    "en": "<p>The minimum age requirement to book and stay in New York City is 18 years old, with proof of identification.</p>"
+    "en": "<p>The Hotel at Times Square is accessible per the Americans with Disabilities Act of 1990. Please see our <a title=\"accessibility statement\" href=\"/accessibility/\">accessibility statement</a> for details about our property and room features.</p>"
   }
 }

@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<div class=\"p-4\">\n<p>Relax in our elegant rooms near the Times Square and so much more. Our boutique hotel NYC has it all.</p>\n</div>"
+      "content": "<h2 class=\"h2\">The Cozy Choice in Boutique NYC Hotel Rooms</h2>\n<p>Our hotel offers a range of rooms that allow you to take an affordable trip to New York City and stay comfortably right in Midtown. Browse the selection of rooms below, and book one of our <a title=\"special offers\" href=\"../offers/\">special offers</a> today.</p>"
     },
     "advanced_options": {
       "custom_classes": "my-3 my-md-4  text-center"
