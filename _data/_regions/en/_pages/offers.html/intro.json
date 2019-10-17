@@ -8,7 +8,10 @@
     "advanced_options": {
     },
     "h1_text_alignment": "text-center",
-    "h1_header_type": "h2"
+    "h1_header_type": "h2",
+    "pre_header": {
+      "content": "<p><br /><br /></p>"
+    }
   },
   {
     "_template": "1_col",
