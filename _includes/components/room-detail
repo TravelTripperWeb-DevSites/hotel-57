@@ -17,7 +17,7 @@
 {% endif %}
 {% assign sync = true %}
 {% assign room_detail = page.data %}
-<section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1561038976/d5eizgdcmtfyco5alil0.jpg');">
+<section class="hero inner-hero" ttweb-component="Room" data-tt-selected-room="{{room.reztrip_room_id}}" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1571292801/xwpetffyy0un9xy23a7b.jpg');">
   <div class="hero__body">
     <div tabindex="0">
       <h1 class="h1 light" {% if sync %}ttweb-room-component="RoomName" {% endif %}>{{ room.name }}</h1>
