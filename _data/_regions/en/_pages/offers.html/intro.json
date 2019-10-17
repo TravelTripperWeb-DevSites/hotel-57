@@ -4,7 +4,11 @@
     "header": {
       "content": "THE BEST DEALS AT ONE OF THE <br />BEST HOTELS IN MANHATTAN",
       "_template": "header"
-    }
+    },
+    "advanced_options": {
+    },
+    "h1_text_alignment": "text-center",
+    "h1_header_type": "h2"
   },
   {
     "_template": "1_col",
