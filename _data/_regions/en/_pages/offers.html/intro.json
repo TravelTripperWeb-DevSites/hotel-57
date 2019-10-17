@@ -11,6 +11,9 @@
     "h1_header_type": "h2",
     "pre_header": {
       "content": "<p><br /><br /></p>"
+    },
+    "post_header": {
+      "content": "<h1 class=\"h2\" style=\"text-align: center;\">THE BEST DEALS AT ONE OF THE <br /> BEST HOTELS IN MANHATTAN</h1>"
     }
   },
   {
