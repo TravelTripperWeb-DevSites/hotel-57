@@ -1,7 +1,7 @@
 [
   {
     "hero_html": {
-      "content": "Gallery"
+      "content": ""
     },
     "_template": "hero",
     "hero_title": {
@@ -37,6 +37,6 @@
         "description": ""
       }
     },
-    "skip_h1": true
+    "skip_h1": false
   }
 ]

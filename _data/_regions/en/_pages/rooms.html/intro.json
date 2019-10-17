@@ -2,7 +2,7 @@
   {
     "_template": "1_col",
     "html": {
-      "content": "<h2 class=\"h2\">The Cozy Choice in Affordable Hotels in NYC</h2>\n<p>Our hotel offers a range of rooms that allow you to take an affordable trip to New York City and stay comfortably right in Midtown. Browse the selection of rooms below, and book one of our special offers today.</p>"
+      "content": "<h2 class=\"h2\">The Cozy Choice in Boutique NYC Hotel Rooms</h2>\n<p>Our hotel offers a range of rooms that allow you to take an affordable trip to New York City and stay comfortably right in Midtown. Browse the selection of rooms below, and book one of our <a title=\"special offers\" href=\"../offers/\">special offers</a> today.</p>"
     },
     "advanced_options": {
       "custom_classes": "my-3 my-md-4  text-center"
