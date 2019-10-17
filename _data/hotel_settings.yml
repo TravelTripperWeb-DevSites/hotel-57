@@ -48,7 +48,7 @@ __EDITABLE_FIELDS__:
     type: float
 booking_url: https://hotelattimessqaure.reztrip.com
 booking_link: https://hotelattimessqaure.reztrip.com
-site_url: https://www.newsteadbelmonthills.com
+site_url: https://www.hoteltsq.com
 toll_free_phone: 866-706-7801
 _root_path: https://rt3api-prd.ttaws.com
 _ttweb_plugins_version: v3.2.3
@@ -70,6 +70,6 @@ logo:
   resource_type: image
   size: 29322
   path: "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1571148205/nlxurvpjbimhl3c8mkds.jpg"
-  file_size: 
+  file_size:
   alt: The Hotel @ Times Square Logo
 phone: 212-719-2300
