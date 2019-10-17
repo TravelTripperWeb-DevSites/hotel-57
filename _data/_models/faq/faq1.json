@@ -1,9 +1,9 @@
 {
-  "order": 0,
+  "order": "",
   "title_localized": {
     "en": "Is the Hotel @ Times Square accessible and ADA compliant?"
   },
   "faq_content_localized": {
-    "en": "<p>The Hotel at Times Square is accessible per the Americans with Disabilities Act of 1990. Please see our <a href=\"/accessibility/\">accessibility statement</a> for details about our property and room features.</p>"
+    "en": "<p>The Hotel at Times Square is accessible per the Americans with Disabilities Act of 1990. Please see our <a title=\"accessibility statement\" href=\"/accessibility/\">accessibility statement</a> for details about our property and room features.</p>"
   }
 }
