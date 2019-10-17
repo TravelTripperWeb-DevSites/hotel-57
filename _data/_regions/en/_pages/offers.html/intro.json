@@ -21,5 +21,8 @@
     "html": {
       "content": "<p class=\"my-4\" style=\"text-align: center;\">Experience more in <a title=\"the Big Apple\" href=\"../location/\">the Big Apple</a> for less. Choose from our best rates and special offers when you book direct with The Hotel @ Times Square</p>"
     }
+  },
+  {
+    "_template": "1_col"
   }
 ]
