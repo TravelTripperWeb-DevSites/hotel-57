@@ -1,6 +1,10 @@
 [
   {
-    "_template": "intro"
+    "_template": "intro",
+    "header": {
+      "content": "THE BEST DEALS AT ONE OF THE <br />BEST HOTELS IN MANHATTAN",
+      "_template": "header"
+    }
   },
   {
     "_template": "1_col",
