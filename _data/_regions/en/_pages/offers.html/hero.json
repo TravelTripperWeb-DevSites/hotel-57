@@ -31,12 +31,12 @@
     },
     "_template": "hero",
     "hero_html": {
-      "content": "<h1>Offers</h1>"
+      "content": ""
     },
     "hero_title": {
       "content": "Exclusive Offers",
       "_template": "header"
     },
-    "skip_h1": true
+    "skip_h1": false
   }
 ]
