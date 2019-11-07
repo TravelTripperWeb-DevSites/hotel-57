@@ -16,15 +16,18 @@
       <p class="accordion" type="button" tabindex="0">Contact</p>
       <div class="accordion__body">
         <p>
-          <a href="{{ site.data.hotel_settings.get_directions_url }}" rel="nofollow" target="_blank"><b>{{ site.data.hotel_settings.name }}</b><br>{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }} {{ site.data.hotel_settings.address.zip_code }}<br>United States</a></p>
-        <p>
-          <p>Email:<a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a></p>
-         <p> Reservations:<a href="tel:212-719-2300"> 212-719-2300</a></br>
-          Front Desk: <a href="tel:{{ site.data.hotel_settings.phone_number }}">{{ site.data.hotel_settings.phone_number }}</a><br>
-          {% if site.data.hotel_settings.alternate_phone_number %}
-            <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
-          {% endif %}
+          <a href="{{ site.data.hotel_settings.get_directions_url }}" rel="nofollow" target="_blank"><b>{{ site.data.hotel_settings.name }}</b><br>{{ site.data.hotel_settings.address.street1 }}<br>{{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }} {{ site.data.hotel_settings.address.zip_code }}<br>United States</a>
         </p>
+        <p>
+          <p>Email:<a href="mailto:{{ site.data.hotel_settings.email }}">{{ site.data.hotel_settings.email }}</a>
+          </p>
+          <p>
+            Reservations:<a href="tel:212-719-2300"> 212-719-2300</a><br>
+            Front Desk: <a href="tel:{{ site.data.hotel_settings.phone_number }}">{{ site.data.hotel_settings.phone_number }}</a><br>
+            {% if site.data.hotel_settings.alternate_phone_number %}
+              <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
+            {% endif %}
+          </p>
         </p>
       </div>
     </div>
@@ -60,9 +63,14 @@
   <div class="copyrights__wrap">
     <div class="copyrights__copy d-block d-md-flex justify-content-between align-items-center">
       <div tabindex="0">&copy; {{ site.data.hotel_settings.name }} {{ "now" | date: "%Y" }}. All Rights Reserved </div>
-      <a href="/accessibility-statement/" title="Powered by Traveltripper" class="mt-2 mt-md-0">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1562063985/uaq0rfr8xwyrhzybjeac.png" alt="This site is a WCAG 2.1 ADA Compliant, powered by Travel Tripper">
-      </a>
+      <div class="d-md-flex justify-content-between align-items-center">
+        <a href="/accessibility/" title="ADA logo" class="mt-2 mt-md-0">
+          <img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1573156052/jvqwiddlgoz8cutgreni.svg" alt="This site is a WCAG 2.1 ADA Compliant">
+        </a>
+        <a href="http://highgate.com/hcf" title="hfc logo">
+          <img class="hcf-logo" src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1573156045/st7halsd9rb5um67hw3t.jpg" alt="Highgate Charitable Foundation logo">
+        </a>
+      </div>
     </div>
   </div>
 </div>
