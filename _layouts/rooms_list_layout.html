@@ -3,7 +3,7 @@ layout: generic
 ---
 
 {% if site.data._models.rooms %}
-  {% assign rooms = site.data._models.rooms %}
+  {% assign rooms = site.data._models.rooms | sort: "order" %}
   <section class="c-room-list rooms-listing">
     <div class="c-room-list__items">
       {% for room in rooms %}
