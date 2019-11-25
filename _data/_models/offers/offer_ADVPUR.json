@@ -28,7 +28,9 @@
     "caption": "",
     "description": "",
     "alt": "Advance Purchase Non-Refundable",
-    "original_url": "https://d31f902anbz5po.cloudfront.net/2128/288845_2_master.jpg"
+    "original_url": "https://d31f902anbz5po.cloudfront.net/2128/288845_2_master.jpg",
+    "git_file_name": "_assets/image_data/Advance-Purchase-Rate-.json"
   },
-  "reztrip_offer_id": "ADVPUR"
+  "reztrip_offer_id": "ADVPUR",
+  "view_offer_link": "https://hoteltsq.reztrip.com/ext/promoRate?property=2128&mode=b&pm=true&sr=513463&vr=3"
 }

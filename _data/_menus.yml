@@ -69,14 +69,7 @@ footer:
     url_localized: ''
     page_id: _pages/user_created/faq.html
     label_localized:
-      en: 'FAQ'
-    items: 
-  - folder: false
-    url_localized:
-      en: "/sitemap/"
-    page_id: _pages/sitemap.html
-    label_localized:
-      en: Site Map
+      en: FAQ
     items: 
   - folder: false
     url_localized:
