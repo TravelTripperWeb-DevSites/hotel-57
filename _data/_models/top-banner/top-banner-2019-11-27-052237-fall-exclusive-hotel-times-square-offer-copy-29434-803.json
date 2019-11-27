@@ -1,12 +1,12 @@
 {
-  "title": "Fall Exclusive Hotel @ Times Square Offer-copy",
-  "banner-text": "Fall Exclusive Hotel @ Times Square Offer",
+  "title": "Black Friday / Cyber Monday Sale",
+  "banner-text": "Black Friday / Cyber Monday Sale",
   "banner-text-color": "#fffffff",
   "button-text-color": "#B48818",
   "background-color": "#B48818",
   "button-border-color": "#ffffff",
   "button-background-color": "#ffffff",
   "button-text": "BOOK NOW",
-  "button-link": "https://hotelattimessquare.reztrip.com/en/special_offer?rate_code=FALL19",
-  "featured": false
+  "button-link": "https://hoteltsq.reztrip.com/ext/promoRate?property=2128&mode=b&pm=true&sr=514101&vr=3",
+  "featured": true
 }
