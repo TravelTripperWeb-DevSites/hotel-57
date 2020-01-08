@@ -82,9 +82,10 @@ footer:
     url_localized:
       en: "/privacy-policy/"
     label_localized:
-      en: Privacy Policy
+      en: Global Privacy Policy
     page_id: _pages/privacy-policy.html
     items: 
+    target: ''
   - folder: false
     url_localized:
       en: "/accessibility/"
