@@ -1,6 +1,6 @@
 <div class="info container">
   <div class="info__wrap row">
-    <div class="info__logo col-md-4">
+    <div class="info__logo col-md-3">
       <span data-live-edit-settings='hotel_settings'
         data-live-edit-settings-field='logo'
         data-live-editable-type='image'>
@@ -12,7 +12,7 @@
         {% endif %}
       </span>
     </div>
-    <div class="info__address mb-1 mb-md-0 col-md-5">
+    <div class="info__address mb-1 mb-md-0 col-md-3">
       <p class="accordion" type="button" tabindex="0">Contact</p>
       <div class="accordion__body">
         <p>
@@ -28,9 +28,14 @@
               <a href="tel:{{ site.data.hotel_settings.alternate_phone_number }}">{{ site.data.hotel_settings.alternate_phone_number }}</a><br>
             {% endif %}
           </p>
-        </p>
       </div>
     </div>
+    <!-- newsletter -->
+    <div class="info__address mb-1 col-md-3">
+      <p class="accordion">SUBSCRIBE</p>
+      {% include forms/jotform/newsletter.html %}
+    </div>
+    <!-- learn more -->
     <div class="info__links mb-1 mb-md-0 col-md-3">
       <p class="accordion" type="button" tabindex="0">Learn More</p>
       <div class="accordion__body">
