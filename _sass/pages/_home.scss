@@ -30,7 +30,7 @@
   &__content {
     &:after {
       @include absolute-position(0,0,0,0,auto,auto);
-      background-color: rgba($black, .6);
+      //background-color: rgba($black, .6);
     }
   }
 
